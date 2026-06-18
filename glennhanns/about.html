@@ -92,6 +92,24 @@ border-bottom: 1px solid var(--border);
         .awards-section { margin-top: 3rem; }
     }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+    /* Contact Modal */
+    .contact-modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 2000; align-items: center; justify-content: center; padding: 1.5rem; }
+    .contact-modal-overlay.open { display: flex; }
+    .contact-modal { background: var(--surface); border: 1px solid var(--border); max-width: 560px; width: 100%; padding: 2.5rem; position: relative; }
+    .contact-modal::before { content: ''; display: block; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); }
+    .contact-modal h3 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 0.06em; color: var(--text); margin-bottom: 1.75rem; }
+    .contact-modal-close { position: absolute; top: 1rem; right: 1.25rem; background: none; border: none; color: var(--muted); font-size: 1.4rem; cursor: pointer; line-height: 1; padding: 0.25rem; transition: color 0.2s; }
+    .contact-modal-close:hover { color: var(--accent); }
+    .contact-field { margin-bottom: 1.25rem; }
+    .contact-field label { display: block; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
+    .contact-field input, .contact-field textarea, .contact-field select { width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 0.9rem; padding: 0.7rem 0.9rem; outline: none; transition: border-color 0.2s; -webkit-appearance: none; appearance: none; border-radius: 0; }
+    .contact-field input:focus, .contact-field textarea:focus, .contact-field select:focus { border-color: var(--accent); }
+    .contact-field textarea { resize: vertical; min-height: 130px; }
+    .contact-submit { display: inline-block; background: var(--accent); color: #fff; font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 0.12em; border: none; padding: 0.75rem 2.25rem; cursor: pointer; transition: opacity 0.2s; width: 100%; margin-top: 0.5rem; }
+    .contact-submit:hover { opacity: 0.85; }
+    .contact-success { display: none; text-align: center; padding: 1.5rem 0; }
+    .contact-success p { color: var(--muted); font-size: 0.95rem; margin-top: 0.75rem; }
+    .contact-success .check { font-size: 2.5rem; color: var(--accent); }
     </style>
 
 <script type="application/ld+json">
@@ -198,7 +216,7 @@ border-bottom: 1px solid var(--border);
                     </div>
 
                     <div class="about-body">
-                        <p>Glenn Hanns ACS is a Sydney-based Director of Photography known for intimate, visually rich storytelling across feature drama, television, and documentary. He's lensed features, television series, documentary, short film, music video and commercial work, with well over 150 projects to his name. Recent credits include the psychological creature feature <a href="/#room-below">The Room Below</a> (dir. Kurt Martin, starring Alyssa Sutherland and Jonathan Rhys Meyers). For a full list of credits, visit <a href="https://www.imdb.com/name/nm1771070/" target="_blank" rel="noopener">IMDb</a>.</p>
+                        <p>Glenn Hanns ACS is a Sydney-based Director of Photography known for intimate, visually rich storytelling across feature drama, television, and documentary. He's lensed features, television series, documentary, short film, music video and commercial work, with well over 150 projects to his name. Recent credits include the psychological creature feature <a href="/#room-below">The Room Below</a> (dir. Kurt Martin, starring Alyssa Sutherland and Jonathan Rhys Meyers). For a portfolio of my work, <a href="/">visit here</a>. To read my blog, <a href="/blog.html">visit here</a>.</p>
                         <p>His AFTRS film <em>Bleeders</em> was nominated for Best Cinematography at Camerimage, Poland in the <a href="https://www.imdb.com/event/ev0000143/2020/1/#silver_tadpole_student_etudes_competition" rel="nofollow" target="_blank">Student Etudes</a> category, and screened at Festival de Cannes (des Antipodes). An accredited ACS cinematographer and AACTA member, his films have screened internationally — from Camerimage, Cannes and Zurich to Beijing, Schlingel, Cinemagic, San Sebastian and the Adelaide Film Festival — and have collected multiple Gold ACS Awards at State and National level, IF Awards and an AACTA nomination for Best Cinematography. Works have been distributed worldwide on Netflix, Amazon Prime, Apple TV, Foxtel, Binge, SBS, ABC, Lionsgate and Discovery Channel.</p>
                         <blockquote>"There's no denying the passion I feel for the moving image. The magic generated when all the elements of film-making come together, creating an engaging cohesive story that transports the audience's reality — that is what I live for."</blockquote>
                         <p>Based in Sydney. Available across Australia and internationally for features, television, documentary, commercials and music video.</p>
@@ -248,7 +266,7 @@ border-bottom: 1px solid var(--border);
                     <img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography"/>
                 </div>
                 <div class="footer-info">
-                    <h4>Get in touch</h4>
+                    <h4><button class="footer-contact-btn" onclick="document.getElementById('contactModal').classList.add('open')">Get in touch</button></h4>
                     <p>Glenn Hanns ACS — Director of Photography</p>
                     <p>Sydney, NSW — Available across Australia and internationally</p>
                     <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
@@ -265,6 +283,72 @@ border-bottom: 1px solid var(--border);
             </div>
         </div>
     </footer>
+
+    <!-- Contact Modal -->
+    <div class="contact-modal-overlay" id="contactModal" onclick="if(event.target===this)this.classList.remove('open')">
+        <div class="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+            <button class="contact-modal-close" onclick="document.getElementById('contactModal').classList.remove('open')" aria-label="Close">&times;</button>
+            <div id="contactForm">
+                <h3 id="contactModalTitle">Get in touch</h3>
+                <div class="contact-field">
+                    <label for="cf-name">Name</label>
+                    <input type="text" id="cf-name" placeholder="Your name" autocomplete="name">
+                </div>
+                <div class="contact-field">
+                    <label for="cf-email">Email</label>
+                    <input type="email" id="cf-email" placeholder="your@email.com" autocomplete="email">
+                </div>
+                <div class="contact-field">
+                    <label for="cf-subject">Subject</label>
+                    <select id="cf-subject">
+                        <option value="" disabled selected>Select a subject</option>
+                        <option>Feature Film</option>
+                        <option>TV / Series</option>
+                        <option>Documentary</option>
+                        <option>Short Film</option>
+                        <option>Music Video</option>
+                        <option>Commercial / Corporate</option>
+                        <option>General Enquiry</option>
+                    </select>
+                </div>
+                <div class="contact-field">
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" placeholder="Tell me about your project…"></textarea>
+                </div>
+                <button class="contact-submit" onclick="submitContactForm()">Send Message</button>
+            </div>
+            <div class="contact-success" id="contactSuccess">
+                <div class="check">✦</div>
+                <h3>Message sent</h3>
+                <p>Thanks for reaching out — I'll be in touch shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    .footer-contact-btn { background: none; border: none; padding: 0; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted); cursor: pointer; font-family: inherit; transition: color 0.2s; }
+    .footer-contact-btn:hover { color: var(--accent); }
+    </style>
+
+    <script>
+    function submitContactForm() {
+        const name    = document.getElementById('cf-name').value.trim();
+        const email   = document.getElementById('cf-email').value.trim();
+        const subject = document.getElementById('cf-subject').value;
+        const message = document.getElementById('cf-message').value.trim();
+        if (!name || !email || !subject || !message) {
+            alert('Please fill in all fields before sending.');
+            return;
+        }
+        const mailto = `mailto:glenn@glennhanns.com?subject=${encodeURIComponent(subject + ' — ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
+        window.location.href = mailto;
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('contactSuccess').style.display = 'block';
+    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') document.getElementById('contactModal').classList.remove('open');
+    });
+    </script>
 
 </body>
 </html>
