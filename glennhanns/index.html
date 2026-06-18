@@ -499,6 +499,19 @@ gap: 1.5rem;
 .footer-base { flex-direction: column; gap: 0.5rem; text-align: center; }
 .footer-tagline { font-size: 1rem; }
 }
+@media (max-width: 768px) and (orientation: landscape) {
+.carousel-section { padding-top: 0; }
+#proj-swiper { padding: 0; scroll-padding: 0; }
+.swiper-end-spacer { flex: 0 0 0; }
+.proj-slide {
+flex: 0 0 100vw;
+aspect-ratio: unset;
+height: 100svh;
+border-radius: 0;
+border-left: none;
+border-right: none;
+}
+}
 @media (prefers-reduced-motion: reduce) {
 *, *::before, *::after { transition: none !important; animation: none !important; }
 }
@@ -1488,7 +1501,7 @@ if (still) { still.style.display = 'none'; still.src = ''; }
 if (p.youtubeId) {
 fr.src = 'https://www.youtube.com/embed/' + p.youtubeId + '?color=white&modestbranding=1&rel=0';
 } else if (p.vimeoId) {
-fr.src = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0&fullscreen=1' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
+fr.src = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0&fullscreen=1&playsinline=0' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
 }
 fr.style.display = 'block';
 fr.setAttribute('data-loaded', '1');
@@ -1513,7 +1526,7 @@ cov.style.display = 'none';
 if (overlay) { overlay.classList.remove('visible'); cov.removeAttribute('data-poster'); cov.onclick = null; }
 } else if (p.vimeoId && p.cover) {
 // Poster mode — show cover, load video on click
-const vimeoSrc = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0&fullscreen=1&fullscreen=1&autoplay=1' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
+const vimeoSrc = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0&fullscreen=1&playsinline=0&autoplay=1' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
 cov.src = p.cover;
 cov.style.display = 'block';
 cov.setAttribute('data-poster', 'true');
@@ -1531,7 +1544,7 @@ cov.onclick = null;
 if (overlay) overlay.classList.remove('visible');
 };
 } else if (p.vimeoId) {
-fr.src = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0&fullscreen=1' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
+fr.src = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0&fullscreen=1&playsinline=0' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
 fr.style.display = 'block';
 fr.setAttribute('data-loaded', '1');
 cov.style.display = 'none';
