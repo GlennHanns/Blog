@@ -1,0 +1,354 @@
+<!--
+╔══════════════════════════════════════════════════════════════════╗
+║  NEW BLOG POST CHECKLIST — complete before publishing            ║
+╠══════════════════════════════════════════════════════════════════╣
+║  IN THIS FILE                                                    ║
+║  [x] <title>          — done                                     ║
+║  [x] <meta description> — done                                   ║
+║  [x] <link rel="canonical"> — done                               ║
+║  [x] og:title / og:description / og:image / og:url — done        ║
+║  [x] twitter:card tags — done                                    ║
+║  [x] Person + WebSite schema — done                              ║
+║  [x] Breadcrumb text — done                                      ║
+║  [x] H1 / article-title — done                                   ║
+║  [x] Hero image src — DOP_31.webp                                ║
+║  [x] Internal links — TV series, feature film, hire              ║
+║  [x] Portfolio links — Ron Iddles, Dark Temptations              ║
+╠══════════════════════════════════════════════════════════════════╣
+║  SITE FILES TO UPDATE AFTER PUBLISHING                           ║
+║  [ ] sitemap.xml      — add new <url> + <lastmod>                ║
+║  [ ] blog.html        — add card to the article listing          ║
+║  [ ] index.html       — update carousel if this is a feature     ║
+╚══════════════════════════════════════════════════════════════════╝
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Drama Series Director of Photography &#8212; Glenn Hanns ACS</title>
+  <meta name="description" content="What a drama series Director of Photography actually does — visual authorship, schedule management, colour pipeline, and how the camera serves performance across a full season.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0a0a0a;--surface:#111111;--border:#1e1e1e;--accent:#ff6600;--text:#ffffff;--muted:#888888;--max-width:1200px;--article-width:740px;--nav-h:68px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:1rem;line-height:1.75;-webkit-font-smoothing:antialiased;}
+    body::before{content:'';display:block;position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);z-index:1001;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{opacity:0.8;}
+    .page-width{max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .site-nav{position:fixed;top:3px;left:0;right:0;height:var(--nav-h);background:rgba(10,10,10,0.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:1000;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .nav-logo img{height:46px;width:auto;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#666;transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;opacity:1;}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:1px;}
+    .site-content{padding-top:calc(var(--nav-h) + 3px);}
+    .article-section{padding:4rem 0 6rem;}
+    .article-inner{max-width:var(--article-width);margin:0 auto;padding:0 2rem;}
+    .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:#444;margin-bottom:2.5rem;transition:color 0.2s;}
+    .back-link:hover{color:var(--accent);opacity:1;}
+    .article-label{font-size:0.55rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem;}
+    .article-title{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:0.06em;color:var(--text);line-height:1.05;text-transform:uppercase;margin-bottom:0.5rem;}
+    .article-subtitle{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#555;margin-bottom:2.5rem;}
+    .article-body p{font-size:0.95rem;color:#bbb;line-height:1.85;margin-bottom:1.4rem;}
+    .article-body h3{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.2rem,2vw,1.7rem);letter-spacing:0.06em;color:var(--accent);line-height:1.1;text-transform:uppercase;margin:2rem 0 0.75rem;}
+    .article-body h4{font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#555;margin:1.75rem 0 0.6rem;}
+    .article-body a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);transition:border-color 0.2s,color 0.2s;}
+    .article-body a:hover{color:var(--accent);opacity:0.8;border-bottom-color:var(--accent);}
+    .article-body strong{color:var(--text);font-weight:500;}
+    .article-body em{font-style:italic;color:#999;}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.5rem;color:#bbb;}
+    .article-body li{font-size:0.95rem;line-height:1.75;margin-bottom:0.5rem;}
+    .article-body li strong{color:var(--text);}
+    .article-body blockquote{border-left:3px solid var(--accent);margin:2rem 0;padding:1rem 1.5rem;color:var(--muted);font-size:1rem;line-height:1.8;font-style:italic;}
+    .article-body figure{margin:2rem 0;}
+    .article-body figure img{width:100%;border-radius:12px;}
+    .article-body figcaption{font-size:0.72rem;color:#444;margin-top:0.6rem;font-style:italic;line-height:1.5;text-align:center;}
+    .article-body hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0;}
+    .article-bio{margin-top:1rem;font-size:0.88rem;color:#666;line-height:1.8;}
+    .article-bio a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);}
+    .article-bio strong{color:#bbb;}
+    .site-footer{background:var(--surface);border-top:1px solid var(--border);padding:4rem 0 2.5rem;margin-top:5rem;}
+    .footer-grid{display:grid;grid-template-columns:110px 1fr auto;gap:2.5rem;align-items:start;padding-bottom:2.5rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem;}
+    .footer-photo img{width:110px;height:auto;}
+    .footer-info h4{font-size:0.68rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;}
+    .footer-info p{font-size:0.9rem;color:var(--muted);margin-bottom:0.35rem;line-height:1.5;}
+    .footer-info a{color:var(--text);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;display:inline-block;margin-bottom:0.35rem;}
+    .footer-info a:hover{color:var(--accent);border-color:var(--accent);opacity:1;}
+    .footer-socials{display:flex;flex-direction:column;gap:0.9rem;align-items:flex-end;}
+    .footer-socials a{font-size:0.68rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);transition:color 0.2s;}
+    .footer-socials a:hover{color:var(--accent);opacity:1;}
+    .footer-base{display:flex;justify-content:space-between;align-items:center;}
+    .footer-base p{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:#444;}
+    .footer-tagline{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--accent);letter-spacing:0.04em;margin-bottom:2rem;padding-bottom:1.75rem;border-bottom:1px solid var(--border);}
+    .seo-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+    @media(max-width:768px){
+      .nav-toggle{display:flex;}
+      .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;padding:1.5rem 2rem;gap:1.5rem;}
+      .nav-links.open{display:flex;}
+      .footer-grid{grid-template-columns:1fr;gap:2rem;}
+      .footer-socials{align-items:flex-start;flex-direction:row;gap:1.5rem;}
+      .footer-base{flex-direction:column;gap:0.5rem;text-align:center;}.footer-tagline{font-size:1rem;}
+      .article-section{padding:3rem 0 4rem;}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;}}
+  </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Glenn Hanns",
+  "alternateName": "Glenn Hanns ACS",
+  "url": "https://glennhanns.com",
+  "image": "https://glennhanns.com/assets/glenn-hanns-acs.webp",
+  "jobTitle": ["Director","Cinematographer","Director of Photography"],
+  "description": "Award-winning Australian director and cinematographer. AFTRS Masters graduate, ACS accredited DOP based in Sydney specialising in feature drama, television and documentary.",
+  "knowsAbout": ["Cinematography","Direction","Director of Photography","Feature Film","Television Drama","Documentary","Music Video","Camera Operation","Lighting"],
+  "hasCredential": [
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Masters Degree","recognizedBy":{"@type":"Organization","name":"Australian Film Television and Radio School","alternateName":"AFTRS","url":"https://www.aftrs.edu.au"},"name":"Masters in Cinematography with High Achievement"},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Professional Accreditation","recognizedBy":{"@type":"Organization","name":"Australian Cinematographers Society","alternateName":"ACS","url":"https://cinematographer.org.au"},"name":"ACS Accredited Cinematographer"}
+  ],
+  "award": [
+    "2023 Gold ACS Award NSW & ACT — Dramatised Documentaries (Ron Iddles)",
+    "2022 Award of Distinction ACS Nationals — Best Feature Film under $2m (Moon Rock For Monday)",
+    "2021 Gold ACS Award NSW & ACT — Feature Films under $2m (Moon Rock For Monday)",
+    "2019 Silver Logie — Most Outstanding Factual or Documentary Program (Ron Iddles)",
+    "2013 Bronze ACS Award NSW & ACT — Feature Films (Forbidden Ground)",
+    "2009 Gold ACS Award NSW & ACT — Music Clips (Birds of Tokyo)",
+    "2008 Golden Tadpole Nominee — Camerimage, Poland (Bleeders)"
+  ],
+  "address": {"@type":"PostalAddress","addressLocality":"Sydney","addressRegion":"NSW","addressCountry":"AU"},
+  "email": "glenn@glennhanns.com",
+  "telephone": "+61421667205",
+  "sameAs": [
+    "https://au.linkedin.com/in/glennhanns",
+    "https://www.instagram.com/glennhanns_ACS/",
+    "https://www.youtube.com/@GlennHanns/playlists",
+    "https://www.imdb.com/name/nm1771070/?ref_=ext_shr_lnk"
+  ],
+  "worksFor": {"@type":"Organization","name":"Glenn Hanns ACS Cinematography","url":"https://glennhanns.com"},
+  "nationality": {"@type":"Country","name":"Australia"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Glenn Hanns ACS — Director of Photography Sydney",
+  "url": "https://glennhanns.com",
+  "description": "Portfolio of Glenn Hanns ACS, Sydney-based Director of Photography and cinematographer specialising in feature drama, television, documentary and music video.",
+  "author": {"@type":"Person","name":"Glenn Hanns","alternateName":"Glenn Hanns ACS"},
+  "inLanguage": "en-AU",
+  "copyrightYear": "2026",
+  "copyrightHolder": {"@type":"Person","name":"Glenn Hanns"}
+}
+</script>
+
+  <link rel="canonical" href="https://glennhanns.com/blog/tv-drama-series-director-of-photography.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Glenn Hanns ACS" />
+  <meta property="og:url" content="https://glennhanns.com/blog/tv-drama-series-director-of-photography.html" />
+  <meta property="og:title" content="TV Drama Series Director of Photography — Glenn Hanns ACS" />
+  <meta property="og:description" content="What a drama series Director of Photography actually does — visual authorship, schedule management, colour pipeline, and how the camera serves performance across a full season." />
+  <meta property="og:image" content="https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_31.webp" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TV Drama Series Director of Photography — Glenn Hanns ACS" />
+  <meta name="twitter:description" content="What a drama series Director of Photography actually does — visual authorship, schedule management, colour pipeline, and how the camera serves performance across a full season." />
+  <meta name="twitter:image" content="https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_31.webp" />
+</head>
+<body>
+<h1 class="seo-h1">TV Drama Series Director of Photography &#8212; Glenn Hanns ACS</h1>
+
+<nav class="site-nav">
+  <div class="nav-inner" style="position:relative;">
+    <a class="nav-logo" href="/"><img src="/assets/images/glennlogotran.png" alt="Glenn Hanns ACS" /></a>
+    <a class="nav-centre-logo" href="/" style="position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;"><img src="/assets/images/glenn-hanns-acs-cinematography.png" alt="Glenn Hanns ACS Cinematography" style="height:38px;width:auto;"/></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Work</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog.html" class="active">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="site-content">
+  <article class="article-section">
+    <div class="article-inner">
+
+      <a class="back-link" href="/blog.html">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All articles
+      </a>
+
+      <header>
+        <p class="article-label">Television</p>
+        <h2 class="article-title">TV Drama Series Director of Photography</h2>
+        <p class="article-subtitle">Glenn Hanns ACS &nbsp;&#183;&nbsp; Sydney</p>
+      </header>
+
+      <div class="article-body">
+
+        <p>A drama series Director of Photography is hired for more than lighting a set well. In television drama the scope is larger and more specific &#8212; you have to develop a visual language that can carry a story across several hours, keep things coherent through changing directors and locations, and deliver images that hold their shape under real production pressure. All at once, usually on a schedule that doesn&#8217;t leave much room.</p>
+
+        <p>For producers and directors that role carries both creative and practical weight. A strong DP gives a series visual confidence early, then keeps that standard when the pace tightens. On a drama production, that combination is what separates competent coverage from work that actually feels finished.</p>
+
+        <h3>What Does a Drama Series DP Really Do</h3>
+
+        <p>The simplest description is visual leadership. In practice that covers script interpretation, camera strategy, lensing, lighting, blocking collaboration, crew management, workflow decisions and quality control &#8212; from the first prep meeting to the last day of principal photography.</p>
+
+        <p>None of those decisions sit in isolation. A lens choice affects production design, performance intimacy and editorial rhythm. A lighting approach shapes the speed of the day as much as the mood of a scene. Camera movement can build emotional scale or quietly drain it. The DP is managing all of that simultaneously while keeping the visual world coherent &#8212; which on a drama series means keeping it coherent across weeks, not just a single day.</p>
+
+        <p>Series work requires a specific kind of discipline that features don&#8217;t. A <a href="/blog/what-does-a-feature-film-cinematographer-do.html">feature film</a> can pursue one contained visual arc. A series has to sustain character, tone and escalation across episodes, often with different directors and a shooting pattern that doesn&#8217;t always go in story order. The cinematography has to be expressive but it also has to be a system someone else can step into and maintain.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_50.webp" alt="Ron Iddles: The Good Cop — cinematography by Glenn Hanns ACS" />
+          <figcaption><a href="/#ron-iddles">Ron Iddles: The Good Cop</a> &#8212; directed by John Mavety, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <h3>Visual Authorship Over a Season</h3>
+
+        <p>The first job of a drama DP is to set the show&#8217;s visual rules &#8212; not a rigid checklist but a shared language the production can rely on. Concrete parameters for contrast levels, camera height, movement grammar, lens families, colour separation, night exteriors, skin tone priorities. The stuff that means when a different director comes in on episode four, the show still looks like itself.</p>
+
+        <p>Television drama accumulates meaning over time. If the visual approach drifts from episode to episode without intention, audiences feel it. Not in technical terms &#8212; they just feel something is off.</p>
+
+        <p>A series look has to be built around story, not trends. Clean images aren&#8217;t automatically dramatic. Heavy stylisation isn&#8217;t automatically cinematic. Some projects need restraint so performance stays central. Others need stronger formal pressure &#8212; bolder shadows, more subjective framing, a camera that sits closer to internal states. Genre, budget, schedule, platform. The answer is different every time. Good series cinematography isn&#8217;t a collection of pretty frames; it&#8217;s a system that can survive contact with production reality.</p>
+
+        <p>That&#8217;s also what separates drama DP work from comedy. In multi-camera sitcom or single-camera comedy the visual language is generally clean, flat and functional &#8212; it&#8217;s there to serve the performance and the joke, not editorialise it. Shadow and contrast work against comedy far more than for it. In drama those same tools are the primary means of carrying emotional weight. A drama DP who shoots comedy the way they&#8217;d shoot a psychological thriller has completely misread the brief. And the reverse is equally true. The craft overlaps but the instincts have to shift entirely depending on what the material needs.</p>
+
+        <h3>Three Projects, Three Visual Challenges</h3>
+
+        <h4>Disciplined documentary drama: Ron Iddles &#8212; The Good Cop</h4>
+
+        <p>On <a href="/#ron-iddles"><em>Ron Iddles &#8212; The Good Cop</em></a>, the visual challenge was consistency under real production pressure. Dramatic reconstructions of cold case investigations had to feel tonally unified across different episodes, shot over weeks in different real locations with constantly changing natural light. The method had to be controlled enough to cut smoothly between episodes but flexible enough to keep pace. That kind of repeatable discipline under schedule pressure is exactly what drama series cinematography demands.</p>
+
+        <h4>Controlled tension: Dark Temptations</h4>
+
+        <p>For <a href="/#dark-temptations"><em>Dark Temptations</em></a>, the visual strategy focuses on internal tension and tight environmental control. When the narrative is carrying that kind of psychological weight, the camera language needs to be very disciplined. Shadow placement, contrast ratios, the decision about exactly when the image stays locked down or becomes unstable &#8212; all of it feeds the unease. The job is to build a claustrophobic visual consistency that mirrors the theme across every setup, not just the hero shots.</p>
+
+        <h4>When the brief is completely different: Furniture Kingz</h4>
+
+        <p>That distinction becomes even clearer when you put comedy series alongside drama work. On <a href="https://www.imdb.com/title/tt4836380/" target="_blank" rel="noopener"><em>Furniture Kingz</em></a> (2015), an Australian comedy series, the visual approach had to change entirely. Clean, even exposure, minimal shadow, camera behaviour that stays out of the way of performance &#8212; the opposite of a psychological drama. Comedy is built on timing and face, and any cinematography that imposes mood or visual weight onto it works against the material. Knowing how to make that switch and why it matters is part of what experience across different formats actually means.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_18.webp" alt="Glenn Hanns ACS — Director of Photography on set" />
+          <figcaption>Glenn Hanns ACS &#8212; Director of Photography on set.</figcaption>
+        </figure>
+
+        <h3>The Pressure Points Unique to Television Drama</h3>
+
+        <p>Television schedules don&#8217;t reward indecision. Even well-supported productions ask crews to move fast, adapt constantly and protect quality under enormous time pressure. The DP is one of the people who determines whether that pressure gets absorbed or ends up in the image.</p>
+
+        <p>It&#8217;s not about speed. It&#8217;s about selective precision &#8212; knowing where to spend time, where to simplify, when to consolidate coverage and when to hold out for one more setup because the scene needs it. That judgement is what separates a DP who keeps a drama together from one who keeps a drama moving.</p>
+
+        <p>And there&#8217;s a continuity beyond aesthetics. Light continuity, eyelines, weather, time-of-day control, location constraints &#8212; all of it shapes what the finished work looks like. A series DP has to think telescopically, understanding how today&#8217;s material will cut against footage shot three weeks ago, while setting up scenes that haven&#8217;t even been blocked yet. It&#8217;s never solitary work.</p>
+
+        <h3>Working with Directors and Producers</h3>
+
+        <p>The best drama work comes from a DP who understands authorship without being territorial about it. Directors need someone who can read performance, tone and blocking with real intelligence. Producers need someone who understands schedule, crew dynamics and where the on-screen value actually sits. Those aren&#8217;t the same thing and they can pull in different directions.</p>
+
+        <p>More ambition usually means more time or more infrastructure. A leaner method can flatten the dramatic possibilities of a scene. The experienced DP reads those trade-offs and finds solutions that protect creative intent without blowing the day. That&#8217;s the job.</p>
+
+        <p>In series television that means constantly distinguishing between what&#8217;s essential and what&#8217;s just desirable. Essential choices define the show. Desirable choices might improve a moment but not at the cost of the schedule. That judgement builds trust with producers quickly &#8212; and it&#8217;s why they tend to look for DPs with strong drama credits rather than backgrounds mainly in commercials or unscripted. Narrative series need a specific fluency: long-form scene construction, emotional continuity, actor sensitivity, visual endurance. For more on this, read <a href="/blog/what-a-television-series-cinematographer-does.html">what a television series cinematographer does</a>.</p>
+
+        <h3>Camera, Lenses and the Colour Pipeline</h3>
+
+        <p>A cohesive visual system cannot survive production reality without a solid technical framework established well before the first shoot day.</p>
+
+        <h4>Camera and lens selection</h4>
+
+        <p>Choosing a camera system is a creative decision with direct implications for set efficiency. On a fast-moving narrative set, the configuration has to match the physical demands of the blocking. Pairing the right sensor with a specific lens family determines how sharpness, flare and fall-off behave under different lighting conditions. Lens testing in prep means the focal lengths are proven before the crew arrives &#8212; from wide environmental framing down to intimate close-up eyelines &#8212; without surprises mid-shoot.</p>
+
+        <h4>Establishing the colour pipeline</h4>
+
+        <p>Look development is where the visual rules get codified. Running thorough exposure and filtration tests during prep and collaborating with the colourist to build dedicated LUTs before principal photography means what you see on the calibrated on-set monitors accurately reflects the final intended colour space and contrast depth. It protects skin tones and shadow detail exactly as captured on the day and keeps the data workflow stable all the way through post.</p>
+
+        <h3>How the Camera Serves Performance</h3>
+
+        <p>In scripted drama, performance is always central. Audiences follow faces, hesitations, contradictions and shifts in power long before they register anything technical. A drama DP has to know when the camera should assert itself and when it should get out of the way. That balance shifts show by show, sometimes scene by scene.</p>
+
+        <p>Lens choice does as much work as movement. A wider lens puts a character inside their environment &#8212; the frame presses in usefully. A longer focal length isolates, compresses, withholds. Not aesthetic decorations. They change how an audience reads character and tension at a fundamental level. Lighting is the same. A clean, polished image might serve one series and actively weaken another. Sometimes a harder edge, a less flattering source, a more naturalistic fall-off is what gives the material its force. The goal isn&#8217;t to make everyone look good. It&#8217;s to make the drama legible.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_24.webp" alt="Glenn Hanns ACS — award-winning Director of Photography" />
+          <figcaption>Glenn Hanns ACS &#8212; award-winning Director of Photography.</figcaption>
+        </figure>
+
+        <h3>Technical Judgement Is Part of the Creative Job</h3>
+
+        <p>On high-end series, technical decisions are creative decisions. Sensor format, monitoring pipelines, LUT design, exposure strategy, filtration, data workflow, colour management &#8212; all of it shapes the final image and all of it dictates set efficiency. A strong DP doesn&#8217;t make technology the subject of the production. They make it serve the work.</p>
+
+        <p>High shooting ratios need stable data workflows. Difficult locations need practical lighting packages. Tight schedules need camera builds chosen with real-world speed in mind. This is where hiring decisions often come clear. Producers aren&#8217;t only assessing taste. They&#8217;re assessing risk &#8212; can this person maintain quality at pace, lead a crew calmly, turn ambition into a method the production can actually execute?</p>
+
+        <p>Credentials and major drama credits matter because they answer those questions before the first tech recce. An <a href="https://cinematographer.org.au/" target="_blank" rel="noopener">ACS-accredited</a> practitioner with extensive narrative work behind them brings more than visual style &#8212; they bring a proven operating framework; methodology, facility networks, key crew relationships, infrastructure knowledge.</p>
+
+        <ul>
+          <li><strong>Proven Methodology:</strong> A systematic approach to planning, lighting and camera movement that minimises costly trial and error and maximises time on set.</li>
+          <li><strong>Established Networks:</strong> Trusted equipment rental and facility relationships built over years in the industry &#8212; no time wasted navigating long vendor chains or chasing deals.</li>
+          <li><strong>Key Crew Relationships:</strong> Access to a cohesive camera team &#8212; from 1st ACs to gaffers &#8212; who already work well together and know what&#8217;s happening behind the scenes.</li>
+          <li><strong>Infrastructure Knowledge:</strong> A deep understanding of current production pipelines, including in-camera virtual production (ICVP), LED volumes and data management.</li>
+        </ul>
+
+        <h3>What Producers Should Look for in a Drama DP</h3>
+
+        <p>A showreel matters, but only so far. The more useful question is whether the work shows repeatable dramatic judgement. Does the cinematography support tone and performance across different scenes, or only in isolated hero shots? Real command of interiors, exteriors, day, night, mixed lighting. A visual voice that feels sustained rather than assembled.</p>
+
+        <p>Credits fill in the rest. Feature drama, scripted television and short-form narrative work show how a cinematographer handles scene-based storytelling. The strongest signal is usually consistency across projects and long-standing creative collaborations &#8212; the same directors, crew and facilities coming back. For a practical guide to the hiring process, read <a href="/blog/how-to-hire-a-cinematographer-for-feature-film.html">how to hire a cinematographer</a>.</p>
+
+        <p>Conversations in prep are equally revealing. The right DP talks about story, process and trade-offs without making it a performance. Opinions without display. They know where the visual ambition should sit and where it has to give way to practical limits.</p>
+
+        <p>The camera department doesn&#8217;t create drama by itself. It gives drama shape, tension and continuity. When that&#8217;s working, the audience never thinks about the logistics or the equipment. They just believe the world in front of them.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_46.webp" alt="Glenn Hanns ACS — Director of Photography on set" />
+          <figcaption>Glenn Hanns ACS &#8212; Director of Photography on set.</figcaption>
+        </figure>
+
+        <hr>
+
+        <p class="article-bio"><a href="/about.html"><strong>Glenn Hanns ACS</strong></a> is a Sydney-based Director of Photography specialising in feature drama, television and documentary. <a href="/">View the full portfolio</a>, read more on <a href="/blog/what-a-television-series-cinematographer-does.html">what a television series cinematographer does</a> or <a href="/blog/working-with-directors.html">working with directors</a>, or get in touch via the contact details below.</p>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width">
+    <div class="footer-tagline">Visual authorship from prep to grade</div>
+<div class="footer-grid">
+      <div class="footer-photo"><img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" /></div>
+      <div class="footer-info">
+        <h4>Get in touch</h4>
+        <p>Glenn Hanns ACS &#8212; Director of Photography</p>
+        <p>Sydney, NSW &#8212; Available across Australia and internationally</p>
+        <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
+        <a href="tel:+610421667205">+61 421 667 205</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&#169; 2026 Glenn Hanns ACS</p>
+      <p>Director of Photography &#8212; Sydney</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

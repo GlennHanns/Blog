@@ -1,0 +1,270 @@
+<!-- ============================================================
+  BLOG POST CHECKLIST
+  ============================================================
+  IN-FILE ITEMS (verify before publishing):
+  [ ] <title> unique, includes target keyphrase + Glenn Hanns ACS
+  [ ] <meta description> 150-160 chars
+  [ ] <link rel="canonical"> full absolute URL, no trailing slash
+  [ ] og:type = "article"
+  [ ] og:image / twitter:image absolute URL to real image asset
+  [ ] JSON-LD Person + WebSite schema blocks present
+  [ ] seo-h1 hidden heading present
+  [ ] Back link to /blog.html
+  [ ] All figures: real src paths, descriptive alt text
+  [ ] article-bio: name /about.html, portfolio /, 2x internal blog links, contact sign-off
+  [ ] Nav: glennlogotran.png left + centre wordmark + nav-links
+  AFTER PUBLISHING:
+  [ ] sitemap.xml  [ ] blog.html card  [ ] index.html carousel if featured
+  ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working with Directors &#8212; Glenn Hanns ACS</title>
+  <meta name="description" content="On the creative partnerships that define the work &#8212; Glenn Hanns ACS on collaborating with Kurt Martin, John Mavety and Josh Groom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0a0a0a;--surface:#111111;--border:#1e1e1e;--accent:#ff6600;--text:#ffffff;--muted:#888888;--max-width:1200px;--article-width:740px;--nav-h:68px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:1rem;line-height:1.75;-webkit-font-smoothing:antialiased;}
+    body::before{content:'';display:block;position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);z-index:1001;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{opacity:0.8;}
+    .page-width{max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .site-nav{position:fixed;top:3px;left:0;right:0;height:var(--nav-h);background:rgba(10,10,10,0.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:1000;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .nav-logo img{height:46px;width:auto;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#666;transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;opacity:1;}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:1px;}
+    .site-content{padding-top:calc(var(--nav-h) + 3px);}
+    .article-section{padding:4rem 0 6rem;}
+    .article-inner{max-width:var(--article-width);margin:0 auto;padding:0 2rem;}
+    .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:#444;margin-bottom:2.5rem;transition:color 0.2s;}
+    .back-link:hover{color:var(--accent);opacity:1;}
+    .article-label{font-size:0.55rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem;}
+    .article-title{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:0.06em;color:var(--text);line-height:1.05;text-transform:uppercase;margin-bottom:0.5rem;}
+    .article-subtitle{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#555;margin-bottom:2.5rem;}
+    .article-body p{font-size:0.95rem;color:#bbb;line-height:1.85;margin-bottom:1.4rem;}
+    .article-body h3{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.2rem,2vw,1.7rem);letter-spacing:0.06em;color:var(--accent);line-height:1.1;text-transform:uppercase;margin:2rem 0 0.75rem;}
+    .article-body a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);transition:border-color 0.2s,color 0.2s;}
+    .article-body a:hover{color:var(--accent);opacity:0.8;border-bottom-color:var(--accent);}
+    .article-body strong{color:var(--text);font-weight:500;}
+    .article-body em{font-style:italic;color:#999;}
+    .article-body blockquote{border-left:3px solid var(--accent);margin:2rem 0;padding:1rem 1.5rem;color:var(--muted);font-size:1rem;line-height:1.8;font-style:italic;}
+    .article-body hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0;}
+    .article-bio{margin-top:1rem;font-size:0.88rem;color:#666;line-height:1.8;}
+    .article-bio a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);}
+    .article-bio strong{color:#bbb;}
+    .site-footer{background:var(--surface);border-top:1px solid var(--border);padding:4rem 0 2.5rem;margin-top:5rem;}
+    .footer-grid{display:grid;grid-template-columns:110px 1fr auto;gap:2.5rem;align-items:start;padding-bottom:2.5rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem;}
+    .footer-photo img{width:110px;height:auto;}
+    .footer-info h4{font-size:0.68rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;}
+    .footer-info p{font-size:0.9rem;color:var(--muted);margin-bottom:0.35rem;line-height:1.5;}
+    .footer-info a{color:var(--text);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;display:inline-block;margin-bottom:0.35rem;}
+    .footer-info a:hover{color:var(--accent);border-color:var(--accent);opacity:1;}
+    .footer-socials{display:flex;flex-direction:column;gap:0.9rem;align-items:flex-end;}
+    .footer-socials a{font-size:0.68rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);transition:color 0.2s;}
+    .footer-socials a:hover{color:var(--accent);opacity:1;}
+    .footer-base{display:flex;justify-content:space-between;align-items:center;}
+    .footer-base p{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:#444;}
+    .footer-tagline{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--accent);letter-spacing:0.04em;margin-bottom:2rem;padding-bottom:1.75rem;border-bottom:1px solid var(--border);}
+    .seo-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+    @media(max-width:768px){
+      .nav-toggle{display:flex;}
+      .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;padding:1.5rem 2rem;gap:1.5rem;}
+      .nav-links.open{display:flex;}
+      .footer-grid{grid-template-columns:1fr;gap:2rem;}
+      .footer-socials{align-items:flex-start;flex-direction:row;gap:1.5rem;}
+      .footer-base{flex-direction:column;gap:0.5rem;text-align:center;}.footer-tagline{font-size:1rem;}
+      .article-section{padding:3rem 0 4rem;}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Glenn Hanns",
+  "alternateName": "Glenn Hanns ACS",
+  "url": "https://glennhanns.com",
+  "image": "https://glennhanns.com/assets/glenn-hanns-acs.webp",
+  "jobTitle": ["Director","Cinematographer","Director of Photography"],
+  "description": "Award-winning Australian director and cinematographer. AFTRS Masters graduate, ACS accredited DOP based in Sydney specialising in feature drama, television and documentary.",
+  "knowsAbout": ["Cinematography","Direction","Director of Photography","Feature Film","Television Drama","Documentary","Music Video","Camera Operation","Lighting"],
+  "hasCredential": [
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Masters Degree","recognizedBy":{"@type":"Organization","name":"Australian Film Television and Radio School","alternateName":"AFTRS","url":"https://www.aftrs.edu.au"},"name":"Masters in Cinematography with High Achievement"},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Professional Accreditation","recognizedBy":{"@type":"Organization","name":"Australian Cinematographers Society","alternateName":"ACS","url":"https://cinematographer.org.au"},"name":"ACS Accredited Cinematographer"}
+  ],
+  "award": [
+    "2023 Gold ACS Award NSW & ACT — Dramatised Documentaries (Ron Iddles)",
+    "2022 Award of Distinction ACS Nationals — Best Feature Film under $2m (Moon Rock For Monday)",
+    "2021 Gold ACS Award NSW & ACT — Feature Films under $2m (Moon Rock For Monday)",
+    "2019 Silver Logie — Most Outstanding Factual or Documentary Program (Ron Iddles)",
+    "2013 Bronze ACS Award NSW & ACT — Feature Films (Forbidden Ground)",
+    "2009 Gold ACS Award NSW & ACT — Music Clips (Birds of Tokyo)",
+    "2008 Golden Tadpole Nominee — Camerimage, Poland (Bleeders)"
+  ],
+  "address": {"@type":"PostalAddress","addressLocality":"Sydney","addressRegion":"NSW","addressCountry":"AU"},
+  "email": "glenn@glennhanns.com",
+  "telephone": "+61421667205",
+  "sameAs": [
+    "https://au.linkedin.com/in/glennhanns",
+    "https://www.instagram.com/glennhanns_ACS/",
+    "https://www.youtube.com/@GlennHanns/playlists",
+    "https://www.imdb.com/name/nm1771070/?ref_=ext_shr_lnk"
+  ],
+  "worksFor": {"@type":"Organization","name":"Glenn Hanns ACS Cinematography","url":"https://glennhanns.com"},
+  "nationality": {"@type":"Country","name":"Australia"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Glenn Hanns ACS — Director of Photography Sydney",
+  "url": "https://glennhanns.com",
+  "description": "Portfolio of Glenn Hanns ACS, Sydney-based Director of Photography and cinematographer specialising in feature drama, television, documentary and music video.",
+  "author": {"@type":"Person","name":"Glenn Hanns","alternateName":"Glenn Hanns ACS"},
+  "inLanguage": "en-AU",
+  "copyrightYear": "2026",
+  "copyrightHolder": {"@type":"Person","name":"Glenn Hanns"}
+}
+</script>
+
+  <link rel="canonical" href="https://glennhanns.com/blog/working-with-directors.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Glenn Hanns ACS" />
+  <meta property="og:url" content="https://glennhanns.com/blog/working-with-directors.html" />
+  <meta property="og:title" content="Working with Directors — Glenn Hanns ACS" />
+  <meta property="og:description" content="On the creative partnerships that define the work — Glenn Hanns ACS on collaborating with Kurt Martin, John Mavety and Josh Groom." />
+  <meta property="og:image" content="https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_5.webp" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Working with Directors — Glenn Hanns ACS" />
+  <meta name="twitter:description" content="On the creative partnerships that define the work — Glenn Hanns ACS on collaborating with Kurt Martin, John Mavety and Josh Groom." />
+  <meta name="twitter:image" content="https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_5.webp" />
+</head>
+<body>
+<h1 class="seo-h1">Working with Directors &#8212; Glenn Hanns ACS</h1>
+
+<nav class="site-nav">
+  <div class="nav-inner" style="position:relative;">
+    <a class="nav-logo" href="/"><img src="/assets/images/glennlogotran.png" alt="Glenn Hanns ACS" /></a>
+    <a class="nav-centre-logo" href="/" style="position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;"><img src="/assets/images/glenn-hanns-acs-cinematography.png" alt="Glenn Hanns ACS Cinematography" style="height:38px;width:auto;"/></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Work</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog.html" class="active">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="site-content">
+  <article class="article-section">
+    <div class="article-inner">
+
+      <a class="back-link" href="/blog.html">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All articles
+      </a>
+
+      <header>
+        <p class="article-label">Collaboration</p>
+        <h2 class="article-title">Working with Directors</h2>
+        <p class="article-subtitle">Glenn Hanns ACS &nbsp;&#183;&nbsp; Sydney</p>
+      </header>
+
+      <div class="article-body">
+
+        <p>The director&#8211;cinematographer relationship is one of the most intimate creative partnerships in filmmaking. Over the years I&#8217;ve been fortunate to build long-term collaborations with directors whose instincts I trust completely &#8212; and who trust mine. Each partnership has its own language, its own rhythm, and its own way of arriving at the image.</p>
+
+        <h3>Working with Kurt Martin</h3>
+
+        <p>Among my longest creative and personal partnerships is with director <a href="https://www.imdb.com/name/nm1974504/" target="_blank" rel="noopener">Kurt Martin</a>, whose features <a href="/#moon-rock"><em>Moon Rock For Monday</em></a> and <a href="/#room-below"><em>The Room Below</em></a>, and the short film <a href="/#briefcase"><em>The Briefcase</em></a> I shot for <a href="https://www.imdb.com/company/co0432357/" target="_blank" rel="noopener">Lunar Pictures</a>. Kurt and I first crossed paths through a mutual friend, and the partnership clicked instantly &#8212; same sense of humour, same shortlist of director&#8211;cinematographer pairings we&#8217;d both been quietly obsessed with for years.</p>
+
+        <p>Kurt is a strongly visual director but likes to hand over the keys early, preferring to see what I bring before he commits to a look. On Moon Rock For Monday that meant multiple scouts of the outback to find the right country, time of day and shoot schedule. Filming there in the warmer months pushed temperatures to the extreme &#8212; so we structured most days around controlled interiors at midday and used heavy overhead skims to soften the high sun on exteriors.</p>
+
+        <blockquote>What I love about working with Kurt is the room he leaves for the process. Giving him space to discover things on set keeps him responsive to the environment and to the actors &#8212; and he&#8217;s exceptional at both.</blockquote>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_5.webp" alt="Moon Rock For Monday (2020) &#8212; directed by Kurt Martin, cinematography by Glenn Hanns ACS" />
+          <figcaption>Moon Rock For Monday (2020) &#8212; on location, directed by Kurt Martin.</figcaption>
+        </figure>
+
+        <p>He&#8217;s particularly gifted at reading people: at seeing what holds true for a performer and chasing it. That means the camera has to stay flexible and ready to follow rather than dictate. His willingness to be led by the room, and mine to be led by him, is what makes the work feel honest.</p>
+
+        <h3>Working with John Mavety</h3>
+
+        <p><a href="https://www.imdb.com/name/nm0562099/" target="_blank" rel="noopener">John Mavety</a> and I have been working together for years &#8212; multiple series of <a href="https://www.primevideo.com/-/nl/detail/0SO39GHDX2UET1XUOOG3ZDD6R7" target="_blank" rel="noopener">Deadly Women</a> for Discovery Channel, two of John&#8217;s short films (one of which placed third at Tropfest), and most recently <a href="/#ron-iddles"><em>Ron Iddles &#8212; The Good Cop</em></a> for Fox. John comes from a visual design background, and it shows the moment he steps on set: an eye for perfection that keeps every department honest, and a frame-first instinct that means we&#8217;re rarely just talking about coverage &#8212; we&#8217;re talking about <em>the</em> shot.</p>
+
+        <blockquote>John has an unusually high bar for what makes a shot worth shooting, and that bar lifts everyone around him.</blockquote>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_33.webp" alt="Deadly Women &#8212; directed by John Mavety, cinematography by Glenn Hanns ACS" />
+          <figcaption>Deadly Women (Discovery Channel) &#8212; directed by John Mavety, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <p>What I value most about working with John is the discipline that visual rigour brings to fast-turnaround productions like dramatised documentary. The Silver Logie and ACS Gold Award that came out of Ron Iddles are a fair measure of what that discipline pays out.</p>
+
+        <h3>Working with Josh Groom</h3>
+
+        <p><a href="https://www.imdb.com/name/nm1779833/" target="_blank" rel="noopener">Josh Groom</a> and I first met at <a href="https://www.aftrs.edu.au/" target="_blank" rel="noopener">AFTRS</a> &#8212; he was completing his Master of Arts in editing while I was doing mine in cinematography. My first-year film at school was cut by Josh, and we&#8217;ve worked together steadily ever since. Josh is a genuine triple-threat: a Masters-trained editor, an accomplished music and live-event photographer, and a director with a deep instinct for performance. His love of visual arts and filmmaking is second to none, and that breadth shows up in every project he touches.</p>
+
+        <blockquote>Josh arrives on set knowing exactly what each shot needs to do narratively, which lets the camera serve the cut rather than fight it &#8212; a clarity that&#8217;s unsurprising given his editorial background.</blockquote>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_2.webp" alt="Glenn Hanns ACS on set with director Josh Groom &#8212; TVC production" />
+          <figcaption>On set with director Josh Groom &#8212; cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <p>Our collaborations have ranged from short-film drama (<em>Manifestation</em>) to music video (<em>Snow Droppers &#8212; Love Letters</em>, and the IF Award-nominated, ACS Gold-winning <em>Birds of Tokyo &#8212; Wild Eyed Boy</em>), and the same principle holds across every format: pictures in service of the story.</p>
+
+        <hr>
+
+        <p class="article-bio"><a href="/about.html"><strong>Glenn Hanns ACS</strong></a> is a Sydney-based Director of Photography specialising in feature drama, television and documentary. <a href="/">View the full portfolio</a> or get in touch via the contact details below.</p>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width">
+    <div class="footer-tagline">Visual authorship from prep to grade</div>
+<div class="footer-grid">
+      <div class="footer-photo"><img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" /></div>
+      <div class="footer-info">
+        <h4>Get in touch</h4>
+        <p>Glenn Hanns ACS &#8212; Director of Photography</p>
+        <p>Sydney, NSW &#8212; Available across Australia and internationally</p>
+        <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
+        <a href="tel:+610421667205">+61 421 667 205</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&#169; 2026 Glenn Hanns ACS</p>
+      <p>Director of Photography &#8212; Sydney</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

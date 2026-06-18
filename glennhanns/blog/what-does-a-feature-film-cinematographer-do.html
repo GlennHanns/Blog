@@ -1,0 +1,361 @@
+<!-- ============================================================
+  BLOG POST CHECKLIST
+  ============================================================
+  IN-FILE ITEMS (verify before publishing):
+  [ ] <title> unique, includes target keyphrase + Glenn Hanns ACS
+  [ ] <meta description> 150-160 chars
+  [ ] <link rel="canonical"> full absolute URL, no trailing slash
+  [ ] og:type = "article"
+  [ ] og:image / twitter:image absolute URL to real image asset
+  [ ] JSON-LD Person + WebSite schema blocks present
+  [ ] seo-h1 hidden heading present
+  [ ] Back link to /blog.html
+  [ ] All figures: real src paths, descriptive alt text
+  [ ] article-bio: name /about.html, portfolio /, 2x internal blog links, contact sign-off
+  [ ] Nav: glennlogotran.png left + centre wordmark + nav-links
+  AFTER PUBLISHING:
+  [ ] sitemap.xml  [ ] blog.html card  [ ] index.html carousel if featured
+  ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What a Feature Film Cinematographer Does &#8212; Glenn Hanns ACS</title>
+  <meta name="description" content="A feature film cinematographer does far more than compose attractive frames. A breakdown of the role across pre-production, principal photography and post.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0a0a0a;--surface:#111111;--border:#1e1e1e;--accent:#ff6600;--text:#ffffff;--muted:#888888;--max-width:1200px;--article-width:740px;--nav-h:68px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:1rem;line-height:1.75;-webkit-font-smoothing:antialiased;}
+    body::before{content:'';display:block;position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);z-index:1001;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{opacity:0.8;}
+    .page-width{max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .site-nav{position:fixed;top:3px;left:0;right:0;height:var(--nav-h);background:rgba(10,10,10,0.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:1000;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .nav-logo img{height:46px;width:auto;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#666;transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;opacity:1;}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:1px;}
+    .site-content{padding-top:calc(var(--nav-h) + 3px);}
+    .article-section{padding:4rem 0 6rem;}
+    .article-inner{max-width:var(--article-width);margin:0 auto;padding:0 2rem;}
+    .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:#444;margin-bottom:2.5rem;transition:color 0.2s;}
+    .back-link:hover{color:var(--accent);opacity:1;}
+    .article-label{font-size:0.55rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem;}
+    .article-title{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:0.06em;color:var(--text);line-height:1.05;text-transform:uppercase;margin-bottom:0.5rem;}
+    .article-subtitle{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#555;margin-bottom:2.5rem;}
+    .article-body p{font-size:0.95rem;color:#bbb;line-height:1.85;margin-bottom:1.4rem;}
+    .article-body h3{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.2rem,2vw,1.7rem);letter-spacing:0.06em;color:var(--accent);line-height:1.1;text-transform:uppercase;margin:2rem 0 0.75rem;}
+    .article-body h4{font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#555;margin:1.75rem 0 0.6rem;}
+    .article-body a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);transition:border-color 0.2s,color 0.2s;}
+    .article-body a:hover{color:var(--accent);opacity:0.8;border-bottom-color:var(--accent);}
+    .article-body strong{color:var(--text);font-weight:500;}
+    .article-body em{font-style:italic;color:#999;}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.5rem;color:#bbb;}
+    .article-body li{font-size:0.95rem;line-height:1.75;margin-bottom:0.5rem;}
+    .article-body li strong{color:var(--text);}
+    .article-body blockquote{border-left:3px solid var(--accent);margin:2rem 0;padding:1rem 1.5rem;color:var(--muted);font-size:1rem;line-height:1.8;font-style:italic;}
+    .article-body figure{margin:2rem 0;}
+    .article-body figure img{width:100%;border-radius:12px;}
+    .article-body figcaption{font-size:0.72rem;color:#444;margin-top:0.6rem;font-style:italic;line-height:1.5;text-align:center;}
+    .article-body hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0;}
+    .article-bio{margin-top:1rem;font-size:0.88rem;color:#666;line-height:1.8;}
+    .article-bio a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);}
+    .article-bio strong{color:#bbb;}
+    .site-footer{background:var(--surface);border-top:1px solid var(--border);padding:4rem 0 2.5rem;margin-top:5rem;}
+    .footer-grid{display:grid;grid-template-columns:110px 1fr auto;gap:2.5rem;align-items:start;padding-bottom:2.5rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem;}
+    .footer-photo img{width:110px;height:auto;}
+    .footer-info h4{font-size:0.68rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;}
+    .footer-info p{font-size:0.9rem;color:var(--muted);margin-bottom:0.35rem;line-height:1.5;}
+    .footer-info a{color:var(--text);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;display:inline-block;margin-bottom:0.35rem;}
+    .footer-info a:hover{color:var(--accent);border-color:var(--accent);opacity:1;}
+    .footer-socials{display:flex;flex-direction:column;gap:0.9rem;align-items:flex-end;}
+    .footer-socials a{font-size:0.68rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);transition:color 0.2s;}
+    .footer-socials a:hover{color:var(--accent);opacity:1;}
+    .footer-base{display:flex;justify-content:space-between;align-items:center;}
+    .footer-base p{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:#444;}
+    .footer-tagline{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--accent);letter-spacing:0.04em;margin-bottom:2rem;padding-bottom:1.75rem;border-bottom:1px solid var(--border);}
+    .seo-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+    @media(max-width:768px){
+      .nav-toggle{display:flex;}
+      .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;padding:1.5rem 2rem;gap:1.5rem;}
+      .nav-links.open{display:flex;}
+      .footer-grid{grid-template-columns:1fr;gap:2rem;}
+      .footer-socials{align-items:flex-start;flex-direction:row;gap:1.5rem;}
+      .footer-base{flex-direction:column;gap:0.5rem;text-align:center;}.footer-tagline{font-size:1rem;}
+      .article-section{padding:3rem 0 4rem;}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Glenn Hanns",
+  "alternateName": "Glenn Hanns ACS",
+  "url": "https://glennhanns.com",
+  "image": "https://glennhanns.com/assets/glenn-hanns-acs.webp",
+  "jobTitle": ["Director","Cinematographer","Director of Photography"],
+  "description": "Award-winning Australian director and cinematographer. AFTRS Masters graduate, ACS accredited DOP based in Sydney specialising in feature drama, television and documentary.",
+  "knowsAbout": ["Cinematography","Direction","Director of Photography","Feature Film","Television Drama","Documentary","Music Video","Camera Operation","Lighting"],
+  "hasCredential": [
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Masters Degree","recognizedBy":{"@type":"Organization","name":"Australian Film Television and Radio School","alternateName":"AFTRS","url":"https://www.aftrs.edu.au"},"name":"Masters in Cinematography with High Achievement"},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Professional Accreditation","recognizedBy":{"@type":"Organization","name":"Australian Cinematographers Society","alternateName":"ACS","url":"https://cinematographer.org.au"},"name":"ACS Accredited Cinematographer"}
+  ],
+  "award": [
+    "2023 Gold ACS Award NSW & ACT — Dramatised Documentaries (Ron Iddles)",
+    "2022 Award of Distinction ACS Nationals — Best Feature Film under $2m (Moon Rock For Monday)",
+    "2021 Gold ACS Award NSW & ACT — Feature Films under $2m (Moon Rock For Monday)",
+    "2019 Silver Logie — Most Outstanding Factual or Documentary Program (Ron Iddles)",
+    "2013 Bronze ACS Award NSW & ACT — Feature Films (Forbidden Ground)",
+    "2009 Gold ACS Award NSW & ACT — Music Clips (Birds of Tokyo)",
+    "2008 Golden Tadpole Nominee — Camerimage, Poland (Bleeders)"
+  ],
+  "address": {"@type":"PostalAddress","addressLocality":"Sydney","addressRegion":"NSW","addressCountry":"AU"},
+  "email": "glenn@glennhanns.com",
+  "telephone": "+61421667205",
+  "sameAs": [
+    "https://au.linkedin.com/in/glennhanns",
+    "https://www.instagram.com/glennhanns_ACS/",
+    "https://www.youtube.com/@GlennHanns/playlists",
+    "https://www.imdb.com/name/nm1771070/?ref_=ext_shr_lnk"
+  ],
+  "worksFor": {"@type":"Organization","name":"Glenn Hanns ACS Cinematography","url":"https://glennhanns.com"},
+  "nationality": {"@type":"Country","name":"Australia"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Glenn Hanns ACS — Director of Photography Sydney",
+  "url": "https://glennhanns.com",
+  "description": "Portfolio of Glenn Hanns ACS, Sydney-based Director of Photography and cinematographer specialising in feature drama, television, documentary and music video.",
+  "author": {"@type":"Person","name":"Glenn Hanns","alternateName":"Glenn Hanns ACS"},
+  "inLanguage": "en-AU",
+  "copyrightYear": "2026",
+  "copyrightHolder": {"@type":"Person","name":"Glenn Hanns"}
+}
+</script>
+
+  <link rel="canonical" href="https://glennhanns.com/blog/what-does-a-feature-film-cinematographer-do.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Glenn Hanns ACS" />
+  <meta property="og:url" content="https://glennhanns.com/blog/what-does-a-feature-film-cinematographer-do.html" />
+  <meta property="og:title" content="What a Feature Film Cinematographer Does — Glenn Hanns ACS" />
+  <meta property="og:description" content="A feature film cinematographer does far more than compose attractive frames. A breakdown of the role across pre-production, principal photography and post." />
+  <meta property="og:image" content="https://glennhanns.com/assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_1.webp" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What a Feature Film Cinematographer Does — Glenn Hanns ACS" />
+  <meta name="twitter:description" content="A feature film cinematographer does far more than compose attractive frames. A breakdown of the role across pre-production, principal photography and post." />
+  <meta name="twitter:image" content="https://glennhanns.com/assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_1.webp" />
+</head>
+<body>
+<h1 class="seo-h1">What a Feature Film Cinematographer Does &#8212; Glenn Hanns ACS</h1>
+
+<nav class="site-nav">
+  <div class="nav-inner" style="position:relative;">
+    <a class="nav-logo" href="/"><img src="/assets/images/glennlogotran.png" alt="Glenn Hanns ACS" /></a>
+    <a class="nav-centre-logo" href="/" style="position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;"><img src="/assets/images/glenn-hanns-acs-cinematography.png" alt="Glenn Hanns ACS Cinematography" style="height:38px;width:auto;"/></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Work</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog.html" class="active">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="site-content">
+  <article class="article-section">
+    <div class="article-inner">
+
+      <a class="back-link" href="/blog.html">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All articles
+      </a>
+
+      <header>
+        <p class="article-label">Industry</p>
+        <h2 class="article-title">What a Feature Film Cinematographer Does</h2>
+        <p class="article-subtitle">Glenn Hanns ACS &nbsp;&#183;&nbsp; Sydney</p>
+      </header>
+
+      <div class="article-body">
+
+        <p>A feature film cinematographer is rarely hired for camera knowledge alone. Producers and directors are usually assessing something more decisive &#8212; whether the cinematographer can carry the visual logic of a long-form narrative from script breakdown through to the final day of principal photography, without losing discipline, taste or momentum.</p>
+
+        <p>That distinction matters on features. A strong image is not enough if it cannot be sustained across weeks of shooting, shifting locations, compressed schedules and the practical demands of performance, design and post. The role sits at the meeting point of story, leadership and execution.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_19.webp" alt="Glenn Hanns ACS on set &#8212; Director of Photography, Sydney &#8212; DOP Glenn Hanns ACS" />
+          <figcaption>Glenn Hanns ACS &#8212; Director of Photography on set.</figcaption>
+        </figure>
+
+        <h3>What a Feature Film Cinematographer Is Responsible For</h3>
+
+        <p>On a feature, cinematography is not the act of making isolated shots look impressive. It is the construction of a complete visual system for the film. That system includes lensing, camera movement, contrast, colour separation, exposure strategy, coverage philosophy and the relationship between image and performance.</p>
+
+        <p>The cinematographer translates the director&#8217;s intent into visual terms that can be repeated and protected under production pressure. In practical terms, that means developing a coherent approach early, then applying it with enough flexibility to accommodate location changes, schedule losses, weather shifts and the realities of actors, crew and budget.</p>
+
+        <p>A feature film cinematographer is also leading a department. The work involves managing the camera and lighting teams, aligning with the first assistant director&#8217;s schedule, working closely with production design and costume, and making constant judgement calls about where the screen value lies in each setup. Some days that decision is about scale and atmosphere. Other days it is simply about preserving the time required for a key dramatic beat.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_13.webp" alt="Forbidden Ground (2013) &#8212; directed by Tony Tilse &#8212; DOP Glenn Hanns ACS" />
+          <figcaption>Forbidden Ground (2013) &#8212; directed by Tony Tilse, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <h3>Visual Storytelling Over Surface Style</h3>
+
+        <p>The best feature work tends to come from decisions that are motivated by story rather than decoration. A frame can be highly controlled and still feel alive. It can also be technically polished and dramatically empty.</p>
+
+        <p>That is why the early conversations matter. Tone, perspective and narrative rhythm are established well before the camera package is finalised. Is the film psychologically close or observational? Does movement feel earned, or should the frame hold its ground? Should night interiors carry softness and intimacy, or tension and separation? These are not abstract preferences. They determine how the audience reads character and space.</p>
+
+        <p>Features also demand restraint. A visual idea that is strong in a proof-of-concept or music video may become repetitive over 100 minutes. The job is not to impose style scene after scene. It is to shape an evolving visual language that gives the story room to escalate, contract and turn.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_5.webp" alt="Moon Rock For Monday (2020) &#8212; directed by Kurt Martin &#8212; DOP Glenn Hanns ACS" />
+          <figcaption>Moon Rock For Monday (2020) &#8212; directed by Kurt Martin, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <h3>The Feature Film Cinematographer in Prep</h3>
+
+        <p>Prep is where the real work begins. By the time a feature reaches set, most of the critical cinematography decisions should already be in motion. Script analysis, location recces, equipment tests, LUT development, discussions with design departments and scheduling conversations all sit inside this phase.</p>
+
+        <p>For producers, this is often where confidence is earned. A cinematographer who can identify risk early is not being conservative. They are protecting the film. That may mean flagging that a location is too small for the intended coverage, that a night exterior will need more rigging time than the schedule allows, or that a proposed visual device is going to create continuity problems across multiple shooting days.</p>
+
+        <p>For directors, prep is where alignment either becomes precise or remains vague. The strongest collaborations usually move past reference images quickly and into something more exact &#8212; why a scene should be seen a certain way, how the camera should behave around a character, when to withhold scale, and when to let the frame open up.</p>
+
+        <h4>Camera, Lenses and Format Are Not Neutral Choices</h4>
+
+        <p>There is a tendency in some conversations to reduce cinematography to package selection. Camera body, lens set and filtration matter, but only in relation to the dramatic aims of the film. A cleaner digital image may suit one project and work against another. Vintage glass can introduce texture and instability, but if the story requires a more rigorous visual discipline, that character may become a distraction. Every choice carries consequences.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_39.webp" alt="Jonathan Rhys Meyers in The Room Below &#8212; DOP Glenn Hanns ACS" />
+          <figcaption>The Room Below (2026) &#8212; directed by Kurt Martin, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <h3>Collaboration on Set</h3>
+
+        <p>Once principal photography begins, the cinematographer becomes one of the central stabilising forces on the floor. Good set work is not loud. It is precise, calm and readable.</p>
+
+        <p>A feature set moves on trust. Directors need to know that the visual plan is being protected. Producers need to know that time is being used intelligently. Actors need an environment where technical adjustments do not erode performance. Crew need clear priorities. A cinematographer who can maintain that balance is doing far more than lighting scenes.</p>
+
+        <p>This is especially true in drama. Performance often asks for speed, sensitivity and selective compromise. There are moments when the ideal lighting refinement is less valuable than preserving an actor&#8217;s energy. There are also moments when taking another ten minutes for shape and contrast materially improves the scene. Knowing the difference is part of the craft.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_40.webp" alt="Gilbert Bradman in The Room Below &#8212; DOP Glenn Hanns ACS" />
+          <figcaption>The Room Below (2026) &#8212; directed by Kurt Martin, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <h3>Cinematographer vs Camera Operator</h3>
+
+        <p>On a feature, the cinematographer and the camera operator are distinct roles. The cinematographer is responsible for the visual authorship of the film &#8212; the lighting strategy, lens selection, coverage philosophy, and the overall system that carries the image from the first day of prep through to the grade. The camera operator is responsible for the physical execution of the frame during takes: precision operating, composition refinement within a shot, and responding to the live behaviour of performance.</p>
+
+        <p>Separating the roles gives the cinematographer the freedom to evaluate the entire image from the monitor, confer with the director, and manage the department &#8212; while the operator focuses entirely on what is happening inside the frame. On larger productions, that division of labour is what allows both jobs to be done properly. When one person carries both responsibilities, something has to give &#8212; usually the broader visual oversight that keeps a feature consistent across weeks of shooting.</p>
+
+        <p>For a fuller breakdown of how these roles differ and when to separate them, read <a href="/blog/cinematographer-vs-camera-operator.html">Cinematographer vs Camera Operator</a>.</p>
+
+        <h3>Lighting for Continuity and Emotional Control</h3>
+
+        <p>Lighting on a feature is often judged by its beauty, but beauty is only one measure. Continuity, control and repeatability are just as important. Long-form storytelling requires images to cut together across time. The cinematographer has to create a lighting methodology that survives changing conditions while still feeling natural within the world of the film.</p>
+
+        <blockquote>The strongest feature cinematography often comes from this balance &#8212; enough design to remain consistent, enough agility to remain alive.</blockquote>
+
+        <h3>Why Producers Look Beyond the Reel</h3>
+
+        <p>A reel can demonstrate taste, scale and technical finish. It cannot fully show how a cinematographer behaves across a six-week or ten-week feature. For producers and production companies, the hiring decision usually extends beyond image quality. Can this person prep properly? Can they lead crew well? Will they collaborate with design and post without friction? Do they understand where to push and where to simplify?</p>
+
+        <p>Those questions matter because a feature is an endurance form. Reliability is not separate from artistry. It is part of it.</p>
+
+        <h3>The Role Broken Down</h3>
+
+        <h4>1. Pre-Production</h4>
+        <ul>
+          <li><strong>Visual Concept:</strong> Reads the script and breaks down the visual requirements scene by scene to create the look, colour palette, mood and tone.</li>
+          <li><strong>Recce:</strong> Scouts locations with the director to determine shooting logistics, natural lighting conditions, and camera angles.</li>
+          <li><strong>Shot planning:</strong> Creates a shot list and storyboards to map out camera movements and blocking.</li>
+          <li><strong>HOD collaboration:</strong> Works with the production designer and costume designer to ensure sets and wardrobe align with the visual palette.</li>
+          <li><strong>Equipment testing:</strong> Configures and tests camera settings and lenses for optimal performance &#8212; sometimes with actors and wardrobe on location.</li>
+          <li><strong>Crewing:</strong> May select key department heads and crew where needed.</li>
+        </ul>
+
+        <h4>2. Production</h4>
+        <ul>
+          <li><strong>Works with the director:</strong> Collaborates during rehearsals to block actors and decide how scenes will be covered.</li>
+          <li><strong>Lighting execution:</strong> Oversees crew to ensure lighting is properly placed and shots are safely executed under tight schedules.</li>
+          <li><strong>Department management:</strong> Liaises with HODs to ensure the visual vision is executed as directed.</li>
+          <li><strong>Project management:</strong> Handles technical, logistical and interpersonal issues as they arise.</li>
+        </ul>
+
+        <h4>3. Post-Production</h4>
+        <ul>
+          <li><strong>Colour grading:</strong> Works alongside a colourist to ensure the contrast, colour balance and saturation of the final film match the original visual intent.</li>
+          <li><strong>VFX supervision:</strong> Collaborates with the VFX team so on-set lighting and camera data match digital compositions.</li>
+          <li><strong>Delivery QC:</strong> Reviews the complete film before final delivery.</li>
+        </ul>
+
+        <p>Awards, <a href="/about.html">ACS accreditation</a>, major credits and formal training do not replace the work itself, but they do indicate a level of professional consistency. For decision-makers managing finance, delivery and creative risk, that consistency has practical value.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_53.webp" alt="Alyssa Sutherland in The Room Below &#8212; DOP Glenn Hanns ACS" />
+          <figcaption>The Room Below (2026) &#8212; directed by Kurt Martin, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <h3>Choosing the Right Cinematographer for a Feature</h3>
+
+        <p>The right fit is not always the most visually aggressive candidate. Sometimes it is the cinematographer whose instincts are most aligned with the material and whose process best suits the production model. A contained drama may need a very different hand from a stylised genre feature. A first-time director may benefit from a cinematographer with a particularly strong prep process and communication style.</p>
+
+        <p>This is where experience on narrative work matters. Feature production exposes every weak assumption. If the visual concept cannot survive the schedule, it was never really a concept for that film.</p>
+
+        <p>For producers, directors and commissioning teams, the useful question is simple: can this cinematographer turn the screenplay into a consistent, cinematic piece of work under real production conditions? That is the standard. And when the answer is yes, the images tend to carry more than polish. They carry authority, intention and dramatic weight.</p>
+
+        <hr>
+
+        <p class="article-bio"><a href="/about.html"><strong>Glenn Hanns ACS</strong></a> is a Sydney-based Director of Photography specialising in feature drama, television and documentary. Read more on <a href="/blog/how-to-hire-a-cinematographer-for-feature-film.html">how to hire a feature film cinematographer</a>, or <a href="/">View the full portfolio</a> or get in touch via the contact details below.</p>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width">
+    <div class="footer-tagline">Visual authorship from prep to grade</div>
+<div class="footer-grid">
+      <div class="footer-photo"><img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" /></div>
+      <div class="footer-info">
+        <h4>Get in touch</h4>
+        <p>Glenn Hanns ACS &#8212; Director of Photography</p>
+        <p>Sydney, NSW &#8212; Available across Australia and internationally</p>
+        <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
+        <a href="tel:+610421667205">+61 421 667 205</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&#169; 2026 Glenn Hanns ACS</p>
+      <p>Director of Photography &#8212; Sydney</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!-- ============================================================
+  BLOG POST CHECKLIST
+  ============================================================
+  IN-FILE ITEMS (verify before publishing):
+  [ ] <title> unique, includes target keyphrase + Glenn Hanns ACS
+  [ ] <meta description> 150-160 chars
+  [ ] <link rel="canonical"> full absolute URL, no trailing slash
+  [ ] og:type = "article"
+  [ ] og:image / twitter:image absolute URL to real image asset
+  [ ] JSON-LD Person + WebSite schema blocks present
+  [ ] seo-h1 hidden heading present
+  [ ] Back link to /blog.html
+  [ ] All figures: real src paths, descriptive alt text
+  [ ] article-bio: name /about.html, portfolio /, 2x internal blog links, contact sign-off
+  [ ] Nav: glennlogotran.png left + centre wordmark + nav-links
+  AFTER PUBLISHING:
+  [ ] sitemap.xml  [ ] blog.html card  [ ] index.html carousel if featured
+  ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What a TV Series Cinematographer Does &#8212; Glenn Hanns ACS</title>
+  <meta name="description" content="How a television series cinematographer builds a repeatable visual system across episodic production — from look development to on-set execution.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0a0a0a;--surface:#111111;--border:#1e1e1e;--accent:#ff6600;--text:#ffffff;--muted:#888888;--max-width:1200px;--article-width:740px;--nav-h:68px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:1rem;line-height:1.75;-webkit-font-smoothing:antialiased;}
+    body::before{content:'';display:block;position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);z-index:1001;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{opacity:0.8;}
+    .page-width{max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .site-nav{position:fixed;top:3px;left:0;right:0;height:var(--nav-h);background:rgba(10,10,10,0.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:1000;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .nav-logo img{height:46px;width:auto;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#666;transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;opacity:1;}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:1px;}
+    .site-content{padding-top:calc(var(--nav-h) + 3px);}
+    .article-section{padding:4rem 0 6rem;}
+    .article-inner{max-width:var(--article-width);margin:0 auto;padding:0 2rem;}
+    .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:#444;margin-bottom:2.5rem;transition:color 0.2s;}
+    .back-link:hover{color:var(--accent);opacity:1;}
+    .article-label{font-size:0.55rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem;}
+    .article-title{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:0.06em;color:var(--text);line-height:1.05;text-transform:uppercase;margin-bottom:0.5rem;}
+    .article-subtitle{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#555;margin-bottom:2.5rem;}
+    .article-body p{font-size:0.95rem;color:#bbb;line-height:1.85;margin-bottom:1.4rem;}
+    .article-body h3{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.2rem,2vw,1.7rem);letter-spacing:0.06em;color:var(--accent);line-height:1.1;text-transform:uppercase;margin:2rem 0 0.75rem;}
+    .article-body h4{font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#555;margin:1.75rem 0 0.6rem;}
+    .article-body a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);transition:border-color 0.2s,color 0.2s;}
+    .article-body a:hover{color:var(--accent);opacity:0.8;border-bottom-color:var(--accent);}
+    .article-body strong{color:var(--text);font-weight:500;}
+    .article-body em{font-style:italic;color:#999;}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.5rem;color:#bbb;}
+    .article-body li{font-size:0.95rem;line-height:1.75;margin-bottom:0.5rem;}
+    .article-body li strong{color:var(--text);}
+    .article-body blockquote{border-left:3px solid var(--accent);margin:2rem 0;padding:1rem 1.5rem;color:var(--muted);font-size:1rem;line-height:1.8;font-style:italic;}
+    .article-body figure{margin:2rem 0;}
+    .article-body figure img{width:100%;border-radius:12px;}
+    .article-body figcaption{font-size:0.72rem;color:#444;margin-top:0.6rem;font-style:italic;line-height:1.5;text-align:center;}
+    .article-body hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0;}
+    .article-bio{margin-top:1rem;font-size:0.88rem;color:#666;line-height:1.8;}
+    .article-bio a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);}
+    .article-bio strong{color:#bbb;}
+    .site-footer{background:var(--surface);border-top:1px solid var(--border);padding:4rem 0 2.5rem;margin-top:5rem;}
+    .footer-grid{display:grid;grid-template-columns:110px 1fr auto;gap:2.5rem;align-items:start;padding-bottom:2.5rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem;}
+    .footer-photo img{width:110px;height:auto;}
+    .footer-info h4{font-size:0.68rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;}
+    .footer-info p{font-size:0.9rem;color:var(--muted);margin-bottom:0.35rem;line-height:1.5;}
+    .footer-info a{color:var(--text);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;display:inline-block;margin-bottom:0.35rem;}
+    .footer-info a:hover{color:var(--accent);border-color:var(--accent);opacity:1;}
+    .footer-socials{display:flex;flex-direction:column;gap:0.9rem;align-items:flex-end;}
+    .footer-socials a{font-size:0.68rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);transition:color 0.2s;}
+    .footer-socials a:hover{color:var(--accent);opacity:1;}
+    .footer-base{display:flex;justify-content:space-between;align-items:center;}
+    .footer-base p{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:#444;}
+    .footer-tagline{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--accent);letter-spacing:0.04em;margin-bottom:2rem;padding-bottom:1.75rem;border-bottom:1px solid var(--border);}
+    .seo-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+    @media(max-width:768px){
+      .nav-toggle{display:flex;}
+      .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;padding:1.5rem 2rem;gap:1.5rem;}
+      .nav-links.open{display:flex;}
+      .footer-grid{grid-template-columns:1fr;gap:2rem;}
+      .footer-socials{align-items:flex-start;flex-direction:row;gap:1.5rem;}
+      .footer-base{flex-direction:column;gap:0.5rem;text-align:center;}.footer-tagline{font-size:1rem;}
+      .article-section{padding:3rem 0 4rem;}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;}}
+  </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Glenn Hanns",
+  "alternateName": "Glenn Hanns ACS",
+  "url": "https://glennhanns.com",
+  "image": "https://glennhanns.com/assets/glenn-hanns-acs.webp",
+  "jobTitle": ["Director","Cinematographer","Director of Photography"],
+  "description": "Award-winning Australian director and cinematographer. AFTRS Masters graduate, ACS accredited DOP based in Sydney specialising in feature drama, television and documentary.",
+  "knowsAbout": ["Cinematography","Direction","Director of Photography","Feature Film","Television Drama","Documentary","Music Video","Camera Operation","Lighting"],
+  "hasCredential": [
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Masters Degree","recognizedBy":{"@type":"Organization","name":"Australian Film Television and Radio School","alternateName":"AFTRS","url":"https://www.aftrs.edu.au"},"name":"Masters in Cinematography with High Achievement"},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Professional Accreditation","recognizedBy":{"@type":"Organization","name":"Australian Cinematographers Society","alternateName":"ACS","url":"https://cinematographer.org.au"},"name":"ACS Accredited Cinematographer"}
+  ],
+  "award": [
+    "2023 Gold ACS Award NSW & ACT — Dramatised Documentaries (Ron Iddles)",
+    "2022 Award of Distinction ACS Nationals — Best Feature Film under $2m (Moon Rock For Monday)",
+    "2021 Gold ACS Award NSW & ACT — Feature Films under $2m (Moon Rock For Monday)",
+    "2019 Silver Logie — Most Outstanding Factual or Documentary Program (Ron Iddles)",
+    "2013 Bronze ACS Award NSW & ACT — Feature Films (Forbidden Ground)",
+    "2009 Gold ACS Award NSW & ACT — Music Clips (Birds of Tokyo)",
+    "2008 Golden Tadpole Nominee — Camerimage, Poland (Bleeders)"
+  ],
+  "address": {"@type":"PostalAddress","addressLocality":"Sydney","addressRegion":"NSW","addressCountry":"AU"},
+  "email": "glenn@glennhanns.com",
+  "telephone": "+61421667205",
+  "sameAs": [
+    "https://au.linkedin.com/in/glennhanns",
+    "https://www.instagram.com/glennhanns_ACS/",
+    "https://www.youtube.com/@GlennHanns/playlists",
+    "https://www.imdb.com/name/nm1771070/?ref_=ext_shr_lnk"
+  ],
+  "worksFor": {"@type":"Organization","name":"Glenn Hanns ACS Cinematography","url":"https://glennhanns.com"},
+  "nationality": {"@type":"Country","name":"Australia"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Glenn Hanns ACS — Director of Photography Sydney",
+  "url": "https://glennhanns.com",
+  "description": "Portfolio of Glenn Hanns ACS, Sydney-based Director of Photography and cinematographer specialising in feature drama, television, documentary and music video.",
+  "author": {"@type":"Person","name":"Glenn Hanns","alternateName":"Glenn Hanns ACS"},
+  "inLanguage": "en-AU",
+  "copyrightYear": "2026",
+  "copyrightHolder": {"@type":"Person","name":"Glenn Hanns"}
+}
+</script>
+
+  <link rel="canonical" href="https://glennhanns.com/blog/what-a-television-series-cinematographer-does.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Glenn Hanns ACS" />
+  <meta property="og:url" content="https://glennhanns.com/blog/what-a-television-series-cinematographer-does.html" />
+  <meta property="og:title" content="What a TV Series Cinematographer Does — Glenn Hanns ACS" />
+  <meta property="og:description" content="How a television series cinematographer builds a repeatable visual system across episodic production — from look development to on-set execution." />
+  <meta property="og:image" content="https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_50.webp" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What a TV Series Cinematographer Does — Glenn Hanns ACS" />
+  <meta name="twitter:description" content="How a television series cinematographer builds a repeatable visual system across episodic production — from look development to on-set execution." />
+  <meta name="twitter:image" content="https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_50.webp" />
+</head>
+<body>
+<h1 class="seo-h1">What a TV Series Cinematographer Does &#8212; Glenn Hanns ACS</h1>
+
+<nav class="site-nav">
+  <div class="nav-inner" style="position:relative;">
+    <a class="nav-logo" href="/"><img src="/assets/images/glennlogotran.png" alt="Glenn Hanns ACS" /></a>
+    <a class="nav-centre-logo" href="/" style="position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;"><img src="/assets/images/glenn-hanns-acs-cinematography.png" alt="Glenn Hanns ACS Cinematography" style="height:38px;width:auto;"/></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Work</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog.html" class="active">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="site-content">
+  <article class="article-section">
+    <div class="article-inner">
+
+      <a class="back-link" href="/blog.html">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All articles
+      </a>
+
+      <header>
+        <p class="article-label">Industry</p>
+        <h2 class="article-title">What a TV Series Cinematographer Does</h2>
+        <p class="article-subtitle">Glenn Hanns ACS &nbsp;&#183;&nbsp; Sydney</p>
+      </header>
+
+      <div class="article-body">
+
+        <p>The first day on a series rarely begins with lighting diagrams or lens tests. It starts with a script, a schedule and a question producers and directors care about immediately: can the visual language hold across months of production without losing precision &#8212; and more importantly, stay on schedule? That is the central task of a television series cinematographer. Not simply making images look polished, but building a repeatable visual system that serves story, cast, directors and delivery.</p>
+
+        <p>In long-form television, cinematography sits at the point where authorship meets logistics. A feature can pursue a single visual arc across one contained production block. A series has to do more &#8212; establish a grammar early, sustain it under pressure, and still leave room for tonal movement as characters and storylines evolve. That balance is where experienced series work separates itself.</p>
+
+        <h3>The Role of a Television Series Cinematographer</h3>
+
+        <p>A television series cinematographer is responsible for translating script to screen through camera, lighting and composition &#8212; much like a <a href="/blog/what-does-a-feature-film-cinematographer-do.html">feature film cinematographer</a>, but across an episodic structure. In practical terms, that means far more than choosing lenses or signing off on a lighting plan. The role includes helping define the show&#8217;s visual identity, protecting continuity across episodes, and collaborating with directors, production design, costume, post and the wider crew so the image remains coherent under real production conditions.</p>
+
+        <p>On a premium drama, the cinematographer may be involved well before principal photography. Look development, camera tests, LUT design, location recce decisions and discussions around aspect ratio all shape the series before a frame is shot. Once production starts, the work becomes equally strategic and operational. A series needs visual ambition, but it also needs pace. Crews do not have the luxury of rethinking the grammar every week.</p>
+
+        <p>That is why television cinematography often rewards clarity over novelty. A striking visual choice is only valuable if it can be sustained across coverage, reverses, night exteriors, company moves and multiple directors.</p>
+
+        <h3>Why Series Work Is Different from Feature Work</h3>
+
+        <p>The obvious difference is duration. The less obvious one is authorship. A feature usually builds around a single director&#8211;cinematographer relationship. A television drama may involve several directors across a season, with the lead DOP acting as custodian of the show&#8217;s visual language.</p>
+
+        <p>That changes the nature of preparation. Instead of designing scenes in isolation, the cinematographer has to think in systems. How contrasty can the world be before continuity becomes difficult? How handheld should the camera feel if one episode leans intimate and the next turns procedural? How much stylisation can a schedule carry without putting the back end of the shoot under pressure?</p>
+
+        <p>Television often demands speed, but speed does not automatically mean generic coverage. Good series cinematography finds efficient ways to preserve point of view &#8212; disciplined blocking, selective camera movement, lighting plans that can turn quickly without flattening the scene. The work is less about compromise than about judgement.</p>
+
+        <p>It is also worth noting that not all television series work is the same. Drama and comedy make completely different demands on the DP. In drama, shadow, contrast, subjective framing, and motivated camera movement are the primary tools for carrying emotional weight. In comedy &#8212; whether multi-camera sitcom or single-camera &#8212; those same tools tend to work against the material. Comedy needs clean, even exposure and a camera that stays out of the way of performance and timing. Applying a drama DP&#8217;s instincts to a comedy series, or the reverse, is a fast way to misread the brief. For a deeper look at how the approach shifts specifically on drama, read <a href="/blog/tv-drama-series-director-of-photography.html">TV drama series Director of Photography</a>.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_17.webp" alt="Whirld &#8212; directed by Karen Illesca, cinematography by Glenn Hanns ACS" />
+          <figcaption>Whirld &#8212; directed by Karen Illesca, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <h3>Persons of Interest &#8212; Documentary Series for SBS</h3>
+
+        <p>A different kind of television documentary challenge came with <em>Persons of Interest</em>, a four-part series for <a href="https://www.sbs.com.au/" target="_blank" rel="noopener">SBS</a> produced by Smart Street Films.</p>
+
+        <p>The series lifted the lid on ASIO&#8217;s secret surveillance files &#8212; giving subjects their previously classified intelligence documents and asking them to respond on camera. Each episode centred on a different Australian dissident: journalist Roger Milliss, student activist Michael Hyde, Aboriginal activist Gary Foley, and communist author Frank Hardy.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_12.webp" alt="Persons of Interest: The Dirty War on Dissent (2013) &#8212; directed by Haydn Keenen, cinematography by Glenn Hanns ACS" />
+          <figcaption>Persons of Interest: The Dirty War on Dissent (2013) &#8212; directed by Haydn Keenen. Walkley Award nomination, Film Critics Circle Award Best Feature Documentary. Cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <p>The cinematographic challenge here was quite different from dramatised documentary. Where <a href="/#ron-iddles">Ron Iddles</a> required visual consistency across reconstructions, Persons of Interest demanded an observational intimacy &#8212; the camera had to hold close to subjects confronting deeply personal and politically charged material, without the visual language ever feeling intrusive or detached. The restraint had to feel authored, not accidental.</p>
+
+        <p>The series was nominated for a <strong>Walkley Award for Outstanding Journalism</strong> and won the <strong>2014 Film Critics Circle Award for Best Feature Documentary</strong> &#8212; recognition that confirmed what good documentary cinematography achieves when it serves the story invisibly: the audience stays entirely with the subject, never the camera.</p>
+
+        <h3>Ron Iddles &#8212; The Good Cop: A Case Study in Dramatised Documentary</h3>
+
+        <p><a href="/#ron-iddles"><em>Ron Iddles &#8212; The Good Cop</em></a>, directed by <a href="https://www.imdb.com/name/nm0562099/" target="_blank" rel="noopener">John Mavety</a> for Fox/CJZ, is one of the clearest examples of what disciplined television cinematography looks like under real production pressure. Shot on Canon C500 with a Canon CN prime set &#8212; a compact, Super 35 package suited to the pace of dramatised-documentary work &#8212; I ran largely as a one-man band: handling lighting, grip, jib and dolly setups with a small crew built for speed.</p>
+
+        <p>The series went on to win the <strong>Silver Logie for Most Outstanding Factual or Documentary Program (2019)</strong> and the <strong>ACS Gold Award NSW &amp; ACT for Dramatised Documentaries (2023)</strong>. Working with John across multiple series of <a href="https://www.primevideo.com/-/nl/detail/0SO39GHDX2UET1XUOOG3ZDD6R7" target="_blank" rel="noopener">Deadly Women</a> and <a href="/#dark-temptations">Dark Temptations</a> for Discovery Channel before <a href="/#ron-iddles">Ron Iddles</a> meant we arrived on set with a shorthand already established &#8212; which is exactly the kind of director&#8211;DOP trust that keeps a series visually coherent under pressure.</p>
+
+        <p>The challenge on a series like Ron Iddles is not scale &#8212; it is consistency. Dramatic reconstructions of cold case investigations need to feel tonally unified across multiple episodes, shot over weeks in different locations with constantly changing natural light. The visual approach had to be controlled enough to cut together seamlessly, yet flexible enough to move quickly through real environments.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_38.webp" alt="Ron Iddles: The Good Cop &#8212; directed by John Mavety, cinematography by Glenn Hanns ACS" />
+          <figcaption>Ron Iddles: The Good Cop &#8212; directed by John Mavety, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <blockquote>John Mavety comes from a visual design background and has an unusually high bar for what makes a shot worth shooting. That bar lifted everyone around him &#8212; and it paid out on screen.</blockquote>
+
+        <h3>Building a Visual Language That Lasts</h3>
+
+        <p>A series earns trust from its audience by feeling intentional. That usually starts with a visual framework everyone can work inside &#8212; specific enough to guide decisions, flexible enough to survive production reality.</p>
+
+        <p>This involves defining the relationship between camera and character early. Is the camera observational, subjective, restrained or intrusive? Does the frame hold distance, or does it move with performance? Those choices affect everything from operating style to lens selection to the way sets are lit. Colour strategy matters too &#8212; not cosmetically, but dramatically. Warmth, separation, density and practical light sources can all support theme, but only when built with consistency.</p>
+
+        <h4>Consistency does not mean repetition</h4>
+
+        <p>A series needs progression. Relationships shift, stakes rise, locations accumulate new meaning. A contained family scene in episode one may be lit with restraint and balance. By episode six, the same room may carry more contrast, less visual comfort, a tighter spatial treatment &#8212; because the emotional conditions have changed. The grammar remains intact, but the emphasis shifts.</p>
+
+        <h3>Collaboration on Set and Across Departments</h3>
+
+        <p>Series cinematography is collaborative by necessity. Directors need room to stage scenes in their own way, but the show still requires visual continuity. That means the cinematographer has to be both interpretive and consistent &#8212; supporting each director while protecting the larger identity of the series.</p>
+
+        <p>The relationship with the production designer is particularly important. Television schedules punish late visual problem-solving. If set finishes, ceiling plans, practical fixtures and window orientations are not considered early, the image pays for it later. On Australian drama series, more often than not you&#8217;re working in real locations &#8212; dealing with people&#8217;s expectations and requirements while trying to do your job as quickly and effectively as possible.</p>
+
+        <p>A strong gaffer and key grip are not there only to execute. They are central to repeatability. On a long shoot, the ability to maintain standards across units, locations and changing weather is often what keeps a series visually controlled. For producers and line producers, a cinematographer who communicates clearly, prepares thoroughly and understands the mechanics of episodic production reduces risk.</p>
+
+        <h3>The Production Realities That Shape the Image</h3>
+
+        <p>Every series speaks about ambition. The better question is whether that ambition is deliverable. Budget, schedule, location access and post workflow all shape what the camera can realistically achieve.</p>
+
+        <p>A seasoned television series cinematographer knows where to spend visual capital. Not every scene requires the same level of intervention. Some sequences justify elaborate rigging, complex movement or extended lighting control because they carry key dramatic weight. Others benefit more from speed and focus. If everything is treated as equally precious, the schedule collapses and the important scenes lose support.</p>
+
+        <h4>Choosing the right level of stylisation</h4>
+
+        <p>Premium television has moved closer to feature standards, but not every project benefits from the same visual intensity. If the writing, performances and production design support a heightened image, the cinematography can lean further into stylisation. If the material is grounded and dialogue-driven, restraint may produce the stronger result. Good judgement is not about doing more &#8212; it is about doing what the series can carry.</p>
+
+        <h3>What Producers and Directors Should Look For</h3>
+
+        <p>When hiring a cinematographer for series work, credits matter, but so does evidence of repeatable craft. Does the cinematographer speak clearly about story rather than gear for its own sake? Do their past projects show control of tone across different environments? Do they understand prep as a creative phase rather than a scheduling formality?</p>
+
+        <p><a href="https://cinematographer.org.au/" target="_blank" rel="noopener">ACS accreditation</a>, <a href="https://www.aacta.org/" target="_blank" rel="noopener">AACTA</a> recognition and recognised credits are useful indicators because they signal trust already earned in the industry &#8212; but the most valuable proof is visible on screen. A cinematographer who can maintain visual discipline while remaining responsive to performance and direction is often what allows a series to feel both cinematic and properly made for television.</p>
+
+        <p>The best series cinematography is rarely loud about its difficulty. It looks assured because the work underneath it is organised, collaborative and exact. When that happens, the audience does not think about coverage ratios, turnarounds or weather holds. They simply stay with the story. For any production, that is the result worth hiring for.</p>
+
+        <hr>
+
+        <p class="article-bio"><a href="/about.html"><strong>Glenn Hanns ACS</strong></a> is a Sydney-based Director of Photography with television series credits including <a href="/#ron-iddles"><em>Ron Iddles &#8212; The Good Cop</em></a> (Silver Logie 2019, ACS Gold Award 2023), <em>Persons of Interest</em> for SBS (Walkley Award nomination, Film Critics Circle Award 2014) and multiple series of <a href="https://www.primevideo.com/-/nl/detail/0SO39GHDX2UET1XUOOG3ZDD6R7" target="_blank" rel="noopener">Deadly Women</a> for Discovery Channel. <a href="/">View the full portfolio</a>, read more on <a href="/blog/working-with-directors.html">working with directors</a>, or get in touch via the contact details below.</p>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width">
+    <div class="footer-tagline">Visual authorship from prep to grade</div>
+<div class="footer-grid">
+      <div class="footer-photo"><img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" /></div>
+      <div class="footer-info">
+        <h4>Get in touch</h4>
+        <p>Glenn Hanns ACS &#8212; Director of Photography</p>
+        <p>Sydney, NSW &#8212; Available across Australia and internationally</p>
+        <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
+        <a href="tel:+610421667205">+61 421 667 205</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&#169; 2026 Glenn Hanns ACS</p>
+      <p>Director of Photography &#8212; Sydney</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

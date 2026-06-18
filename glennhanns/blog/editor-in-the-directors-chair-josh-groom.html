@@ -1,0 +1,383 @@
+<!-- ============================================================
+  BLOG POST CHECKLIST
+  ============================================================
+  IN-FILE ITEMS (verify before publishing):
+  [ ] <title> unique, includes target keyphrase + Glenn Hanns ACS
+  [ ] <meta description> 150-160 chars
+  [ ] <link rel="canonical"> full absolute URL, no trailing slash
+  [ ] og:type = "article"
+  [ ] og:image / twitter:image absolute URL to real image asset
+  [ ] JSON-LD Person + WebSite schema blocks present
+  [ ] seo-h1 hidden heading present
+  [ ] Back link to /blog.html
+  [ ] All figures: real src paths, descriptive alt text
+  [ ] article-bio: name /about.html, portfolio /, 2x internal blog links, contact sign-off
+  [ ] Nav: glennlogotran.png left + centre wordmark + nav-links
+  AFTER PUBLISHING:
+  [ ] sitemap.xml  [ ] blog.html card  [ ] index.html carousel if featured
+  ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Editor in the Director&#8217;s Chair &#8212; Glenn Hanns ACS &amp; Josh Groom</title>
+  <meta name="description" content="What happens when your director thinks in cuts. Glenn Hanns ACS on the creative partnership with editor-turned-director Josh Groom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0a0a0a;--surface:#111111;--border:#1e1e1e;--accent:#ff6600;--text:#ffffff;--muted:#888888;--max-width:1200px;--article-width:740px;--nav-h:68px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:1rem;line-height:1.75;-webkit-font-smoothing:antialiased;}
+    body::before{content:'';display:block;position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);z-index:1001;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{opacity:0.8;}
+    .page-width{max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .site-nav{position:fixed;top:3px;left:0;right:0;height:var(--nav-h);background:rgba(10,10,10,0.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:1000;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .nav-logo img{height:46px;width:auto;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#666;transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;opacity:1;}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:1px;}
+    .site-content{padding-top:calc(var(--nav-h) + 3px);}
+    .article-section{padding:4rem 0 6rem;}
+    .article-inner{max-width:var(--article-width);margin:0 auto;padding:0 2rem;}
+    .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:#444;margin-bottom:2.5rem;transition:color 0.2s;}
+    .back-link:hover{color:var(--accent);opacity:1;}
+    .article-label{font-size:0.55rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem;}
+    .article-title{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:0.06em;color:var(--text);line-height:1.05;text-transform:uppercase;margin-bottom:0.5rem;}
+    .article-subtitle{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#555;margin-bottom:2.5rem;}
+    .article-body p{font-size:0.95rem;color:#bbb;line-height:1.85;margin-bottom:1.4rem;}
+    .article-body h3{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.2rem,2vw,1.7rem);letter-spacing:0.06em;color:var(--accent);line-height:1.1;text-transform:uppercase;margin:2rem 0 0.75rem;}
+    .article-body h4{font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#555;margin:1.75rem 0 0.6rem;}
+    .article-body a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);transition:border-color 0.2s,color 0.2s;}
+    .article-body a:hover{color:var(--accent);opacity:0.8;border-bottom-color:var(--accent);}
+    .article-body strong{color:var(--text);font-weight:500;}
+    .article-body em{font-style:italic;color:#999;}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.5rem;color:#bbb;}
+    .article-body li{font-size:0.95rem;line-height:1.75;margin-bottom:0.4rem;}
+    .article-body li strong{color:var(--text);}
+    .article-body blockquote{border-left:3px solid var(--accent);margin:2rem 0;padding:1rem 1.5rem;color:var(--muted);font-size:1rem;line-height:1.8;font-style:italic;}
+    .article-body figure{margin:2rem 0;}
+    .article-body figure img,.article-body img{width:100%;border-radius:12px;margin:1.5rem 0;}
+    .article-body figcaption{font-size:0.72rem;color:#444;margin-top:0.6rem;font-style:italic;line-height:1.5;text-align:center;}
+    .article-body hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0;}
+    .article-body .gh-table{margin:1.5rem 0 2.5rem;overflow-x:auto;}
+    .article-body table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+    .article-body thead tr{border-bottom:1px solid var(--accent);}
+    .article-body thead th{padding:0.6rem 1rem;text-align:left;font-size:0.65rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);}
+    .article-body tbody tr{border-bottom:1px solid #1a1a1a;}
+    .article-body tbody td{padding:0.75rem 1rem;vertical-align:top;line-height:1.6;color:#bbb;font-size:0.88rem;}
+    .article-body tbody td:first-child{font-weight:500;color:var(--accent);font-size:0.85rem;}
+    .gh-transition{display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;margin:1.5rem 0;padding:1rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:#555;}
+    .gh-transition .node{color:#ccc;font-style:italic;}
+    .gh-transition .arrow{color:var(--accent);}
+    .article-bio{margin-top:1rem;font-size:0.88rem;color:#666;line-height:1.8;}
+    .article-bio a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);}
+    .article-bio strong{color:#bbb;}
+    .site-footer{background:var(--surface);border-top:1px solid var(--border);padding:4rem 0 2.5rem;margin-top:5rem;}
+    .footer-grid{display:grid;grid-template-columns:110px 1fr auto;gap:2.5rem;align-items:start;padding-bottom:2.5rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem;}
+    .footer-photo img{width:110px;height:auto;}
+    .footer-info h4{font-size:0.68rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;}
+    .footer-info p{font-size:0.9rem;color:var(--muted);margin-bottom:0.35rem;line-height:1.5;}
+    .footer-info a{color:var(--text);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;display:inline-block;margin-bottom:0.35rem;}
+    .footer-info a:hover{color:var(--accent);border-color:var(--accent);opacity:1;}
+    .footer-socials{display:flex;flex-direction:column;gap:0.9rem;align-items:flex-end;}
+    .footer-socials a{font-size:0.68rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);transition:color 0.2s;}
+    .footer-socials a:hover{color:var(--accent);opacity:1;}
+    .footer-base{display:flex;justify-content:space-between;align-items:center;}
+    .footer-base p{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:#444;}
+    .footer-tagline{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--accent);letter-spacing:0.04em;margin-bottom:2rem;padding-bottom:1.75rem;border-bottom:1px solid var(--border);}
+    .seo-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+    @media(max-width:768px){
+      .nav-toggle{display:flex;}
+      .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;padding:1.5rem 2rem;gap:1.5rem;}
+      .nav-links.open{display:flex;}
+      .footer-grid{grid-template-columns:1fr;gap:2rem;}
+      .footer-socials{align-items:flex-start;flex-direction:row;gap:1.5rem;}
+      .footer-base{flex-direction:column;gap:0.5rem;text-align:center;}.footer-tagline{font-size:1rem;}
+      .article-section{padding:3rem 0 4rem;}
+      .article-body tbody td:first-child{white-space:normal;}
+      .gh-transition{flex-direction:column;align-items:flex-start;}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Glenn Hanns",
+  "alternateName": "Glenn Hanns ACS",
+  "url": "https://glennhanns.com",
+  "image": "https://glennhanns.com/assets/glenn-hanns-acs.webp",
+  "jobTitle": ["Director","Cinematographer","Director of Photography"],
+  "description": "Award-winning Australian director and cinematographer. AFTRS Masters graduate, ACS accredited DOP based in Sydney specialising in feature drama, television and documentary.",
+  "knowsAbout": ["Cinematography","Direction","Director of Photography","Feature Film","Television Drama","Documentary","Music Video","Camera Operation","Lighting"],
+  "hasCredential": [
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Masters Degree","recognizedBy":{"@type":"Organization","name":"Australian Film Television and Radio School","alternateName":"AFTRS","url":"https://www.aftrs.edu.au"},"name":"Masters in Cinematography with High Achievement"},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Professional Accreditation","recognizedBy":{"@type":"Organization","name":"Australian Cinematographers Society","alternateName":"ACS","url":"https://cinematographer.org.au"},"name":"ACS Accredited Cinematographer"}
+  ],
+  "award": [
+    "2023 Gold ACS Award NSW & ACT — Dramatised Documentaries (Ron Iddles)",
+    "2022 Award of Distinction ACS Nationals — Best Feature Film under $2m (Moon Rock For Monday)",
+    "2021 Gold ACS Award NSW & ACT — Feature Films under $2m (Moon Rock For Monday)",
+    "2019 Silver Logie — Most Outstanding Factual or Documentary Program (Ron Iddles)",
+    "2013 Bronze ACS Award NSW & ACT — Feature Films (Forbidden Ground)",
+    "2009 Gold ACS Award NSW & ACT — Music Clips (Birds of Tokyo)",
+    "2008 Golden Tadpole Nominee — Camerimage, Poland (Bleeders)"
+  ],
+  "address": {"@type":"PostalAddress","addressLocality":"Sydney","addressRegion":"NSW","addressCountry":"AU"},
+  "email": "glenn@glennhanns.com",
+  "telephone": "+61421667205",
+  "sameAs": [
+    "https://au.linkedin.com/in/glennhanns",
+    "https://www.instagram.com/glennhanns_ACS/",
+    "https://www.youtube.com/@GlennHanns/playlists",
+    "https://www.imdb.com/name/nm1771070/?ref_=ext_shr_lnk"
+  ],
+  "worksFor": {"@type":"Organization","name":"Glenn Hanns ACS Cinematography","url":"https://glennhanns.com"},
+  "nationality": {"@type":"Country","name":"Australia"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Glenn Hanns ACS — Director of Photography Sydney",
+  "url": "https://glennhanns.com",
+  "description": "Portfolio of Glenn Hanns ACS, Sydney-based Director of Photography and cinematographer specialising in feature drama, television, documentary and music video.",
+  "author": {"@type":"Person","name":"Glenn Hanns","alternateName":"Glenn Hanns ACS"},
+  "inLanguage": "en-AU",
+  "copyrightYear": "2026",
+  "copyrightHolder": {"@type":"Person","name":"Glenn Hanns"}
+}
+</script>
+
+  <link rel="canonical" href="https://glennhanns.com/blog/editor-in-the-directors-chair-josh-groom.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Glenn Hanns ACS" />
+  <meta property="og:url" content="https://glennhanns.com/blog/editor-in-the-directors-chair-josh-groom.html" />
+  <meta property="og:title" content="The Editor in the Director’s Chair — Glenn Hanns ACS & Josh Groom" />
+  <meta property="og:description" content="What happens when your director thinks in cuts. Glenn Hanns ACS on the creative partnership with editor-turned-director Josh Groom." />
+  <meta property="og:image" content="https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_2.webp" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Editor in the Director’s Chair — Glenn Hanns ACS & Josh Groom" />
+  <meta name="twitter:description" content="What happens when your director thinks in cuts. Glenn Hanns ACS on the creative partnership with editor-turned-director Josh Groom." />
+  <meta name="twitter:image" content="https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_2.webp" />
+</head>
+<body>
+<h1 class="seo-h1">The Editor in the Director&#8217;s Chair &#8212; Glenn Hanns ACS &amp; Josh Groom</h1>
+
+<nav class="site-nav">
+  <div class="nav-inner" style="position:relative;">
+    <a class="nav-logo" href="/"><img src="/assets/images/glennlogotran.png" alt="Glenn Hanns ACS" /></a>
+    <a class="nav-centre-logo" href="/" style="position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;"><img src="/assets/images/glenn-hanns-acs-cinematography.png" alt="Glenn Hanns ACS Cinematography" style="height:38px;width:auto;"/></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Work</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog.html" class="active">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="site-content">
+  <article class="article-section">
+    <div class="article-inner">
+
+      <a class="back-link" href="/blog.html">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All articles
+      </a>
+
+      <header>
+        <p class="article-label">Collaboration</p>
+        <h2 class="article-title">The Editor in the Director&#8217;s Chair: Inside a Cinematic Partnership</h2>
+        <p class="article-subtitle">Glenn Hanns ACS &nbsp;&#183;&nbsp; Josh Groom</p>
+      </header>
+
+      <div class="article-body">
+
+        <p>There is a distinct brand of panic that sets in on a film set when the clock is ticking down, the light is dying, and a director realises they don&#8217;t have the coverage they need to make a scene work. You see it in the frantic addition of &#8220;safety setups&#8221; &#8212; the classic manifestation of a fear of the edit suite.</p>
+
+        <p>But when your director spends their formative years looking at raw footage through the cold, calculated lens of an editor, the entire psychological landscape of the set changes.</p>
+
+        <p>For years, my collaboration with director <a href="https://www.imdb.com/name/nm1779833/" target="_blank" rel="noopener">Josh Groom</a> has been defined by this exact shorthand. We met at <a href="https://www.aftrs.edu.au" target="_blank" rel="noopener">AFTRS</a>, both completing our Master of Arts &#8212; him in editing, me in cinematography. My very first film at school was cut by Josh, and we&#8217;ve been working together ever since, moving between short-film dramas like <a href="/#manifestation"><em>Manifestation</em></a> and stylised music videos for bands like <a href="https://angusandjuliastone.com" target="_blank" rel="noopener">Angus and Julia Stone</a>, <a href="https://www.birdsoftokyo.com" target="_blank" rel="noopener">Birds of Tokyo</a>, <a href="https://en.wikipedia.org/wiki/The_Snowdroppers" target="_blank" rel="noopener">The Snowdroppers</a> and <a href="https://en.wikipedia.org/wiki/Yves_Klein_Blue" target="_blank" rel="noopener">Yves Klein Blue</a>.</p>
+
+        <p>When an editor transitions to the director&#8217;s chair, they don&#8217;t just see a scene; they see the timeline. They aren&#8217;t shooting coverage to find the story later &#8212; they are shooting strictly for the cut.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_22.webp" alt="The Snowdroppers &#8212; Love Letters music video, cinematography by Glenn Hanns ACS" />
+          <figcaption>The Snowdroppers &#8212; Love Letters music video, directed by Josh Groom, cinematography by Glenn Hanns ACS</figcaption>
+        </figure>
+
+        <h3>Translating the Stick Figures: Pre-Production as an Insurance Policy</h3>
+
+        <p>Every director&#8211;DP relationship requires a shared language, and ours usually begins with some of the most spectacularly terrible stick-figure storyboards you&#8217;ve ever seen. Josh frames his initial concepts in raw sketches, but because of our long-term partnership, I can instantly extract the narrative intent beneath the ink.</p>
+
+        <p>The real magic happens when we take those raw concepts and stress-test them during pre-production. Directors naturally want to overshoot to build a safety blanket. Because I understand his editorial rhythm, my role is to look at those storyboards and ruthlessly analyse where we can combine setups or eliminate redundant angles.</p>
+
+        <blockquote>Careful planning in pre-production that takes a single minute saves an hour on set &#8212; an hour where a crew of fifty people isn&#8217;t standing around staring at you and the director, waiting for a decision.</blockquote>
+
+        <p>To keep this organised, we rely heavily on digital script breakdown tools like <a href="https://www.scriptation.com" target="_blank" rel="noopener">Scriptation</a>. It allows us to layer our tech recce notes, camera positions, and lighting setups directly onto the script pages. We pair this with top-down floor plans mapping out exact actor and camera positions. If we know the exact boundaries of our frames before the crew arrives, the lighting and grip departments can pre-rig with surgical precision.</p>
+
+        <h3>Lighting Philosophies: The Technical Toolkit</h3>
+
+        <p>These are the three core approaches that anchor our visual language &#8212; each chosen to serve the emotional register of the scene rather than aesthetic habit alone.</p>
+
+        <div class="gh-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Technique</th>
+                <th>Philosophy</th>
+                <th>Technical Metric</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chiaroscuro &amp; Shadow</td>
+                <td>Strong contrasts between light and dark. We shape the subject by letting the fill side fall completely into shadow, using large soft sources highly gridded to wrap light precisely and isolate the actor against a dropped background.</td>
+                <td>Key-to-fill ratio 8:1 or higher. Shooting wide open at T1.4&#8211;T2.0 to maintain shallow depth of field.</td>
+              </tr>
+              <tr>
+                <td>Motivated Practicals</td>
+                <td>The scene is lit using sources that naturally exist in the environment &#8212; lamps, windows, computer screens &#8212; augmented subtly with off-camera fixtures to ensure the sensor gets the organic colour information it needs.</td>
+                <td>Precise Kelvin matching: cloning the exact colour temperature of on-screen tungsten bulbs (~3200K) or daylight fixtures (5600K) using wireless LED bypass units.</td>
+              </tr>
+              <tr>
+                <td>High Key Subversion</td>
+                <td>High key lighting reduces the lighting ratio so fill is almost as intense as the key. Subverted in psychological or clinical spaces, it creates an unsettling atmosphere where characters have nowhere to hide.</td>
+                <td>Key-to-fill ratio near 1:1 or 2:1. Broad, bounced sources spread an even exposure across the entire histogram.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_51.webp" alt="Glenn Hanns ACS on set with director Josh Groom &#8212; music video production" />
+          <figcaption>Glenn Hanns ACS on set with director Josh Groom &#8212; music video production.</figcaption>
+        </figure>
+
+        <h3>Playing the Rhythm: Camera Mechanics &amp; Pacing</h3>
+
+        <p>A major trap for young cinematographers is falling in love with a shot for the sake of its technical complexity. We&#8217;ve all been there: you spend three hours lighting and executing a flawless continuous tracking shot &#8212; a &#8220;oner&#8221; &#8212; only to sit in the cinema months later and realise it was hacked into five pieces because the scene needed a sharper pace.</p>
+
+        <p>When you share an editorial language with your director, you avoid that heartbreak. If we design a long, fluid camera movement, we build internal &#8220;soft cuts&#8221; into the blocking &#8212; a dark wipe past an actor&#8217;s back, or a swift tilt past a structural column. It provides an emergency exit strategy for Josh in post without compromising the visual integrity of the frame.</p>
+
+        <p>Josh also has a deep affinity for simple, practical camera tricks like high-speed whip pans to bridge locations or timeline jumps.</p>
+
+        <div class="gh-transition" aria-label="Whip pan transition">
+          <span class="node">Setup A &middot; Pan Right / High Speed</span>
+          <span class="arrow">&#10230;</span>
+          <span class="node">Whip Pan Blur</span>
+          <span class="arrow">&#10230;</span>
+          <span class="node">Setup B &middot; Pan Right / Match Action</span>
+        </div>
+
+        <p>To make these in-camera transitions seamless, we match focal lengths, lens heights, and spatial geometry exactly. It keeps the energy incredibly high and allows the camera to actively drive the narrative rhythm rather than just capturing it.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_35.webp" alt="Born Lion &#8212; Good Dogs Play Dead music video, cinematography by Glenn Hanns ACS" />
+          <figcaption>Born Lion &#8212; Good Dogs Play Dead music video, directed by Josh Groom, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_24.webp" alt="Manifestation (2017) &#8212; directed by Josh Groom, cinematography by Glenn Hanns ACS" />
+          <figcaption>Manifestation (2017) &#8212; directed by Josh Groom, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <h3>Lens Utilisation vs. Narrative Beat</h3>
+
+        <div class="gh-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Focal Length</th>
+                <th>Narrative Application</th>
+                <th>Visual &amp; Psychological Effect</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>18mm &#8211; 24mm<br><small style="font-weight:300;color:#555;">Wide</small></td>
+                <td>Establishing &amp; Context</td>
+                <td>Physically involves the audience, exaggerates spatial geometry.</td>
+              </tr>
+              <tr>
+                <td>35mm &#8211; 40mm<br><small style="font-weight:300;color:#555;">Standard</small></td>
+                <td>Dialogue &amp; Connection</td>
+                <td>Mirrors natural human vision; builds intimacy without distortion.</td>
+              </tr>
+              <tr>
+                <td>50mm &#8211; 85mm<br><small style="font-weight:300;color:#555;">Telephoto</small></td>
+                <td>Isolation &amp; Detail</td>
+                <td>Flattens the perspective, compressing background space to trap the subject.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_1.webp" alt="Glenn Hanns ACS on set with director Josh Groom &#8212; music video production" />
+          <figcaption>Glenn Hanns ACS on set with director Josh Groom &#8212; music video production.</figcaption>
+        </figure>
+
+        <h3>Sculpting the Frame: Lighting with Intention</h3>
+
+        <p>Josh possesses a massive, broad design sensibility that influences every project he touches. Rather than over-complicating setups with massive arrays of diffusion, our visual style favours a clean, geometric, high-contrast approach. Sculpting with shadow is often much faster than trying to achieve a perfectly flat, safe exposure everywhere &#8212; it creates immediate depth and draws the audience&#8217;s eye precisely where the edit demands it.</p>
+
+        <p>We heavily integrate our lighting into the production design itself, utilising motivated practical sources within the frame. By relying on controllable, wireless <a href="https://en.wikipedia.org/wiki/LED_stage_lighting" target="_blank" rel="noopener">LED fixtures</a> tucked into the architecture of the set, we give the actors complete freedom of movement &#8212; and when we turn around from the wide shot to the close-up, we aren&#8217;t spending forty-five minutes relighting the entire room.</p>
+
+        <h3>The Ultimate Shorthand</h3>
+
+        <p>At the end of the day, a successful director&#8211;cinematographer collaboration isn&#8217;t about the gear you choose or the complexity of your lighting grid. It is about a shared philosophy.</p>
+
+        <p>Working with a director who understands the economy of a cut means every frame is purposeful. The camera never fights the edit; it serves it. When you achieve that level of creative alignment, you stop worrying about &#8220;getting enough safety&#8221; and start focusing entirely on what matters: telling a powerful visual story.</p>
+
+        <hr>
+
+        <p class="article-bio"><a href="/about.html"><strong>Glenn Hanns ACS</strong></a> is a Sydney-based Director of Photography specialising in feature drama, television and documentary. <a href="/">View the full portfolio</a>, read more on <a href="/blog/working-with-directors.html">working with directors</a>, or get in touch via the contact details below.</p>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width">
+    <div class="footer-tagline">Visual authorship from prep to grade</div>
+<div class="footer-grid">
+      <div class="footer-photo"><img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" /></div>
+      <div class="footer-info">
+        <h4>Get in touch</h4>
+        <p>Glenn Hanns ACS &#8212; Director of Photography</p>
+        <p>Sydney, NSW &#8212; Available across Australia and internationally</p>
+        <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
+        <a href="tel:+610421667205">+61 421 667 205</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&#169; 2026 Glenn Hanns ACS</p>
+      <p>Director of Photography &#8212; Sydney</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

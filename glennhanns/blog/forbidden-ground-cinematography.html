@@ -1,0 +1,404 @@
+<!-- ============================================================
+  BLOG POST CHECKLIST
+  ============================================================
+  IN-FILE ITEMS (verify before publishing):
+  [ ] <title> unique, includes target keyphrase + Glenn Hanns ACS
+  [ ] <meta description> 150-160 chars
+  [ ] <link rel="canonical"> full absolute URL, no trailing slash
+  [ ] og:type = "article"
+  [ ] og:image / twitter:image absolute URL to real image asset
+  [ ] JSON-LD Person + WebSite schema blocks present
+  [ ] seo-h1 hidden heading present
+  [ ] Back link to /blog.html
+  [ ] All figures: real src paths, descriptive alt text
+  [ ] article-bio: name /about.html, portfolio /, 2x internal blog links, contact sign-off
+  [ ] Nav: glennlogotran.png left + centre wordmark + nav-links
+  AFTER PUBLISHING:
+  [ ] sitemap.xml  [ ] blog.html card  [ ] index.html carousel if featured
+  ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forbidden Ground &#8212; Cinematography Breakdown &#8212; Glenn Hanns ACS</title>
+  <meta name="description" content="How Glenn Hanns ACS transformed a Dubbo farm into the Western Front &#8212; 19 days, 300kg of live explosives, RED ONE, Sony F3, and a Phantom high-speed rig.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0a0a0a;--surface:#111111;--border:#1e1e1e;--accent:#ff6600;--text:#ffffff;--muted:#888888;--max-width:1200px;--article-width:740px;--nav-h:68px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:1rem;line-height:1.75;-webkit-font-smoothing:antialiased;}
+    body::before{content:'';display:block;position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);z-index:1001;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{opacity:0.8;}
+    .page-width{max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .site-nav{position:fixed;top:3px;left:0;right:0;height:var(--nav-h);background:rgba(10,10,10,0.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:1000;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .nav-logo img{height:46px;width:auto;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#666;transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;opacity:1;}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:1px;}
+    .site-content{padding-top:calc(var(--nav-h) + 3px);}
+    .article-section{padding:4rem 0 6rem;}
+    .article-inner{max-width:var(--article-width);margin:0 auto;padding:0 2rem;}
+    .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:#444;margin-bottom:2.5rem;transition:color 0.2s;}
+    .back-link:hover{color:var(--accent);opacity:1;}
+    .article-label{font-size:0.55rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem;}
+    .article-title{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:0.06em;color:var(--text);line-height:1.05;text-transform:uppercase;margin-bottom:0.5rem;}
+    .article-subtitle{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#555;margin-bottom:2.5rem;}
+    .article-body p{font-size:0.95rem;color:#bbb;line-height:1.85;margin-bottom:1.4rem;}
+    .article-body h3{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.2rem,2vw,1.7rem);letter-spacing:0.06em;color:var(--accent);line-height:1.1;text-transform:uppercase;margin:2rem 0 0.75rem;}
+    .article-body h4{font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#555;margin:1.75rem 0 0.6rem;}
+    .article-body a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);transition:border-color 0.2s,color 0.2s;}
+    .article-body a:hover{color:var(--accent);opacity:0.8;border-bottom-color:var(--accent);}
+    .article-body strong{color:var(--text);font-weight:500;}
+    .article-body em{font-style:italic;color:#999;}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.5rem;color:#bbb;}
+    .article-body li{font-size:0.95rem;line-height:1.75;margin-bottom:0.4rem;}
+    .article-body li strong{color:var(--text);}
+    .article-body blockquote{border-left:3px solid var(--accent);margin:2rem 0;padding:1rem 1.5rem;color:var(--muted);font-size:1rem;line-height:1.8;font-style:italic;}
+    .article-body hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0;}
+    .article-body .gh-table{margin:1.5rem 0 2.5rem;overflow-x:auto;}
+    .article-body table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+    .article-body thead tr{border-bottom:1px solid var(--accent);}
+    .article-body thead th{padding:0.6rem 1rem;text-align:left;font-size:0.65rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);}
+    .article-body tbody tr{border-bottom:1px solid #1a1a1a;}
+    .article-body tbody td{padding:0.75rem 1rem;vertical-align:top;line-height:1.6;color:#bbb;font-size:0.88rem;}
+    .article-body tbody td:first-child{font-weight:500;color:var(--accent);font-size:0.85rem;}
+    .gh-stats{display:flex;gap:2rem;flex-wrap:wrap;margin:2rem 0;padding:1.5rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+    .gh-stat{display:flex;flex-direction:column;gap:0.2rem;}
+    .gh-stat-num{font-family:'Barlow Condensed',sans-serif;font-size:2.5rem;color:var(--accent);line-height:1;}
+    .gh-stat-label{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:#555;}
+    .article-bio{margin-top:1rem;font-size:0.88rem;color:#666;line-height:1.8;}
+    .article-bio a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);}
+    .article-bio strong{color:#bbb;}
+    .site-footer{background:var(--surface);border-top:1px solid var(--border);padding:4rem 0 2.5rem;margin-top:5rem;}
+    .footer-grid{display:grid;grid-template-columns:110px 1fr auto;gap:2.5rem;align-items:start;padding-bottom:2.5rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem;}
+    .footer-photo img{width:110px;height:auto;}
+    .footer-info h4{font-size:0.68rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;}
+    .footer-info p{font-size:0.9rem;color:var(--muted);margin-bottom:0.35rem;line-height:1.5;}
+    .footer-info a{color:var(--text);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;display:inline-block;margin-bottom:0.35rem;}
+    .footer-info a:hover{color:var(--accent);border-color:var(--accent);opacity:1;}
+    .footer-socials{display:flex;flex-direction:column;gap:0.9rem;align-items:flex-end;}
+    .footer-socials a{font-size:0.68rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);transition:color 0.2s;}
+    .footer-socials a:hover{color:var(--accent);opacity:1;}
+    .footer-base{display:flex;justify-content:space-between;align-items:center;}
+    .footer-base p{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:#444;}
+    .footer-tagline{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--accent);letter-spacing:0.04em;margin-bottom:2rem;padding-bottom:1.75rem;border-bottom:1px solid var(--border);}
+    .seo-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+    @media(max-width:768px){
+      .nav-toggle{display:flex;}
+      .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;padding:1.5rem 2rem;gap:1.5rem;}
+      .nav-links.open{display:flex;}
+      .footer-grid{grid-template-columns:1fr;gap:2rem;}
+      .footer-socials{align-items:flex-start;flex-direction:row;gap:1.5rem;}
+      .footer-base{flex-direction:column;gap:0.5rem;text-align:center;}.footer-tagline{font-size:1rem;}
+      .article-section{padding:3rem 0 4rem;}
+      .article-body tbody td:first-child{white-space:normal;}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Glenn Hanns",
+  "alternateName": "Glenn Hanns ACS",
+  "url": "https://glennhanns.com",
+  "image": "https://glennhanns.com/assets/glenn-hanns-acs.webp",
+  "jobTitle": ["Director","Cinematographer","Director of Photography"],
+  "description": "Award-winning Australian director and cinematographer. AFTRS Masters graduate, ACS accredited DOP based in Sydney specialising in feature drama, television and documentary.",
+  "knowsAbout": ["Cinematography","Direction","Director of Photography","Feature Film","Television Drama","Documentary","Music Video","Camera Operation","Lighting"],
+  "hasCredential": [
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Masters Degree","recognizedBy":{"@type":"Organization","name":"Australian Film Television and Radio School","alternateName":"AFTRS","url":"https://www.aftrs.edu.au"},"name":"Masters in Cinematography with High Achievement"},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Professional Accreditation","recognizedBy":{"@type":"Organization","name":"Australian Cinematographers Society","alternateName":"ACS","url":"https://cinematographer.org.au"},"name":"ACS Accredited Cinematographer"}
+  ],
+  "award": [
+    "2023 Gold ACS Award NSW & ACT — Dramatised Documentaries (Ron Iddles)",
+    "2022 Award of Distinction ACS Nationals — Best Feature Film under $2m (Moon Rock For Monday)",
+    "2021 Gold ACS Award NSW & ACT — Feature Films under $2m (Moon Rock For Monday)",
+    "2019 Silver Logie — Most Outstanding Factual or Documentary Program (Ron Iddles)",
+    "2013 Bronze ACS Award NSW & ACT — Feature Films (Forbidden Ground)",
+    "2009 Gold ACS Award NSW & ACT — Music Clips (Birds of Tokyo)",
+    "2008 Golden Tadpole Nominee — Camerimage, Poland (Bleeders)"
+  ],
+  "address": {"@type":"PostalAddress","addressLocality":"Sydney","addressRegion":"NSW","addressCountry":"AU"},
+  "email": "glenn@glennhanns.com",
+  "telephone": "+61421667205",
+  "sameAs": [
+    "https://au.linkedin.com/in/glennhanns",
+    "https://www.instagram.com/glennhanns_ACS/",
+    "https://www.youtube.com/@GlennHanns/playlists",
+    "https://www.imdb.com/name/nm1771070/?ref_=ext_shr_lnk"
+  ],
+  "worksFor": {"@type":"Organization","name":"Glenn Hanns ACS Cinematography","url":"https://glennhanns.com"},
+  "nationality": {"@type":"Country","name":"Australia"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Glenn Hanns ACS — Director of Photography Sydney",
+  "url": "https://glennhanns.com",
+  "description": "Portfolio of Glenn Hanns ACS, Sydney-based Director of Photography and cinematographer specialising in feature drama, television, documentary and music video.",
+  "author": {"@type":"Person","name":"Glenn Hanns","alternateName":"Glenn Hanns ACS"},
+  "inLanguage": "en-AU",
+  "copyrightYear": "2026",
+  "copyrightHolder": {"@type":"Person","name":"Glenn Hanns"}
+}
+</script>
+
+  <link rel="canonical" href="https://glennhanns.com/blog/forbidden-ground-cinematography.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Glenn Hanns ACS" />
+  <meta property="og:url" content="https://glennhanns.com/blog/forbidden-ground-cinematography.html" />
+  <meta property="og:title" content="Forbidden Ground — Cinematography Breakdown — Glenn Hanns ACS" />
+  <meta property="og:description" content="How Glenn Hanns ACS transformed a Dubbo farm into the Western Front — 19 days, 300kg of live explosives, RED ONE, Sony F3, and a Phantom high-speed rig." />
+  <meta property="og:image" content="https://glennhanns.com/assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_1.webp" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Forbidden Ground — Cinematography Breakdown — Glenn Hanns ACS" />
+  <meta name="twitter:description" content="How Glenn Hanns ACS transformed a Dubbo farm into the Western Front — 19 days, 300kg of live explosives, RED ONE, Sony F3, and a Phantom high-speed rig." />
+  <meta name="twitter:image" content="https://glennhanns.com/assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_1.webp" />
+</head>
+<body>
+<h1 class="seo-h1">Forbidden Ground &#8212; Cinematography Breakdown &#8212; Glenn Hanns ACS</h1>
+
+<nav class="site-nav">
+  <div class="nav-inner" style="position:relative;">
+    <a class="nav-logo" href="/"><img src="/assets/images/glennlogotran.png" alt="Glenn Hanns ACS" /></a>
+    <a class="nav-centre-logo" href="/" style="position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;"><img src="/assets/images/glenn-hanns-acs-cinematography.png" alt="Glenn Hanns ACS Cinematography" style="height:38px;width:auto;"/></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Work</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog.html" class="active">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="site-content">
+  <article class="article-section">
+    <div class="article-inner">
+
+      <a class="back-link" href="/blog.html">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All articles
+      </a>
+
+      <header>
+        <p class="article-label">Feature Film</p>
+        <h2 class="article-title">Forbidden Ground: Transforming the Landscape</h2>
+        <p class="article-subtitle">Cinematography breakdown &nbsp;&#183;&nbsp; Glenn Hanns ACS &nbsp;&#183;&nbsp; 2011</p>
+      </header>
+
+      <div class="article-body">
+
+        <p>A landscape shaped to reflect the scale of the Great War is an extraordinary challenge for independent filmmakers &#8212; especially when you are half a world away from the original European battlefields. To recreate the muddy, devastated landscape of the Western Front in 1916 France, we went to a farm just outside the rural township of Dubbo, New South Wales. This regional location, coupled with some interior and pickup shots done in Sydney, provided our canvas.</p>
+
+        <p>To manage the environmental passage from the sun-drenched, arid topography of regional New South Wales to the cold, waterlogged clay of the Somme, there had to be tight cooperation between the camera, art, and special effects departments.</p>
+
+        <div class="gh-stats">
+          <div class="gh-stat">
+            <span class="gh-stat-num">19</span>
+            <span class="gh-stat-label">Consecutive shoot days &amp; nights</span>
+          </div>
+          <div class="gh-stat">
+            <span class="gh-stat-num">300<small style="font-size:1.2rem;font-family:'DM Sans',sans-serif;">kg</small></span>
+            <span class="gh-stat-label">Live explosives on set</span>
+          </div>
+          <div class="gh-stat">
+            <span class="gh-stat-num">3</span>
+            <span class="gh-stat-label">Camera platforms</span>
+          </div>
+          <div class="gh-stat">
+            <span class="gh-stat-num">2.35</span>
+            <span class="gh-stat-label">Aspect ratio (theatrical)</span>
+          </div>
+        </div>
+
+        <p>Principal photography was a punishing 19-day and 19-night consecutive schedule completed during the Christmas period in 2011. We had to deal with the deep heat of Australia in December and try to evoke a bleak, freezing northern European winter &#8212; and we had to be in total control of our setup. The shoot was physically draining &#8212; days of up to eighteen hours on the heaviest setups with thick mud on top of everything for almost all of the production.</p>
+
+        <blockquote>Working in long, committed blocks meant we were locked into a particular look creatively. It kept our lighting and atmosphere very well together and luckily a recent wet spell gave us that look we were after. We&#8217;d brought in a water tanker to do daily wet downs but in the end it wasn&#8217;t needed.</blockquote>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_13.webp" alt="Forbidden Ground (2013) &#8212; production still, on location Dubbo NSW" />
+          <figcaption>Forbidden Ground (2013) &#8212; on location in Dubbo, NSW. 19 days and nights. Cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <p>To build the Dubbo farmland into a convincing war zone, the production employed more than 300kg of real explosives provided by the pyrotechnic company <a href="https://www.imdb.com/company/co0432357/" target="_blank" rel="noopener">Armzfx</a>, run by co-director Johan Earl. Because we put in-camera physical explosions instead of digital effects, we had an incredibly tactile, immediate atmosphere for the actors.</p>
+
+        <p>Much of the coverage was restricted by the location &#8212; carefully negotiating what identifiable Australian bushland appeared in the background, and using close-ups that focused on the faces of young men struggling to survive. Inside the trenches we were restricted by the fact we only had two large 12x12 scrims available to us. Taking these restrictions into account I planned to use this for effect. This forced stylistic decision maximises the psychological claustrophobia of the story and narrows the lens&#8217;s field of view to exclude regional Australian flora and flat horizons that would have effectively eliminated the notion that the world was historical Europe.</p>
+
+        <h3>Directorial Clarity in the Mud</h3>
+
+        <p><em>Forbidden Ground</em> was co-directed by Johan Earl and <a href="https://www.imdb.com/name/nm1974505/" target="_blank" rel="noopener">Adrian Powers</a>. Since Johan was doing double duty &#8212; playing Sgt. Major Arthur Wilkins and also overseeing the pyrotechnics team &#8212; Adrian handled the lion&#8217;s share of the in-the-moment directorial decisions on set.</p>
+
+        <blockquote>Directorial clarity is one of the most underrated gifts a director can give a cinematographer on a tight and independent schedule. As we didn&#8217;t spend much time looking for the frame, we were able to focus on all the lighting, lenses, and atmospherics in the world.</blockquote>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_48.webp" alt="Forbidden Ground (2013) — production still, intimate two-shot, garden exterior" />
+        </figure>
+
+        <h3>The Digital Toolkit: Managing Early Sensor Constraints</h3>
+
+        <p>We shot the film during a fascinating time for digital cinema acquisition. Our camera package was a mix of early-generation digital sensors, with Edgar Deluen keeping everything pin-sharp as our &#8220;A&#8221; camera focus puller.</p>
+
+        <div class="gh-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Camera</th>
+                <th>Lens / Profile</th>
+                <th>Primary Use</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://www.red.com/" target="_blank" rel="noopener noreferrer">RED ONE</a></td>
+                <td>Zeiss Master Primes &amp; RED Primes &#8212; Spherical (2.35:1 matte)</td>
+                <td>High-quality master shots and battlefield choreography. Excellent spatial resolution and landscape detail.</td>
+              </tr>
+              <tr>
+                <td><a href="https://pro.sony/en_AU/products/handheld-camcorders/pmw-f3" target="_blank" rel="noopener noreferrer">Sony PMW-F3</a></td>
+                <td>Zeiss Master Primes &#8212; Cinegammas (~12 stops)</td>
+                <td>Low-light night scenes and dialogue scenes in No Man&#8217;s Land. Great shadow detail without S-Log.</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.phantomhighspeed.com/" target="_blank" rel="noopener noreferrer">Phantom</a></td>
+                <td>High-frame-rate recording</td>
+                <td>Pyrotechnic explosions and trench debris. Great temporal clarity in combat sequences.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>The Sony F3 was a camera released for the first time just two weeks before principal photography. The paid and free internal S-Log firmware upgrades were not available because of this limited lead time. We were forced to record with the camera&#8217;s internal Cinegammas &#8212; the sensor had at a maximum 12 stops of light, which at that time was fantastic. We recorded externally to the original HyperDeck Shuttle in uncompressed YUV 10 bit 4:2:2, allowing the best option for grading in post.</p>
+
+        <blockquote>In a high-contrast environment &#8212; night scenes lit up with pyrotechnic flashes and harsh backlights &#8212; that 12-stop exposure needed to be controlled very precisely to ensure no highlight clipping and to keep in good shadow detail.</blockquote>
+
+        <p>We recorded the footage spherically and used a high-quality <a href="https://www.zeiss.com/consumer-products/int/photography/lenses/master-prime.html" target="_blank" rel="noopener noreferrer">Zeiss Master Prime</a> lens set. The spherical footage was then matted to a 2.35:1 aspect ratio, which was later changed to 1.78:1 for home entertainment and DVD releases.</p>
+
+        <h3>Painting with Backlight: Atmospheric Smoke and the Fog of War</h3>
+
+        <p>A lot of the film takes place in the pitch-black expanse of No Man&#8217;s Land at night. The basic lighting strategy I developed was to create strong directional motivation from heavy backlights &#8212; 4K HMI lamps projected directly through thick, live atmospheric smoke, dust, and pyrotechnic debris.</p>
+
+        <ul>
+          <li><strong>Graphic Silhouette Generation</strong> &#8212; The intense backlighting transformed falling dirt, rising smoke, muzzle flashes, and soldiers&#8217; profiles into sharp graphic silhouettes, heightening the emotional tension.</li>
+          <li><strong>Physical Diffusion and Edge Softening</strong> &#8212; Physical smoke acted as a natural optical low-pass filter, softening the image and rolling highlights in-camera without heavy post filtration.</li>
+          <li><strong>Depth Construction in Void Spaces</strong> &#8212; With smoke layers backlit, we had different planes of atmospheric density to build depth of field in a very flat environment.</li>
+        </ul>
+
+        <h3>Deakins, Fraser and the Philosophy of Light</h3>
+
+        <p><a href="https://www.imdb.com/name/nm0005683/" target="_blank" rel="noopener">Roger Deakins</a> CBE ASC BSC is more about lighting the space than individual shots, so actors are able to move in a believable environment. His cove lighting technique bounces powerful fixtures off huge muslin surfaces to produce a soft, wrapping feel that resembles natural ambient light.</p>
+
+        <p><a href="https://www.imdb.com/name/nm0290275/" target="_blank" rel="noopener">Greig Fraser ACS ASC</a> has built a reputation for very adaptive imagery that merges digital sensors with vintage optics. On <em>Dune: Part Two</em>, he captured Giedi Prime using a 3D rig that had a colour and an infrared sensor, coupled with modern digital sensors and 1970s <a href="https://www.panavision.com/" target="_blank" rel="noopener noreferrer">Panavision</a> C-series anamorphic lenses.</p>
+
+        <blockquote>Our approach on Forbidden Ground was somewhere in the middle &#8212; a very detailed, stylised backlight approach but at the same time as run-and-gun and lightweight as possible on the ground.</blockquote>
+
+        <h3>Shutter Angles and Saving Private Ryan</h3>
+
+        <p>In exploring the ultimate in war cinematography, <em><a href="https://www.imdb.com/title/tt0120815/" target="_blank" rel="noopener">Saving Private Ryan</a></em> provided a reference point to look at and evolve from. <a href="https://www.imdb.com/name/nm0001076/" target="_blank" rel="noopener">Janusz Kami&#324;ski&#8217;s</a> approach was to use acute shutter angles and phase shifting &#8212; to pull the film down in the exposure window and create a distinct streaking effect. In 2011 I was not able to achieve this in-camera and had tried it on my last short film <em>Bleeders</em> on <a href="https://www.arri.com/" target="_blank" rel="noopener noreferrer">Arriflex</a> 435 ES &#8216;Extreme&#8217;.</p>
+
+        <p>I chose not to use this technique in the battle scenes but thought the soldiers would be more agitated and nervous before going over the trenches. I used shallow shutter angles inside the trenches and normal photography &#8212; but slow-motion &#8212; for when the battle started.</p>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_49.webp" alt="Forbidden Ground (2013) — production still, WWI battle sequence, trench assault" />
+        </figure>
+
+        <h3>Post-Production: Harmonising CGI and Colour Grading</h3>
+
+        <p>With principal photography in our 19-day window, we collaborated with visual effects artists to integrate digital matte paintings &#8212; extending background horizons with distant artillery flashes, ruined forests, and endless lines of trenches. A very washed-out and desaturated colour was used by the colourist to reflect the soldiers&#8217; mental state and the cold, empty nature of the history.</p>
+
+        <blockquote><a href="https://www.imdb.com/name/nm0005683/" target="_blank" rel="noopener">Roger Deakins</a> has frequently said that the best cinematography needs to be cohesive and doesn&#8217;t have any one thing which stands out over the rest of the film.</blockquote>
+
+        <h3>A Humbling Milestone</h3>
+
+        <p>Our work on <em>Forbidden Ground</em> went on to win an <a href="https://cinematographer.org.au/" target="_blank" rel="noopener">ACS Bronze Award</a> at the NSW &amp; ACT chapter in the Feature Films &#8212; Cinema category. While in the company of <a href="https://www.imdb.com/name/nm0065659/" target="_blank" rel="noopener">Dion Beebe ACS ASC</a> &#8212; the Academy Award-winning Australian cinematographer behind <em>Memoirs of a Geisha</em> &#8212; it was a humbling experience.</p>
+
+        <h3>Conclusions &amp; Technical Takeaways</h3>
+
+        <div class="gh-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Takeaway</th>
+                <th>Technique</th>
+                <th>Application</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hide Location Limits</td>
+                <td>Heavy backlight + live atmospheric smoke</td>
+                <td>Creates a physical barrier of background flora &#8212; very effective for doubling Australian landscapes for European locations</td>
+              </tr>
+              <tr>
+                <td>Limitations as Strengths</td>
+                <td>Tight framing and frequent close-ups</td>
+                <td>Solved limited set design but created a claustrophobic atmosphere that really worked</td>
+              </tr>
+              <tr>
+                <td>Sensor Adaptability</td>
+                <td>Sony F3 Cinegammas without S-Log</td>
+                <td>Eye-catching images without modern log curves achieved with careful exposure control</td>
+              </tr>
+              <tr>
+                <td>Shutter Strategy</td>
+                <td>Shallow angles pre-battle, normal for combat</td>
+                <td>Created psychological states &#8212; nervousness and the chaos of war &#8212; by camera mechanics alone</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Forbidden Ground is an example of independent Australian filmmaking at its best &#8212; a team working together to transform an old farm in New South Wales into the historic mud-drenched trenches of the Somme, and a creative, technical, and innovative approach to solving it.</p>
+
+        <hr>
+
+        <p class="article-bio"><a href="/about.html"><strong>Glenn Hanns ACS</strong></a> is a Sydney-based Director of Photography specialising in feature drama, television and documentary. His work on <a href="/#forbidden-ground"><em>Forbidden Ground</em></a> was distributed through <a href="https://www.lionsgate.com/" target="_blank" rel="noopener noreferrer">Lionsgate</a> and recognised with an ACS Bronze Award NSW 2013. <a href="/">View the full portfolio</a> or get in touch via the contact details below.</p>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width">
+    <div class="footer-tagline">Visual authorship from prep to grade</div>
+<div class="footer-grid">
+      <div class="footer-photo"><img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" /></div>
+      <div class="footer-info">
+        <h4>Get in touch</h4>
+        <p>Glenn Hanns ACS &#8212; Director of Photography</p>
+        <p>Sydney, NSW &#8212; Available across Australia and internationally</p>
+        <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
+        <a href="tel:+610421667205">+61 421 667 205</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&#169; 2026 Glenn Hanns ACS</p>
+      <p>Director of Photography &#8212; Sydney</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

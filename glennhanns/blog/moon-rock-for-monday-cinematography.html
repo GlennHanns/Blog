@@ -1,0 +1,379 @@
+<!-- ============================================================
+  BLOG POST CHECKLIST
+  ============================================================
+  IN-FILE ITEMS (verify before publishing):
+  [ ] <title> unique, includes target keyphrase + Glenn Hanns ACS
+  [ ] <meta description> 150-160 chars
+  [ ] <link rel="canonical"> full absolute URL, no trailing slash
+  [ ] og:type = "article"
+  [ ] og:image / twitter:image absolute URL to real image asset
+  [ ] JSON-LD Person + WebSite schema blocks present
+  [ ] seo-h1 hidden heading present
+  [ ] Back link to /blog.html
+  [ ] All figures: real src paths, descriptive alt text
+  [ ] article-bio: name /about.html, portfolio /, 2x internal blog links, contact sign-off
+  [ ] Nav: glennlogotran.png left + centre wordmark + nav-links
+  AFTER PUBLISHING:
+  [ ] sitemap.xml  [ ] blog.html card  [ ] index.html carousel if featured
+  ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon Rock For Monday &#8212; Cinematography Breakdown &#8212; Glenn Hanns ACS</title>
+  <meta name="description" content="How Glenn Hanns ACS shot Moon Rock For Monday on ARRI Alexa Mini with Cooke S4 glass &#8212; outback nights, extreme depth of field, and a Gold ACS Award.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0a0a0a;--surface:#111111;--border:#1e1e1e;--accent:#ff6600;--text:#ffffff;--muted:#888888;--max-width:1200px;--article-width:740px;--nav-h:68px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:1rem;line-height:1.75;-webkit-font-smoothing:antialiased;}
+    body::before{content:'';display:block;position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);z-index:1001;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{opacity:0.8;}
+    .page-width{max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .site-nav{position:fixed;top:3px;left:0;right:0;height:var(--nav-h);background:rgba(10,10,10,0.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:1000;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
+    .nav-logo img{height:46px;width:auto;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#666;transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;opacity:1;}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:1px;}
+    .site-content{padding-top:calc(var(--nav-h) + 3px);}
+    .article-section{padding:4rem 0 6rem;}
+    .article-inner{max-width:var(--article-width);margin:0 auto;padding:0 2rem;}
+    .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:#444;margin-bottom:2.5rem;transition:color 0.2s;}
+    .back-link:hover{color:var(--accent);opacity:1;}
+    .article-label{font-size:0.55rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem;}
+    .article-title{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:0.06em;color:var(--text);line-height:1.05;text-transform:uppercase;margin-bottom:0.5rem;}
+    .article-subtitle{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#555;margin-bottom:2.5rem;}
+    .article-body p{font-size:0.95rem;color:#bbb;line-height:1.85;margin-bottom:1.4rem;}
+    .article-body h3{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.2rem,2vw,1.7rem);letter-spacing:0.06em;color:var(--accent);line-height:1.1;text-transform:uppercase;margin:2rem 0 0.75rem;}
+    .article-body h4{font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#555;margin:1.75rem 0 0.6rem;}
+    .article-body a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);transition:border-color 0.2s,color 0.2s;}
+    .article-body a:hover{color:var(--accent);opacity:0.8;border-bottom-color:var(--accent);}
+    .article-body strong{color:var(--text);font-weight:500;}
+    .article-body em{font-style:italic;color:#999;}
+    .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.5rem;color:#bbb;}
+    .article-body li{font-size:0.95rem;line-height:1.75;margin-bottom:0.4rem;}
+    .article-body li strong{color:var(--text);}
+    .article-body blockquote{border-left:3px solid var(--accent);margin:2rem 0;padding:1rem 1.5rem;color:var(--muted);font-size:1rem;line-height:1.8;font-style:italic;}
+    .article-body figure{margin:2rem 0;}
+    .article-body figure img{width:100%;border-radius:12px;}
+    .article-body figcaption{font-size:0.72rem;color:#444;margin-top:0.6rem;font-style:italic;line-height:1.5;text-align:center;}
+    .article-body hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0;}
+    .article-body .gh-table{margin:1.5rem 0 2.5rem;overflow-x:auto;}
+    .article-body table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+    .article-body thead tr{border-bottom:1px solid var(--accent);}
+    .article-body thead th{padding:0.6rem 1rem;text-align:left;font-size:0.65rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);}
+    .article-body tbody tr{border-bottom:1px solid #1a1a1a;}
+    .article-body tbody td{padding:0.75rem 1rem;vertical-align:top;line-height:1.6;color:#bbb;font-size:0.88rem;}
+    .article-body tbody td:first-child{font-weight:500;color:var(--accent);font-size:0.85rem;}
+    .gh-stats{display:flex;gap:2rem;flex-wrap:wrap;margin:2rem 0;padding:1.5rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+    .gh-stat{display:flex;flex-direction:column;gap:0.2rem;}
+    .gh-stat-num{font-family:'Barlow Condensed',sans-serif;font-size:2.5rem;color:var(--accent);line-height:1;}
+    .gh-stat-label{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:#555;}
+    .article-bio{margin-top:1rem;font-size:0.88rem;color:#666;line-height:1.8;}
+    .article-bio a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);}
+    .article-bio strong{color:#bbb;}
+    .site-footer{background:var(--surface);border-top:1px solid var(--border);padding:4rem 0 2.5rem;margin-top:5rem;}
+    .footer-grid{display:grid;grid-template-columns:110px 1fr auto;gap:2.5rem;align-items:start;padding-bottom:2.5rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem;}
+    .footer-photo img{width:110px;height:auto;}
+    .footer-info h4{font-size:0.68rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;}
+    .footer-info p{font-size:0.9rem;color:var(--muted);margin-bottom:0.35rem;line-height:1.5;}
+    .footer-info a{color:var(--text);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;display:inline-block;margin-bottom:0.35rem;}
+    .footer-info a:hover{color:var(--accent);border-color:var(--accent);opacity:1;}
+    .footer-socials{display:flex;flex-direction:column;gap:0.9rem;align-items:flex-end;}
+    .footer-socials a{font-size:0.68rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);transition:color 0.2s;}
+    .footer-socials a:hover{color:var(--accent);opacity:1;}
+    .footer-base{display:flex;justify-content:space-between;align-items:center;}
+    .footer-base p{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:#444;}
+    .footer-tagline{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--accent);letter-spacing:0.04em;margin-bottom:2rem;padding-bottom:1.75rem;border-bottom:1px solid var(--border);}
+    .seo-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+    @media(max-width:768px){
+      .nav-toggle{display:flex;}
+      .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;padding:1.5rem 2rem;gap:1.5rem;}
+      .nav-links.open{display:flex;}
+      .footer-grid{grid-template-columns:1fr;gap:2rem;}
+      .footer-socials{align-items:flex-start;flex-direction:row;gap:1.5rem;}
+      .footer-base{flex-direction:column;gap:0.5rem;text-align:center;}.footer-tagline{font-size:1rem;}
+      .article-section{padding:3rem 0 4rem;}
+      .article-body tbody td:first-child{white-space:normal;}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Glenn Hanns",
+  "alternateName": "Glenn Hanns ACS",
+  "url": "https://glennhanns.com",
+  "image": "https://glennhanns.com/assets/glenn-hanns-acs.webp",
+  "jobTitle": ["Director","Cinematographer","Director of Photography"],
+  "description": "Award-winning Australian director and cinematographer. AFTRS Masters graduate, ACS accredited DOP based in Sydney specialising in feature drama, television and documentary.",
+  "knowsAbout": ["Cinematography","Direction","Director of Photography","Feature Film","Television Drama","Documentary","Music Video","Camera Operation","Lighting"],
+  "hasCredential": [
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Masters Degree","recognizedBy":{"@type":"Organization","name":"Australian Film Television and Radio School","alternateName":"AFTRS","url":"https://www.aftrs.edu.au"},"name":"Masters in Cinematography with High Achievement"},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"Professional Accreditation","recognizedBy":{"@type":"Organization","name":"Australian Cinematographers Society","alternateName":"ACS","url":"https://cinematographer.org.au"},"name":"ACS Accredited Cinematographer"}
+  ],
+  "award": [
+    "2023 Gold ACS Award NSW & ACT — Dramatised Documentaries (Ron Iddles)",
+    "2022 Award of Distinction ACS Nationals — Best Feature Film under $2m (Moon Rock For Monday)",
+    "2021 Gold ACS Award NSW & ACT — Feature Films under $2m (Moon Rock For Monday)",
+    "2019 Silver Logie — Most Outstanding Factual or Documentary Program (Ron Iddles)",
+    "2013 Bronze ACS Award NSW & ACT — Feature Films (Forbidden Ground)",
+    "2009 Gold ACS Award NSW & ACT — Music Clips (Birds of Tokyo)",
+    "2008 Golden Tadpole Nominee — Camerimage, Poland (Bleeders)"
+  ],
+  "address": {"@type":"PostalAddress","addressLocality":"Sydney","addressRegion":"NSW","addressCountry":"AU"},
+  "email": "glenn@glennhanns.com",
+  "telephone": "+61421667205",
+  "sameAs": [
+    "https://au.linkedin.com/in/glennhanns",
+    "https://www.instagram.com/glennhanns_ACS/",
+    "https://www.youtube.com/@GlennHanns/playlists",
+    "https://www.imdb.com/name/nm1771070/?ref_=ext_shr_lnk"
+  ],
+  "worksFor": {"@type":"Organization","name":"Glenn Hanns ACS Cinematography","url":"https://glennhanns.com"},
+  "nationality": {"@type":"Country","name":"Australia"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Glenn Hanns ACS — Director of Photography Sydney",
+  "url": "https://glennhanns.com",
+  "description": "Portfolio of Glenn Hanns ACS, Sydney-based Director of Photography and cinematographer specialising in feature drama, television, documentary and music video.",
+  "author": {"@type":"Person","name":"Glenn Hanns","alternateName":"Glenn Hanns ACS"},
+  "inLanguage": "en-AU",
+  "copyrightYear": "2026",
+  "copyrightHolder": {"@type":"Person","name":"Glenn Hanns"}
+}
+</script>
+
+  <link rel="canonical" href="https://glennhanns.com/blog/moon-rock-for-monday-cinematography.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Glenn Hanns ACS" />
+  <meta property="og:url" content="https://glennhanns.com/blog/moon-rock-for-monday-cinematography.html" />
+  <meta property="og:title" content="Moon Rock For Monday — Cinematography Breakdown — Glenn Hanns ACS" />
+  <meta property="og:description" content="How Glenn Hanns ACS shot Moon Rock For Monday on ARRI Alexa Mini with Cooke S4 glass — outback nights, extreme depth of field, and a Gold ACS Award." />
+  <meta property="og:image" content="https://glennhanns.com/assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_1.webp" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Moon Rock For Monday — Cinematography Breakdown — Glenn Hanns ACS" />
+  <meta name="twitter:description" content="How Glenn Hanns ACS shot Moon Rock For Monday on ARRI Alexa Mini with Cooke S4 glass — outback nights, extreme depth of field, and a Gold ACS Award." />
+  <meta name="twitter:image" content="https://glennhanns.com/assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_1.webp" />
+</head>
+<body>
+<h1 class="seo-h1">Moon Rock For Monday &#8212; Cinematography Breakdown &#8212; Glenn Hanns ACS</h1>
+
+<nav class="site-nav">
+  <div class="nav-inner" style="position:relative;">
+    <a class="nav-logo" href="/"><img src="/assets/images/glennlogotran.png" alt="Glenn Hanns ACS" /></a>
+    <a class="nav-centre-logo" href="/" style="position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;"><img src="/assets/images/glenn-hanns-acs-cinematography.png" alt="Glenn Hanns ACS Cinematography" style="height:38px;width:auto;"/></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Work</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog.html" class="active">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="site-content">
+  <article class="article-section">
+    <div class="article-inner">
+
+      <a class="back-link" href="/blog.html">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All articles
+      </a>
+
+      <header>
+        <p class="article-label">Feature Film</p>
+        <h2 class="article-title">Crafting an Outback Odyssey: The Cinematography of Moon Rock For Monday</h2>
+        <p class="article-subtitle">Glenn Hanns ACS &nbsp;&#183;&nbsp; 2020</p>
+      </header>
+
+      <div class="article-body">
+
+        <p>There is an old saying among directors of photography that the environment is your most unpredictable character &#8212; especially when you step out of the studio and into the vast expanse of the Australian outback. Capturing that endless horizon while maintaining a deeply intimate connection between your actors is a tightrope walk.</p>
+
+        <p>On the award-winning feature <a href="/#moon-rock">Moon Rock For Monday</a>, I teamed up with long-time creative collaborator <a href="https://www.imdb.com/name/nm1974504/" target="_blank" rel="noopener">Kurt Martin</a> to do exactly that. The film &#8212; which follows an unlikely alliance between a young girl and a fugitive teenager chasing a healing moon rock &#8212; picked up a <a href="https://cinematographer.org.au/" target="_blank" rel="noopener">Gold Award at the ACS NSW &amp; ACT Awards</a> in 2021, followed by an Award of Distinction at the National ACS Awards in 2022, and an <a href="https://www.aacta.org/" target="_blank" rel="noopener">AACTA</a> nomination for Best Cinematography.</p>
+
+        <div class="gh-stats">
+          <div class="gh-stat">
+            <span class="gh-stat-num">2</span>
+            <span class="gh-stat-label">ACS Awards</span>
+          </div>
+          <div class="gh-stat">
+            <span class="gh-stat-num">13</span>
+            <span class="gh-stat-label">Festival screenings</span>
+          </div>
+          <div class="gh-stat">
+            <span class="gh-stat-num">2.35</span>
+            <span class="gh-stat-label">Aspect ratio</span>
+          </div>
+          <div class="gh-stat">
+            <span class="gh-stat-num">T1.4</span>
+            <span class="gh-stat-label">Minimum aperture used</span>
+          </div>
+        </div>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_5.webp" alt="On set Moon Rock For Monday &#8212; DOP Glenn Hanns ACS" />
+          <figcaption>Moon Rock For Monday (2020) &#8212; directed by Kurt Martin, cinematography by Glenn Hanns ACS</figcaption>
+        </figure>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_18.webp" alt="Still from Moon Rock For Monday &#8212; DOP Glenn Hanns ACS" />
+          <figcaption>Moon Rock For Monday (2020) &#8212; directed by Kurt Martin, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <h3>The Canvas: Formats, Crops, and the Cooke Look</h3>
+
+        <p>When shooting a road-trip narrative through wide landscapes, the instinct might be to reach for traditional anamorphic glass. For this project however, I opted for a calculated structural approach: capturing in 4K UHD on the <a href="https://www.arri.com/" target="_blank" rel="noopener noreferrer">ARRI Alexa Mini</a> and implementing a hard 2.35:1 anamorphic crop in post-production.</p>
+
+        <p>The camera choice provided that coveted, organic Alexa sensor roll-off, but the real magic lay in the lens selection. I paired the sensor with a classic set of <a href="https://www.cookeoptics.com/" target="_blank" rel="noopener noreferrer">Cooke S4 prime lenses</a>. While modern lenses can sometimes feel clinically sharp, Cooke glass is legendary for its roundness, gentle skin rendering, and a smooth, cinematic bokeh roll-off. This ensured that despite the harsh, unforgiving nature of the desert location, the texturing of human faces remained soft, organic, and grounded in emotional truth.</p>
+
+        <h3>Manipulating Depth: Creating an Otherworldly Space</h3>
+
+        <p>One of the standout achievements of the film is how it transitions into the stylised, dreamscape quality required for the moon-scape sequences. To achieve an ethereal feel under the bright Australian sun, I utilised a technique that demands serious precision on set &#8212; stacking heavy external neutral density filters on top of the Alexa Mini&#8217;s internal ND system, stripping away stops of light to force the lens wide open to an ultra-shallow T1.4.</p>
+
+        <blockquote>Stacking ND filters allows the operator to maintain a cinematic shutter angle while opening the aperture completely, compressing the depth of field to mere millimetres in broad daylight.</blockquote>
+
+        <p>This dramatic depth compression served a dual narrative purpose:</p>
+
+        <ul>
+          <li><strong>Isolation</strong> &#8212; It physically isolated the children and the moon rock from their surroundings, creating a private world within the vast landscape.</li>
+          <li><strong>Spatial Tension</strong> &#8212; Using the widest Cooke S4 at T1.4 exaggerated the immense scale and emptiness of the background while keeping the leads intimately framed in sharp relief against a creamy, impressionistic fall-off.</li>
+        </ul>
+
+        <p>For the disorienting car accident flashbacks, I pivoted to a <a href="https://lensbaby.com/" target="_blank" rel="noopener noreferrer">Lensbaby</a> optic, combining it with an off-speed frame rate of 30fps played back at the standard 24fps. This subtle overcranking created a slightly slowed, glitchy temporal sensation &#8212; mirroring the fractured nature of memory and trauma.</p>
+
+        <h3>Lighting the Outback Night</h3>
+
+        <p>Night exteriors in remote areas present a classic cinematographer&#8217;s paradox: how do you light the darkness without making it look artificially lit?</p>
+
+        <figure style="position:relative;overflow:hidden;">
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_52.webp" alt="Ashlyn Louden-Gamble stars in Moon Rock For Monday &#8212; DOP Glenn Hanns ACS" />
+
+          <figcaption>Moon Rock For Monday (2020) &#8212; on location, outback Australia. Directed by Kurt Martin.</figcaption>
+        </figure>
+
+        <p>The solution combined massive scale with practical intimacy. For the overhead ambient key, I floated a 4K helium lighting balloon at maximum height. Dimmed down significantly, it cast a faint, cool, moonlight-mimicking wash across the desert floor. The trick was to bring the HMI fill down to our main key fire level by 2 stops &#8212; creating a natural balance between ambient and source.</p>
+
+        <p>To contrast this cool overhead ambient, a real campfire provided warm interactive tones on the actors&#8217; faces. To gain absolute exposure control without sacrificing the unpredictable texture of live fire, the team augmented the campfire with a custom gas rig burning underneath actual wood logs &#8212; giving us the ability to dial the flame height instantly while maintaining complete visual authenticity. The complex starfields were shot as clean, static plates on location and seamlessly composited in post-production.</p>
+
+        <div class="gh-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Setup</th>
+                <th>Source</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Overhead Key</td>
+                <td>4K helium balloon, dimmed</td>
+                <td>Cool moonlight wash across desert floor</td>
+              </tr>
+              <tr>
+                <td>Interactive Fill</td>
+                <td>Gas-augmented campfire under real logs</td>
+                <td>Warm, controllable face light with authentic texture</td>
+              </tr>
+              <tr>
+                <td>Background</td>
+                <td>Static star plates composited in post</td>
+                <td>Clean, uncompromised night sky</td>
+              </tr>
+              <tr>
+                <td>Day scenes</td>
+                <td>Heavy overhead silk skims</td>
+                <td>Softened harsh midday Australian sun on exteriors</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure>
+          <img loading="lazy" src="/assets/images/Glenn_Hanns_ACS_DOP_44.webp" alt="George Pullar and Ashlyn Louden-Gamble driving &#8212; DOP Glenn Hanns ACS" />
+          <figcaption>Moon Rock For Monday (2020) &#8212; directed by Kurt Martin, cinematography by Glenn Hanns ACS.</figcaption>
+        </figure>
+
+        <h3>The Director&#8211;Cinematographer Partnership</h3>
+
+        <p>Behind every great visual style is a functional creative partnership. My shorthand with <a href="https://www.imdb.com/name/nm1974504/" target="_blank" rel="noopener">Kurt Martin</a> spans several projects including short films <em>Narcititis</em> and <em>The Briefcase</em> for <a href="https://www.imdb.com/company/co0432357/" target="_blank" rel="noopener">Lunar Pictures</a>. Kurt and I first crossed paths through a mutual friend, and the partnership clicked instantly &#8212; same sense of humour, same shortlist of director&#8211;cinematographer pairings we&#8217;d both been quietly obsessed with for years.</p>
+
+        <p>Kurt is a strongly visual director but likes to hand over the keys early, preferring to see what I bring before he commits to a look. On Moon Rock For Monday that meant multiple scouts of the outback to find the right country, time of day and shoot schedule. Filming there in the warmer months pushed temperatures to the extreme &#8212; so we structured most days around controlled interiors at midday and used heavy overhead skims to soften the high sun on exteriors.</p>
+
+        <blockquote>What I love about working with Kurt is the room he leaves for the process. Giving him space to discover things on set keeps him responsive to the environment and to the actors &#8212; and he&#8217;s exceptional at both.</blockquote>
+
+        <p>He&#8217;s particularly gifted at reading people: at seeing what holds true for a performer and chasing it. That means the camera has to stay flexible and ready to follow rather than dictate. His willingness to be led by the room, and mine to be led by him, is what makes the work feel honest.</p>
+
+        <h3>Awards &amp; Recognition</h3>
+
+        <ul>
+          <li><a href="https://cinematographer.org.au/" target="_blank" rel="noopener">ACS Gold Award NSW &amp; ACT</a> &#8212; Feature Films under $2m, 2021</li>
+          <li><a href="https://cinematographer.org.au/" target="_blank" rel="noopener">ACS Award of Distinction National</a> &#8212; Best Feature Film under $2m, 2022</li>
+          <li><a href="https://www.aacta.org/" target="_blank" rel="noopener">AACTA Nomination</a> &#8212; Best Cinematography, 2021</li>
+          <li><a href="https://ff-schlingel.de/" target="_blank" rel="noopener">Schlingel Film Festival</a> (Germany) &#8212; SLM Top Award, Best International Feature Film, 2020</li>
+          <li>ASIN Award &#8212; Best Feature Film, 2020</li>
+          <li><a href="https://zff.com/" target="_blank" rel="noopener">Zurich Film Festival</a> (Switzerland)</li>
+          <li><a href="https://www.bjiff.com/" target="_blank" rel="noopener">Beijing International Film Festival</a> (China)</li>
+          <li><a href="https://adelaidefilmfestival.org/" target="_blank" rel="noopener">Adelaide Film Festival</a> (Australia)</li>
+        </ul>
+        <p><em>8 wins &amp; 28 nominations total — <a href="https://www.imdb.com/title/tt10555232/awards/" target="_blank" rel="noopener">full list on IMDb</a>.</em></p>
+
+        <p>The film received worldwide digital distribution through <a href="https://www.netflix.com/" target="_blank" rel="noopener noreferrer">Netflix</a>, <a href="https://www.amazon.com.au/primevideo" target="_blank" rel="noopener noreferrer">Amazon Prime</a>, Apple TV, Foxtel, ABC and SBS.</p>
+
+        <hr>
+
+        <p class="article-bio"><a href="/about.html"><strong>Glenn Hanns ACS</strong></a> is a Sydney-based Director of Photography specialising in feature drama, television and documentary. <a href="/">View the full portfolio</a>, read more on <a href="/blog/what-does-a-feature-film-cinematographer-do.html">what a feature film cinematographer does</a>, or get in touch via the contact details below.</p>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="page-width">
+    <div class="footer-tagline">Visual authorship from prep to grade</div>
+<div class="footer-grid">
+      <div class="footer-photo"><img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" /></div>
+      <div class="footer-info">
+        <h4>Get in touch</h4>
+        <p>Glenn Hanns ACS &#8212; Director of Photography</p>
+        <p>Sydney, NSW &#8212; Available across Australia and internationally</p>
+        <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
+        <a href="tel:+610421667205">+61 421 667 205</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&#169; 2026 Glenn Hanns ACS</p>
+      <p>Director of Photography &#8212; Sydney</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
