@@ -1065,7 +1065,7 @@ title: 'Persons of Interest',
 year: '2013',
 cat: 'Doco',
 dir: 'Haydn Keenan',
-vimeoId: '73766107',
+vimeoId: '1202385829',
 vimeoStart: 0,
 cover: '',
 desc: 'Persons of Interest is an acclaimed Australian documentary miniseries produced by Smart Street Films that aired on SBS. The four-part series explores covert ASIO operations during the Cold War, tracking the secret surveillance of Australian citizens targeted for left-wing, communist, or activist sympathies — and follows the stories of individuals caught up in Australia\'s post-9/11 counter-terrorism dragnet. The show gives notable Australians — including unionists, writers, and Aboriginal rights advocates — access to their previously classified intelligence files, asking them to respond to the allegations and revealing the personal impact of government surveillance and the “dirty war” waged against political dissent. Winner of the Walkley Award for Outstanding Journalism and the FCCA Award for Best Feature Documentary. Also screened at the <a href="https://miff.com.au/festival-archive/year/2013" target="_blank" rel="noopener">Melbourne International Film Festival 2013</a>.<br><br>“There is one kind of history they teach you in school and another which tells how things really happened. ASIO’s files reveal how things really happened in Australia. Since 1949, ASIO has opened files on over 500,000 citizens. Today, these records are a unique dossier of dissent and a treasure trove of surveillance movie film and photographs.”<br><br>In <em>Persons of Interest</em>, director Haydn Keenan confronts four persons of interest with the allegations contained in their previously secret ASIO files. This session features <em>Roger Milliss: The Serpent’s Tooth</em>, telling the story of Communist author Milliss and his family as their lives and careers are blighted over two generations by ASIO; and <em>Michael Hyde: All Watched Over by Machines of Loving Grace</em>, telling the story of the chairman of the Monash Labor Club, one of Australia’s most radical student activists of the 1960s.',
@@ -1416,7 +1416,7 @@ function buildSwiper() {
 const sw = document.getElementById('proj-swiper');
 sw.innerHTML = projects.map((p, i) => `
 <div class="proj-slide" data-i="${i}" style="opacity:${i===0?1:0.35};transform:scale(${i===0?1:0.97})">
-<iframe class="vframe" src="" allow="autoplay;fullscreen;picture-in-picture" allowfullscreen></iframe>
+<iframe class="vframe" src="" allow="autoplay; fullscreen; picture-in-picture; xr-spatial-tracking" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
 <img class="slide-cover" src="${makeCoverSVG(i)}" alt="${p.title}" />
 <img class="still-preview" src="" alt="Still from ${p.title}" />
 <div class="play-overlay"><div class="play-overlay-btn"></div></div>
@@ -1487,7 +1487,7 @@ if (still) { still.style.display = 'none'; still.src = ''; }
 if (p.youtubeId) {
 fr.src = 'https://www.youtube.com/embed/' + p.youtubeId + '?color=white&modestbranding=1&rel=0';
 } else if (p.vimeoId) {
-fr.src = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
+fr.src = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0&fullscreen=1' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
 }
 fr.style.display = 'block';
 fr.setAttribute('data-loaded', '1');
@@ -1512,7 +1512,7 @@ cov.style.display = 'none';
 if (overlay) { overlay.classList.remove('visible'); cov.removeAttribute('data-poster'); cov.onclick = null; }
 } else if (p.vimeoId && p.cover) {
 // Poster mode — show cover, load video on click
-const vimeoSrc = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0&autoplay=1' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
+const vimeoSrc = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0&fullscreen=1&fullscreen=1&autoplay=1' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
 cov.src = p.cover;
 cov.style.display = 'block';
 cov.setAttribute('data-poster', 'true');
@@ -1530,7 +1530,7 @@ cov.onclick = null;
 if (overlay) overlay.classList.remove('visible');
 };
 } else if (p.vimeoId) {
-fr.src = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
+fr.src = 'https://player.vimeo.com/video/' + p.vimeoId + (p.vimeoHash ? '?h=' + p.vimeoHash + '&' : '?') + 'color=ff6600&title=0&byline=0&portrait=0&fullscreen=1' + (p.vimeoStart ? '#t=' + p.vimeoStart + 's' : '');
 fr.style.display = 'block';
 fr.setAttribute('data-loaded', '1');
 cov.style.display = 'none';
