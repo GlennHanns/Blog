@@ -141,6 +141,8 @@
         color: #fff;
         opacity: 1;
     }
+    .nav-contact-btn { background: none; border: none; padding: 0; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #666; cursor: pointer; font-family: inherit; transition: color 0.2s; }
+    .nav-contact-btn:hover { color: #fff; }
 
     .nav-toggle {
         display: none;
@@ -567,6 +569,7 @@ border-bottom: 1px solid var(--border);
                 <li>
                     <a href="/blog.html" class="active">Blog</a>
                 </li>
+                <li><button class="nav-contact-btn" onclick="document.getElementById('contactModal').classList.add('open')">Contact</button></li>
             </ul>
         </div>
     </nav>

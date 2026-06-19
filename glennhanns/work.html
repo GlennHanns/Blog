@@ -82,6 +82,8 @@ color: #666;
 transition: color 0.2s;
 }
 .nav-links a:hover, .nav-links a.active { color: #fff; opacity: 1; }
+    .nav-contact-btn { background: none; border: none; padding: 0; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #666; cursor: pointer; font-family: inherit; transition: color 0.2s; }
+    .nav-contact-btn:hover { color: #fff; }
 .nav-toggle {
 display: none;
 flex-direction: column;
@@ -687,7 +689,8 @@ onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open'
 <li><a href="/work#work" class="active">Work</a></li>
 <li><a href="/">About</a></li>
 <li><a href="/blog.html">Blog</a></li>
-</ul>
+                <li><button class="nav-contact-btn" onclick="document.getElementById('contactModal').classList.add('open')">Contact</button></li>
+            </ul>
 </div>
 </nav>
 
