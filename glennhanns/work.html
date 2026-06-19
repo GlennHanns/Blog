@@ -1984,6 +1984,11 @@ section.style.display = 'none';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+const hash = window.location.hash.replace('#','');
+if (hash) {
+    const idx = projects.findIndex(p => p.id === hash);
+    if (idx > 0) setTimeout(() => navTo(idx), 100);
+}
 document.getElementById('still-prev').addEventListener('click', () => {
 const newIdx = (currentStillIndex - 1 + currentStillImages.length) % currentStillImages.length;
 showStill(newIdx);
