@@ -112,11 +112,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"></noscript>
 
   <style>
-    :root{--bg:#0a0a0a;--surface:#111111;--border:#1e1e1e;--accent:#F58535;--text:#ffffff;--muted:#9A9A9A;--max-width:1200px;--article-width:740px;--nav-h:68px;}
+    :root{--bg:#0a0a0a;--surface:#111111;--border:#1e1e1e;--accent:#F58535;--text:#ffffff;--muted:#888888;--max-width:1200px;--article-width:740px;--nav-h:68px;}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
     html{scroll-behavior:smooth;}
     body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:1rem;line-height:1.75;-webkit-font-smoothing:antialiased;}
@@ -126,40 +126,46 @@
     a:hover{opacity:0.8;}
     .page-width{max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
     .site-nav{position:fixed;top:3px;left:0;right:0;height:var(--nav-h);background:rgba(10,10,10,0.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:1000;}
-    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--max-width);margin:0 auto;padding:0 2rem;}
-    .nav-logo img{height:46px;width:auto;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--max-width);margin:0 auto;padding:0 2rem;position:relative;}
+    .nav-logo img{height:38px;width:auto;}
+    .nav-centre-logo{display:none;}
     .nav-links{display:flex;gap:2.5rem;list-style:none;}
-    .nav-links a{font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#666;transition:color 0.2s;}
+    .nav-links a{font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#9A9A9A;transition:color 0.2s;}
     .nav-links a:hover,.nav-links a.active{color:#fff;opacity:1;}
-    .nav-links button.nav-contact-btn{font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#666;background:none;border:none;cursor:pointer;padding:0;transition:color 0.2s;font-family:'DM Sans',sans-serif;}
-    .nav-links button.nav-contact-btn:hover{color:#fff;}
+    .nav-contact-btn{background:none;border:none;padding:0;font-size:0.7rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#9A9A9A;cursor:pointer;font-family:inherit;transition:color 0.2s;}
+    .nav-contact-btn:hover{color:#fff;}
     .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:0.5rem;}
     .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:1px;}
     .site-content{padding-top:calc(var(--nav-h) + 3px);}
     .article-section{padding:4rem 0 6rem;}
     .article-inner{max-width:var(--article-width);margin:0 auto;padding:0 2rem;}
-    .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:#444;margin-bottom:2.5rem;transition:color 0.2s;}
+    .back-link{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:#9A9A9A;margin-bottom:2.5rem;transition:color 0.2s;}
     .back-link:hover{color:var(--accent);opacity:1;}
     .article-label{font-size:0.55rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem;}
-    .article-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:0.04em;color:var(--text);line-height:1.05;margin-bottom:0.5rem;}
-    .article-subtitle{font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:#555;margin-bottom:2.5rem;}
+    .article-title{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:0.06em;color:var(--text);line-height:1.05;text-transform:uppercase;margin-bottom:0.5rem;}
+    .article-subtitle{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:#9A9A9A;margin-bottom:2.5rem;}
     .article-body p{font-size:0.95rem;color:#bbb;line-height:1.85;margin-bottom:1.4rem;}
-    .article-body h3{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.2rem,2vw,1.7rem);letter-spacing:0.04em;color:var(--accent);line-height:1.1;margin:2rem 0 0.75rem;}
-    .article-body h4{font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#555;margin:1.75rem 0 0.6rem;}
-    .article-body a{color:var(--accent);border-bottom:1px solid rgba(245,133,53,0.3);transition:border-color 0.2s,color 0.2s;}
+    .article-body h3{font-weight:300;font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.2rem,2vw,1.7rem);letter-spacing:0.06em;color:var(--accent);line-height:1.1;text-transform:uppercase;margin:2rem 0 0.75rem;}
+    .article-body h4{font-size:0.68rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#9A9A9A;margin:1.75rem 0 0.6rem;}
+    .article-body a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);transition:border-color 0.2s,color 0.2s;}
     .article-body a:hover{color:var(--accent);opacity:0.8;border-bottom-color:var(--accent);}
     .article-body strong{color:var(--text);font-weight:500;}
     .article-body em{font-style:italic;color:#999;}
     .article-body ul,.article-body ol{padding-left:1.5rem;margin-bottom:1.5rem;color:#bbb;}
-    .article-body li{font-size:0.95rem;line-height:1.75;margin-bottom:0.4rem;}
+    .article-body li{font-size:0.95rem;line-height:1.75;margin-bottom:0.5rem;}
+    .article-body li strong{color:var(--text);}
     .article-body blockquote{border-left:3px solid var(--accent);margin:2rem 0;padding:1rem 1.5rem;color:var(--muted);font-size:1rem;line-height:1.8;font-style:italic;}
+    .article-body figure{margin:2rem 0;}
+    .article-body figure img{width:100%;border-radius:12px;}
+    .article-body figcaption{font-size:0.72rem;color:#9A9A9A;margin-top:0.6rem;font-style:italic;line-height:1.5;text-align:center;}
     .article-body hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0;}
     .article-bio{margin-top:1rem;font-size:0.88rem;color:#666;line-height:1.8;}
-    .article-bio a{color:var(--accent);border-bottom:1px solid rgba(245,133,53,0.3);}
+    .article-bio a{color:var(--accent);border-bottom:1px solid rgba(255,102,0,0.3);}
     .article-bio strong{color:#bbb;}
     .site-footer{background:var(--surface);border-top:1px solid var(--border);padding:4rem 0 2.5rem;margin-top:5rem;}
+    .footer-tagline{font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:1.4rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);margin-bottom:2rem;padding-bottom:1.75rem;border-bottom:1px solid var(--border);}
     .footer-grid{display:grid;grid-template-columns:110px 1fr auto;gap:2.5rem;align-items:start;padding-bottom:2.5rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem;}
-    .footer-photo img{width:110px;height:auto;border-radius:4px;}
+    .footer-photo img{width:110px;height:auto;}
     .footer-info h4{font-size:0.68rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;}
     .footer-info p{font-size:0.9rem;color:var(--muted);margin-bottom:0.35rem;line-height:1.5;}
     .footer-info a{color:var(--text);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;display:inline-block;margin-bottom:0.35rem;}
@@ -168,7 +174,7 @@
     .footer-socials a{font-size:0.68rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);transition:color 0.2s;text-decoration:underline;text-underline-offset:3px;}
     .footer-socials a:hover{color:var(--accent);opacity:1;}
     .footer-base{display:flex;justify-content:space-between;align-items:center;}
-    .footer-base p{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:#444;}
+    .footer-base p{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:#9A9A9A;}
     .seo-h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
     /* Contact modal */
     .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:2000;align-items:center;justify-content:center;}
@@ -176,7 +182,7 @@
     .modal-box{background:#111;border:1px solid var(--border);padding:2.5rem;max-width:480px;width:90%;position:relative;}
     .modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:#666;font-size:1.4rem;cursor:pointer;line-height:1;}
     .modal-close:hover{color:#fff;}
-    .modal-box h3{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:0.06em;margin-bottom:1.25rem;}
+    .modal-box h3{font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:2rem;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem;}
     .modal-box p{font-size:0.9rem;color:#bbb;margin-bottom:0.5rem;}
     .modal-box a{color:var(--accent);font-size:0.95rem;text-decoration:underline;text-underline-offset:3px;}
     @media(max-width:768px){
@@ -186,6 +192,7 @@
       .footer-grid{grid-template-columns:1fr;gap:2rem;}
       .footer-socials{align-items:flex-start;flex-direction:row;gap:1.5rem;}
       .footer-base{flex-direction:column;gap:0.5rem;text-align:center;}
+      .footer-tagline{font-size:1rem;}
       .article-section{padding:3rem 0 4rem;}
     }
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;}}
@@ -197,13 +204,13 @@
 
 <nav class="site-nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="/"><img src="/assets/images/glenn-hanns-acs-cinematography.webp" alt="Glenn Hanns ACS" width="297" height="76" fetchpriority="high"></a>
+    <a class="nav-logo" href="/"><img src="/assets/images/glenn-hanns-acs-cinematography.webp" alt="Glenn Hanns ACS" style="height:38px;width:auto;" width="297" height="76" fetchpriority="high" /></a>
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/">Work</a></li>
+      <li><a href="/work">Work</a></li>
+      <li><a href="/">About</a></li>
       <li><a href="/blog.html" class="active">Blog</a></li>
       <li><button class="nav-contact-btn" onclick="document.getElementById('contactModal').classList.add('open')">Contact</button></li>
     </ul>
@@ -244,8 +251,8 @@
         <p>A cinematographer is not only designing images. They&#8217;re assessing how those images can be achieved within the production model in front of them. That includes the budget range, the number of shoot days, likely locations, studio versus practical environments, day-night balance, and the level of support expected from grip, lighting, and camera teams. If those realities are vague, the brief tends to become aspirational in the wrong way.</p>
 
         <figure style="margin:2rem 0 2.5rem;">
-          <img src="/assets/images/Glenn_Hanns_ACS_DOP_50.webp" alt="Glenn Hanns ACS — Ron Iddles: The Good Cop" style="width:100%;border-radius:4px;" loading="lazy">
-          <figcaption style="font-size:0.75rem;color:#555;margin-top:0.6rem;letter-spacing:0.04em;"><em>Ron Iddles: The Good Cop</em> &#8212; directed by John Mavety</figcaption>
+          <img src="/assets/images/Glenn_Hanns_ACS_DOP_50.webp" alt="Glenn Hanns ACS — Ron Iddles: The Good Cop" style="width:100%;border-radius:12px;" loading="lazy">
+          <figcaption style="font-size:0.72rem;color:#9A9A9A;margin-top:0.6rem;font-style:italic;line-height:1.5;text-align:center;"><em>Ron Iddles: The Good Cop</em> &#8212; directed by John Mavety</figcaption>
         </figure>
 
         <h3>References help when you explain them</h3>
@@ -259,8 +266,8 @@
         <blockquote>A strong brief isolates the reason for each reference. One film may be there for night exterior treatment, another for lensing, another for the way it handles skin tone in mixed colour temperatures.</blockquote>
 
         <figure style="margin:2rem 0 2.5rem;">
-          <img src="/assets/images/Glenn_Hanns_ACS_DOP_36.webp" alt="Glenn Hanns ACS — Born Lion: Good Dogs Play Dead music video" style="width:100%;border-radius:4px;" loading="lazy">
-          <figcaption style="font-size:0.75rem;color:#555;margin-top:0.6rem;letter-spacing:0.04em;"><em>Good Dogs Play Dead</em> &#8212; Born Lion (music video)</figcaption>
+          <img src="/assets/images/Glenn_Hanns_ACS_DOP_36.webp" alt="Glenn Hanns ACS — Born Lion: Good Dogs Play Dead music video" style="width:100%;border-radius:12px;" loading="lazy">
+          <figcaption style="font-size:0.72rem;color:#9A9A9A;margin-top:0.6rem;font-style:italic;line-height:1.5;text-align:center;"><em>Good Dogs Play Dead</em> &#8212; Born Lion (music video)</figcaption>
         </figure>
 
         <h3>The visual framework is a storytelling tool</h3>
@@ -326,9 +333,10 @@
 
 <footer class="site-footer">
   <div class="page-width">
+    <div class="footer-tagline">Visual authorship from prep to grade</div>
     <div class="footer-grid">
       <div class="footer-photo">
-        <img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" width="110" height="110" loading="lazy">
+        <img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" loading="lazy" />
       </div>
       <div class="footer-info">
         <h4>Get in touch</h4>
