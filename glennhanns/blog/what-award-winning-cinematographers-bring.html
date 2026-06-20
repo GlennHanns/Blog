@@ -12,7 +12,7 @@
   [ ] Back link to /blog.html
   [ ] All figures: real src paths, descriptive alt text
   [ ] article-bio: name /about, portfolio /, 2x internal blog links, contact sign-off
-  [ ] Nav: glennlogotran.webp left + centre wordmark + nav-links
+  [ ] Nav: glenn-hanns-acs-cinematography.webp left + nav-links
   AFTER PUBLISHING:
   [ ] sitemap.xml  [ ] blog.html card  [ ] index.html carousel if featured
   ============================================================ -->
@@ -21,11 +21,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What Award Winning Cinematographers Bring — Glenn Hanns ACS</title>
-    <meta name="description" content="For directors and producers, industry recognition confirms a track record of judgement, consistency and authorship in a cinematographer.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+    <title>What Award Winning Cinematographers Bring &#8212; Glenn Hanns ACS</title>
+    <meta name="description" content="For directors and producers, industry recognition confirms a track record of judgement, consistency and authorship in a cinematographer."><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
     <style>
     :root {
         --bg: #0a0a0a;
@@ -48,7 +45,8 @@
     .page-width { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem; }
     .site-nav { position: fixed; top: 3px; left: 0; right: 0; height: var(--nav-h); background: rgba(10,10,10,0.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); z-index: 1000; }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 2rem; }
-    .nav-logo img { height: 46px; width: auto; }
+    .nav-logo img { height:38px; width: auto; }
+    .nav-centre-logo{display:none;}
     .nav-links { display: flex; gap: 2.5rem; list-style: none; }
     .nav-links a { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #9A9A9A; transition: color 0.2s; }
     .nav-links a:hover, .nav-links a.active { color: #fff; opacity: 1; }
@@ -100,7 +98,7 @@
     .footer-base { display: flex; justify-content: space-between; align-items: center; }
     .footer-base p { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: #9A9A9A; }
 .footer-tagline {
-font-family: 'Bebas Neue', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
 font-size: 1.4rem;
 color: var(--accent);
 letter-spacing: 0.04em;
@@ -120,7 +118,18 @@ border-bottom: 1px solid var(--border);
         .article-section { padding: 3rem 0 4rem; }
     }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
-    </style>
+        /* Contact modal */
+    .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:2000;align-items:center;justify-content:center;}
+    .modal-overlay.open{display:flex;}
+    .modal-box{background:#111;border:1px solid var(--border);padding:2.5rem;max-width:480px;width:90%;position:relative;}
+    .modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:#666;font-size:1.4rem;cursor:pointer;line-height:1;}
+    .modal-close:hover{color:#fff;}
+    .modal-box h3{font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:2rem;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem;}
+    .modal-box p{font-size:0.9rem;color:#bbb;margin-bottom:0.5rem;}
+    .modal-box a{color:var(--accent);font-size:0.95rem;text-decoration:underline;text-underline-offset:3px;}
+      .footer-contact-btn{background:none;border:none;padding:0;font-size:0.68rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);cursor:pointer;font-family:inherit;transition:color 0.2s;margin-bottom:0.75rem;display:block;}
+    .footer-contact-btn:hover{opacity:0.8;}
+  </style>
 
 
   <link rel="canonical" href="https://glennhanns.com/blog/what-award-winning-cinematographers-bring.html" />
@@ -129,12 +138,12 @@ border-bottom: 1px solid var(--border);
   <meta property="og:url" content="https://glennhanns.com/blog/what-award-winning-cinematographers-bring.html" />
   <meta property="og:title" content="What Award Winning Cinematographers Bring — Glenn Hanns ACS" />
   <meta property="og:description" content="For directors and producers, industry recognition confirms a track record of judgement, consistency and authorship in a cinematographer." />
-  <meta property="og:image" content="https://glennhanns.com/assets/glenn-hanns-acs.webp" />
+  <meta property="og:image" content="https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_52.webp" />
   <meta property="og:locale" content="en_AU" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="What Award Winning Cinematographers Bring — Glenn Hanns ACS" />
   <meta name="twitter:description" content="For directors and producers, industry recognition confirms a track record of judgement, consistency and authorship in a cinematographer." />
-  <meta name="twitter:image" content="https://glennhanns.com/assets/glenn-hanns-acs.webp" />
+  <meta name="twitter:image" content="https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_52.webp" />
 
   <script type="application/ld+json">
   {
@@ -262,7 +271,7 @@ border-bottom: 1px solid var(--border);
       "description": "For directors and producers, industry recognition confirms a track record of judgement, consistency and authorship in a cinematographer.",
       "image": {
         "@type": "ImageObject",
-        "url": "https://glennhanns.com/assets/glenn-hanns-acs.webp"
+        "url": "https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_52.webp"
       },
       "url": "https://glennhanns.com/blog/what-award-winning-cinematographers-bring.html",
       "datePublished": "2025-11-15",
@@ -294,6 +303,10 @@ border-bottom: 1px solid var(--border);
   ]
 }
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"></noscript>
 </head>
 <body>
 
@@ -318,7 +331,7 @@ border-bottom: 1px solid var(--border);
         <article class="article-section">
             <div class="article-inner">
 
-                <a class='back-link' href='/blog'>
+                <a class="back-link" href="/blog.html">
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                         <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -396,34 +409,52 @@ border-bottom: 1px solid var(--border);
                 </div>
             </div>
         </article>
+          <a class="back-link" href="/blog.html" style="margin-top:2.5rem;margin-bottom:0;">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All articles
+      </a>
     </main>
 
     <footer class="site-footer">
-        <div class="page-width">
-            <div class="footer-tagline">Visual authorship from prep to grade</div>
-<div class="footer-grid">
-                <div class="footer-photo">
-                    <img src="/assets/images/glenn-hanns-acs-cinematography.webp" alt="Glenn Hanns ACS &#8212; Director of Photography" width="297" height="76"/>
-                </div>
-                <div class="footer-info">
-                    <h4>Get in touch</h4>
-                    <p>Glenn Hanns ACS &#8212; Director of Photography</p>
-                    <p>Sydney, NSW &#8212; Available across Australia and internationally</p>
-                    <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
-                    <a href="tel:+610421667205">+61 421 667 205</a>
-                </div>
-                <div class="footer-socials">
-                    <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://www.imdb.com/name/nm1771070/" target="_blank" rel="noopener noreferrer">IMDb</a>
-                </div>
-            </div>
-            <div class="footer-base">
-                <p>&#169; 2026 Glenn Hanns ACS</p>
-                <p>Director of Photography &#8212; Sydney</p>
-            </div>
-        </div>
-    </footer>
+  <div class="page-width">
+    <div class="footer-tagline">Visual authorship from prep to grade</div>
+    <div class="footer-grid">
+      <div class="footer-photo">
+        <img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" loading="lazy" />
+      </div>
+      <div class="footer-info">
+        <button class="footer-contact-btn" onclick="document.getElementById('contactModal').classList.add('open')">Get in touch</button>
+        <p>Glenn Hanns ACS &#8212; Director of Photography</p>
+        <p>Sydney, NSW &#8212; Available across Australia and internationally</p>
+        <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
+        <a href="tel:+61421667205">+61 421 667 205</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/glennhanns_acs/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.imdb.com/name/nm1771070/" target="_blank" rel="noopener noreferrer">IMDb</a>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&#169; 2026 Glenn Hanns ACS</p>
+      <p>Director of Photography &#8212; Sydney</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Contact Modal -->
+<div class="modal-overlay" id="contactModal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('contactModal').classList.remove('open')" aria-label="Close">&times;</button>
+    <h3>Get in Touch</h3>
+    <p>Glenn Hanns ACS &#8212; Director of Photography</p>
+    <p>Sydney, NSW</p>
+    <p style="margin-top:1rem;"><a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a></p>
+    <p><a href="tel:+61421667205">+61 421 667 205</a></p>
+  </div>
+</div>
 
 </body>
 </html>

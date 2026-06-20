@@ -132,6 +132,8 @@
       .article-section{padding:3rem 0 4rem;}
     }
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;}}
+      .footer-contact-btn{background:none;border:none;padding:0;font-size:0.68rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);cursor:pointer;font-family:inherit;transition:color 0.2s;margin-bottom:0.75rem;display:block;}
+    .footer-contact-btn:hover{opacity:0.8;}
   </style>
 
   <script type="application/ld+json">
@@ -424,7 +426,13 @@
       </div>
     </div>
   </article>
-</main>
+      <a class="back-link" href="/blog.html" style="margin-top:2.5rem;margin-bottom:0;">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        All articles
+      </a>
+    </main>
 
 <footer class="site-footer">
   <div class="page-width">
@@ -434,7 +442,7 @@
         <img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" loading="lazy" />
       </div>
       <div class="footer-info">
-        <h4>Get in touch</h4>
+        <button class="footer-contact-btn" onclick="document.getElementById('contactModal').classList.add('open')">Get in touch</button>
         <p>Glenn Hanns ACS &#8212; Director of Photography</p>
         <p>Sydney, NSW &#8212; Available across Australia and internationally</p>
         <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
