@@ -3,17 +3,7 @@
 
 ## Pages
 - [Homepage](https://glennhanns.com/): About Glenn Hanns ACS — biography, career credits, awards, festival screenings and industry recognition
-- [Work](https://glennhanns.com/work): Cinematography portfolio overview and showreel index
-
-- [Showreel](https://glennhanns.com/showreel): Cinematography showreel - full reel and individual project pages
-- [Moon Rock For Monday](https://glennhanns.com/showreel/moonrock): Feature film (2020), dir. Kurt Martin, Lunar Pictures. ACS Gold Award NSW 2021, ACS Award of Distinction Nationals 2022, SCHLiNGEL SLM Top Award 2020, ASIN Award Best Feature Film 2020, 8 wins & 28 nominations total
-- [Ron Iddles - The Good Cop](https://glennhanns.com/showreel/ron-iddles): TV series (2018), dir. John Mavety, FOX/CJZ. ACS Gold Award NSW 2023, Silver Logie 2019
-- [Forbidden Ground](https://glennhanns.com/showreel/forbidden-ground): WWI feature film (2013), dir. Adrian Powers, Lionsgate. ACS Bronze Award NSW 2013
-- [Manifestation](https://glennhanns.com/showreel/manifestation): Short film, dir. Josh Groom, Greenlight Productions
-- [Transitions](https://glennhanns.com/showreel/transitions): Short film, dir. Zain Ayub, Virtue Film
-- [Snow Droppers](https://glennhanns.com/showreel/snow-droppers): Love Letters music video, dir. Josh Groom, Cant Be Stopped Productions
-- [The Briefcase](https://glennhanns.com/showreel/the-briefcase): Short film, dir. Kurt Martin, Lunar Productions
-- [MiMic](https://glennhanns.com/blog): Short film (2026). Currently on the international festival circuit
+- [Work](https://glennhanns.com/work): Cinematography portfolio — showreel, project breakdowns and production credits
 - [Blog](https://glennhanns.com/blog): Cinematography blog - behind the scenes, technique and collaboration
 - [What a Feature Film Cinematographer Does](https://glennhanns.com/blog/what-does-a-feature-film-cinematographer-do.html): The role of a DOP across pre-production, principal photography and post
 - [How to Hire a Cinematographer for Feature Film](https://glennhanns.com/blog/how-to-hire-a-cinematographer-for-feature-film.html): What producers and directors should look for when hiring a DOP
@@ -27,7 +17,6 @@
 - [Moon Rock For Monday — Cinematography](https://glennhanns.com/blog/moon-rock-for-monday-cinematography.html): Camera and lighting breakdown for the award-winning feature
 - [Forbidden Ground — Cinematography](https://glennhanns.com/blog/forbidden-ground-cinematography.html): WWI feature cinematography breakdown including pyrotechnics and dual-camera workflow
 - [Cinematographer vs Camera Operator](https://glennhanns.com/blog/cinematographer-vs-camera-operator.html): The distinction between visual authorship and physical frame execution on a professional set
-- [Contact](https://glennhanns.com/contact): Contact and availability enquiries
 
 ## Awards
 - 2023 Gold ACS Award NSW & ACT - Dramatised Documentaries (Ron Iddles)
@@ -40,8 +29,8 @@
 
 ## Contact
 - Email: glenn@glennhanns.com
-- Phone: +61 (0)421 667 205
+- Phone: +61 421 667 205
 - LinkedIn: https://au.linkedin.com/in/glennhanns
-- Instagram: https://www.instagram.com/glennhanns_ACS/
+- Instagram: https://www.instagram.com/glennhanns_acs/
 - YouTube: https://www.youtube.com/@GlennHanns/playlists
 - IMDb: https://www.imdb.com/name/nm1771070/
