@@ -3,8 +3,8 @@
 
 ## Pages
 - [Homepage](https://glennhanns.com/): About Glenn Hanns ACS — biography, career credits, awards, festival screenings and industry recognition
-- [Work](https://glennhanns.com/work): Cinematography portfolio — showreel, project breakdowns and production credits
-- [Blog](https://glennhanns.com/blog): Cinematography blog - behind the scenes, technique and collaboration
+- [Work](https://glennhanns.com/work.html): Cinematography portfolio — showreel, project breakdowns and production credits
+- [Blog](https://glennhanns.com/blog.html): Cinematography blog - behind the scenes, technique and collaboration
 - [What a Feature Film Cinematographer Does](https://glennhanns.com/blog/what-does-a-feature-film-cinematographer-do.html): The role of a DOP across pre-production, principal photography and post
 - [How to Hire a Cinematographer for Feature Film](https://glennhanns.com/blog/how-to-hire-a-cinematographer-for-feature-film.html): What producers and directors should look for when hiring a DOP
 - [What a Television Series Cinematographer Does](https://glennhanns.com/blog/what-a-television-series-cinematographer-does.html): How a TV series DP builds a repeatable visual system across episodic production
@@ -17,14 +17,15 @@
 - [Moon Rock For Monday — Cinematography](https://glennhanns.com/blog/moon-rock-for-monday-cinematography.html): Camera and lighting breakdown for the award-winning feature
 - [Forbidden Ground — Cinematography](https://glennhanns.com/blog/forbidden-ground-cinematography.html): WWI feature cinematography breakdown including pyrotechnics and dual-camera workflow
 - [Cinematographer vs Camera Operator](https://glennhanns.com/blog/cinematographer-vs-camera-operator.html): The distinction between visual authorship and physical frame execution on a professional set
+- [How to Brief a DOP](https://glennhanns.com/blog/how-to-brief-a-dop.html): What makes a great creative brief — and why the best partnerships start with a conversation, not a shot list
 
 ## Awards
-- 2023 Gold ACS Award NSW & ACT - Dramatised Documentaries (Ron Iddles)
+- 2023 Gold ACS Award NSW & ACT - Dramatised Documentaries (Ron Iddles: The Good Cop)
 - 2022 Award of Distinction ACS Nationals - Best Feature Film under $2m (Moon Rock For Monday)
 - 2021 Gold ACS Award NSW & ACT - Feature Films under $2m (Moon Rock For Monday)
-- 2019 Silver Logie - Most Outstanding Factual or Documentary Program (Ron Iddles)
+- 2019 Silver Logie - Most Outstanding Factual or Documentary Program (Ron Iddles: The Good Cop)
 - 2013 Bronze ACS Award NSW & ACT - Feature Films (Forbidden Ground)
-- 2009 Gold ACS Award NSW & ACT - Music Clips (Birds of Tokyo)
+- 2009 Gold ACS Award NSW & ACT - Music Clips (Birds of Tokyo — Anchor)
 - 2008 Golden Tadpole Nominee - Camerimage, Poland (Bleeders)
 
 ## Contact
