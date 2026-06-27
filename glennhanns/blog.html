@@ -46,57 +46,19 @@
     .page-width { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem; }
 
     /* NAV */
-    .site-nav {
-      position: fixed;
-      top: 3px; left: 0; right: 0;
-      height: var(--nav-h);
-      background: rgba(10,10,10,0.96);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-      z-index: 1000;
-    }
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-      height: 100%;
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-    .nav-logo img { height: 46px; width: auto; }
-    .nav-centre-logo { position: absolute; left: 50%; transform: translateX(-50%); }
-    .nav-centre-logo img { height: 46px; width: auto; }
-    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-    .nav-links a {
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: #9A9A9A;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover, .nav-links a.active { color: #fff; opacity: 1; }
-    .nav-contact-btn { background: none; border: none; padding: 0; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #9A9A9A; cursor: pointer; font-family: inherit; transition: color 0.2s; }
-    .nav-contact-btn:hover { color: #fff; }
-    .nav-toggle {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem;
-    }
-    .nav-toggle span {
-      display: block;
-      width: 22px; height: 2px;
-      background: var(--text);
-      border-radius: 1px;
-    }
-    .site-content { padding-top: calc(var(--nav-h) + 3px); }
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 3rem;background:rgba(8,8,8,0.97);border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--text);text-decoration:none;letter-spacing:0.05em}
+    .nav-logo span{color:var(--accent);font-style:italic}
+    .nav-links{display:flex;gap:3rem;list-style:none}
+    .nav-links a{font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
+    .nav-links a:hover,.nav-links a.active{color:var(--text)}
+    .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+    .nav-hamburger span{display:block;width:22px;height:1px;background:var(--text);transition:all 0.3s}
+    .nav-mobile{display:none;position:fixed;inset:0;background:var(--bg);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem}
+    .nav-mobile.open{display:flex}
+    .nav-mobile a{font-family:var(--serif);font-size:2.5rem;color:var(--text);text-decoration:none;font-style:italic}
+    .nav-mobile a:hover{color:var(--accent)}
 
     /* BLOG INDEX */
     .blog-section { padding: 5rem 0; }
@@ -237,7 +199,7 @@ border-bottom: 1px solid var(--border);
       font-style: italic;
     }
     @media (max-width: 768px) {
-      .nav-toggle { display: flex; }
+      .nav-hamburger { display: flex; }
       .nav-links {
         display: none;
         position: absolute;
@@ -483,20 +445,23 @@ border-bottom: 1px solid var(--border);
 
 <h1 class="seo-h1">Journal  -  Glenn Hanns ACS, Director of Photography</h1>
 
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="/" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--text);text-decoration:none;letter-spacing:0.05em;">Glenn <span style="color:var(--accent);font-style:italic;">Hanns</span> ACS</a>
-    <button class="nav-toggle" aria-label="Toggle navigation"
-      onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="/">Work</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/blog.html" class="active">Journal</a></li>
-    </ul>
-  </div>
+<nav id="nav">
+  <a href="/work.html" class="nav-logo">Glenn <span>Hanns</span> ACS</a>
+  <ul class="nav-links">
+    <li><a href="/work.html">Work</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog.html" class="active">Journal</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="document.getElementById('mobileNavBlog').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<div class="nav-mobile" id="mobileNavBlog">
+  <a href="/work.html" onclick="this.closest('.nav-mobile').classList.remove('open')">Work</a>
+  <a href="/about" onclick="this.closest('.nav-mobile').classList.remove('open')">About</a>
+  <a href="/blog.html" onclick="this.closest('.nav-mobile').classList.remove('open')">Journal</a>
+</div>
 
 <main class="site-content">
   <section class="blog-section">
@@ -510,7 +475,7 @@ border-bottom: 1px solid var(--border);
             placeholder="Search articles..."
             autocomplete="off"
             oninput="filterPosts(this.value)"
-            style="width:100%;background:none;border:none;border-bottom:1px solid #2a2a2a;color:#fff;font-family:'DM Sans',sans-serif;font-size:0.85rem;padding:0.6rem 0;outline:none;transition:border-color 0.2s;"
+            style="width:100%;background:none;border:none;border-bottom:1px solid #2a2a2a;color:#fff;font-family:var(--sans);font-size:0.85rem;padding:0.6rem 0;outline:none;transition:border-color 0.2s;"
             onfocus="this.style.borderColor='#d4621a'"
             onblur="this.style.borderColor='#2a2a2a'"
           />
@@ -765,20 +730,20 @@ function filterPosts(query) {
     .contact-modal-overlay.open { display: flex; }
     .contact-modal { background: var(--surface); border: 1px solid var(--border); max-width: 560px; width: 100%; padding: 2.5rem; position: relative; }
     .contact-modal::before { content: ''; display: block; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); }
-    .contact-modal h3 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 0.06em; color: var(--text); margin-bottom: 1.75rem; }
+    .contact-modal h3 { font-family: var(--sans); font-size: 2rem; letter-spacing: 0.06em; color: var(--text); margin-bottom: 1.75rem; }
     .contact-modal-close { position: absolute; top: 1rem; right: 1.25rem; background: none; border: none; color: var(--muted); font-size: 1.4rem; cursor: pointer; line-height: 1; padding: 0.25rem; transition: color 0.2s; }
     .contact-modal-close:hover { color: var(--accent); }
     .contact-field { margin-bottom: 1.25rem; }
     .contact-field label { display: block; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
-    .contact-field input, .contact-field textarea, .contact-field select { width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 0.9rem; padding: 0.7rem 0.9rem; outline: none; transition: border-color 0.2s; -webkit-appearance: none; appearance: none; border-radius: 0; }
+    .contact-field input, .contact-field textarea, .contact-field select { width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: var(--sans); font-size: 0.9rem; padding: 0.7rem 0.9rem; outline: none; transition: border-color 0.2s; -webkit-appearance: none; appearance: none; border-radius: 0; }
     .contact-field input:focus, .contact-field textarea:focus, .contact-field select:focus { border-color: var(--accent); }
     .contact-field textarea { resize: vertical; min-height: 130px; }
-    .contact-submit { display: inline-block; background: var(--accent); color: #fff; font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 0.12em; border: none; padding: 0.75rem 2.25rem; cursor: pointer; transition: opacity 0.2s; width: 100%; margin-top: 0.5rem; }
+    .contact-submit { display: inline-block; background: var(--accent); color: #fff; font-family: var(--sans); font-size: 1.1rem; letter-spacing: 0.12em; border: none; padding: 0.75rem 2.25rem; cursor: pointer; transition: opacity 0.2s; width: 100%; margin-top: 0.5rem; }
     .contact-submit:hover { opacity: 0.85; }
     .contact-success { display: none; text-align: center; padding: 1.5rem 0; }
     .contact-success p { color: var(--muted); font-size: 0.95rem; margin-top: 0.75rem; }
     .contact-success .check { font-size: 2.5rem; color: var(--accent); }
-    .footer-contact-btn { background: none; border: none; padding: 0; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted); cursor: pointer; font-family: inherit; transition: color 0.2s; }
+    .footer-contact-btn { background: none; border: none; padding: 0; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted); cursor: pointer; font-family: var(--sans); transition: color 0.2s; }
     .footer-contact-btn:hover { color: var(--accent); }
     </style>
 
