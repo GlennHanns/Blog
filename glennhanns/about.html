@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Glenn Hanns ACS, Director of Photography</title>
+<meta name="description" content="Glenn Hanns ACS is a Sydney-based Director of Photography with over 20 years experience across feature drama, documentary, television and short film.">
+<meta property="og:title" content="About — Glenn Hanns ACS">
+<meta property="og:description" content="Visual authorship from prep to grade. Sydney-based cinematographer with credits on Netflix, Foxtel, Lionsgate, ABC, SBS and Discovery Channel.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_AU">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://glennhanns.com/about">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --accent:#d4621a;
+  --bg:#080808;
+  --surface:#0f0f0f;
+  --border:#1c1c1c;
+  --text:#e8e0d6;
+  --muted:#666;
+  --serif:'Cormorant Garamond',serif;
+  --sans:'Barlow Condensed',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 3rem;background:transparent;transition:background 0.4s}
+nav.scrolled{background:rgba(8,8,8,0.95);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--text);text-decoration:none;letter-spacing:0.05em}
+.nav-logo span{color:var(--accent);font-style:italic}
+.nav-links{display:flex;gap:3rem;list-style:none}
+.nav-links a{font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--text)}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.nav-hamburger span{display:block;width:22px;height:1px;background:var(--text);transition:all 0.3s}
+.nav-mobile{display:none;position:fixed;inset:0;background:var(--bg);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem}
+.nav-mobile.open{display:flex}
+.nav-mobile a{font-family:var(--serif);font-size:2.5rem;color:var(--text);text-decoration:none;font-style:italic}
+.nav-mobile a:hover{color:var(--accent)}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+.hero-image{position:relative;overflow:hidden}
+.hero-image img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:brightness(0.75) contrast(1.05);display:block}
+.hero-image::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,var(--bg) 100%)}
+.hero-content{display:flex;flex-direction:column;justify-content:center;padding:8rem 4rem 4rem 3rem;position:relative}
+.hero-eyebrow{font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--accent);margin-bottom:2rem}
+.hero-heading{font-family:var(--serif);font-size:clamp(2.8rem,4.5vw,4.5rem);font-weight:300;line-height:1.1;color:var(--text);margin-bottom:0.3rem}
+.hero-heading-italic{font-family:var(--serif);font-size:clamp(2.8rem,4.5vw,4.5rem);font-weight:300;font-style:italic;line-height:1.1;color:var(--accent);margin-bottom:2.5rem}
+.hero-body{font-size:0.95rem;color:var(--muted);line-height:1.8;max-width:380px;font-weight:300;margin-bottom:2.5rem}
+.hero-tags{display:flex;flex-wrap:wrap;gap:0.5rem}
+.hero-tag{font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;border:1px solid var(--border);color:var(--muted);padding:0.4rem 0.9rem}
+
+/* QUOTE */
+.quote-section{padding:7rem 3rem;max-width:900px;margin:0 auto;text-align:center;border-top:1px solid var(--border)}
+.quote-mark{font-family:var(--serif);font-size:5rem;line-height:0.5;color:var(--accent);opacity:0.4;margin-bottom:1rem;display:block}
+.quote-text{font-family:var(--serif);font-size:clamp(1.3rem,2.2vw,1.9rem);font-weight:300;font-style:italic;line-height:1.6;color:var(--text);margin-bottom:2rem}
+.quote-attribution{font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent)}
+
+/* FILMOGRAPHY + AWARDS */
+.credits-section{padding:5rem 3rem 7rem;border-top:1px solid var(--border)}
+.credits-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem}
+.section-eyebrow{font-size:0.58rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--muted);margin-bottom:1.25rem}
+.section-heading{font-family:var(--serif);font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--text);margin-bottom:3rem}
+
+/* Filmography list */
+.film-list{display:flex;flex-direction:column;gap:0}
+.film-item{display:grid;grid-template-columns:3.5rem 1fr auto;align-items:baseline;padding:1.25rem 0;border-bottom:1px solid var(--border);gap:1rem}
+.film-year{font-size:0.7rem;letter-spacing:0.15em;color:var(--accent)}
+.film-title{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--text);margin-bottom:0.2rem}
+.film-meta{font-size:0.65rem;letter-spacing:0.08em;color:var(--muted);text-transform:uppercase}
+.film-role{font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted)}
+
+/* Awards list */
+.award-list{display:flex;flex-direction:column;gap:0}
+.award-item{padding:1.25rem 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:3.5rem 1fr;gap:1rem;align-items:baseline}
+.award-year{font-size:0.7rem;letter-spacing:0.15em;color:var(--accent)}
+.award-title{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--text);margin-bottom:0.25rem;line-height:1.3}
+.award-film{font-size:0.63rem;letter-spacing:0.08em;color:var(--muted);text-transform:uppercase}
+
+/* BIO SECTION */
+.bio-section{padding:5rem 3rem 7rem;border-top:1px solid var(--border)}
+.bio-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;align-items:start}
+.bio-portrait{position:relative}
+.bio-portrait img{width:100%;display:block;filter:grayscale(15%)}
+.bio-portrait-caption{font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-top:1rem}
+.bio-content{}
+.bio-text{font-size:1rem;color:rgba(232,224,214,0.75);line-height:1.9;margin-bottom:1.5rem;font-weight:300}
+.bio-text strong{color:var(--text);font-weight:400}
+.bio-links{display:flex;gap:1.5rem;margin-top:2rem;flex-wrap:wrap}
+.bio-link{font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:0.2rem;transition:color 0.2s,border-color 0.2s}
+.bio-link:hover{color:var(--accent);border-color:var(--accent)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:5rem 3rem 3rem}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-cta{margin-bottom:4rem}
+.footer-cta-label{font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem}
+.footer-cta-heading{font-family:var(--serif);font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;line-height:1.1;color:var(--text)}
+.footer-cta-heading em{color:var(--accent);font-style:italic}
+.footer-bottom{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;padding-top:3rem;border-top:1px solid var(--border)}
+.footer-col-label{font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem}
+.footer-col p,.footer-col a{font-size:0.8rem;color:rgba(232,224,214,0.5);line-height:2;display:block;text-decoration:none;transition:color 0.2s}
+.footer-col a:hover{color:var(--accent)}
+.footer-copy{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.footer-copy p{font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted)}
+
+/* CONTACT MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:200;align-items:center;justify-content:center;padding:2rem}
+.modal-overlay.open{display:flex}
+.modal{background:var(--surface);border:1px solid var(--border);max-width:520px;width:100%;padding:3rem;position:relative}
+.modal::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
+.modal-close{position:absolute;top:1.25rem;right:1.5rem;background:none;border:none;color:var(--muted);font-size:1.2rem;cursor:pointer;transition:color 0.2s}
+.modal-close:hover{color:var(--accent)}
+.modal h3{font-family:var(--serif);font-size:1.8rem;font-weight:300;color:var(--text);margin-bottom:2rem}
+.form-field{margin-bottom:1.25rem}
+.form-field label{display:block;font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem}
+.form-field input,.form-field select,.form-field textarea{width:100%;background:var(--bg);border:1px solid var(--border);color:var(--text);font-family:var(--sans);font-size:0.9rem;font-weight:300;padding:0.75rem 1rem;outline:none;transition:border-color 0.2s;border-radius:0;-webkit-appearance:none}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--accent)}
+.form-field textarea{min-height:120px;resize:vertical}
+.form-submit{width:100%;background:var(--accent);color:#fff;border:none;font-family:var(--sans);font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;padding:1rem;cursor:pointer;transition:opacity 0.2s;margin-top:0.5rem}
+.form-submit:hover{opacity:0.85}
+.form-success{display:none;text-align:center;padding:2rem 0}
+.form-success .check{font-family:var(--serif);font-size:3rem;color:var(--accent);display:block;margin-bottom:1rem}
+.form-success p{color:var(--muted);font-size:0.9rem}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav{padding:1.25rem 1.5rem}
+  .nav-links{display:none}
+  .nav-hamburger{display:flex}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-image{height:60vw}
+  .hero-image::after{background:linear-gradient(to bottom,transparent 60%,var(--bg) 100%)}
+  .hero-content{padding:3rem 1.5rem 4rem}
+  .quote-section{padding:4rem 1.5rem}
+  .credits-section{padding:4rem 1.5rem}
+  .credits-inner{grid-template-columns:1fr;gap:3rem}
+  .bio-section{padding:4rem 1.5rem}
+  .bio-inner{grid-template-columns:1fr;gap:2rem}
+  footer{padding:4rem 1.5rem 2rem}
+  .footer-bottom{grid-template-columns:1fr 1fr;gap:2rem}
+  .footer-copy{flex-direction:column;gap:1rem;text-align:center}
+}
+@media(max-width:480px){
+  .footer-bottom{grid-template-columns:1fr}
+  .film-item{grid-template-columns:2.5rem 1fr;gap:0.75rem}
+  .film-role{display:none}
+  .award-item{grid-template-columns:2.5rem 1fr}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="/" class="nav-logo">Glenn <span>Hanns</span> ACS</a>
+  <ul class="nav-links">
+    <li><a href="/">Work</a></li>
+    <li><a href="/about" class="active">About</a></li>
+    <li><a href="/blog.html">Journal</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-mobile" id="mobileNav">
+  <a href="/" onclick="this.closest('.nav-mobile').classList.remove('open')">Work</a>
+  <a href="/about" onclick="this.closest('.nav-mobile').classList.remove('open')">About</a>
+  <a href="/blog.html" onclick="this.closest('.nav-mobile').classList.remove('open')">Journal</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-image">
+    <img src="/assets/images/Glenn_Hanns_ACS_BW.webp" alt="Glenn Hanns ACS — Director of Photography, Sydney">
+  </div>
+  <div class="hero-content">
+    <img src="/assets/images/glennlogo.png" alt="" aria-hidden="true" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:420px;height:420px;object-fit:contain;opacity:0.10;pointer-events:none;z-index:0;">
+    <p class="hero-eyebrow">About</p>
+    <h1 class="hero-heading">Visual authorship —</h1>
+    <p class="hero-heading-italic">from prep to grade.</p>
+    <p class="hero-body">Glenn Hanns ACS is a Sydney-based Director of Photography known for intimate, visually rich storytelling across feature drama, long-form documentary and series. Over 150 projects. Over 20 years.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">ACS (Australian Cinematography Society) Accredited</span>
+      <span class="hero-tag">AFTRS Alumni</span>
+      <span class="hero-tag">Sydney · Available Worldwide</span>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote-section">
+  <span class="quote-mark">"</span>
+  <blockquote class="quote-text">There's no denying the passion I feel for the moving image. The magic generated when all the elements of film-making come together, creating an engaging cohesive story that transports the audience's reality — that is what I live for.</blockquote>
+  <p class="quote-attribution">— Glenn Hanns ACS</p>
+</section>
+
+<!-- FILMOGRAPHY + AWARDS -->
+<section class="credits-section">
+  <div class="credits-inner">
+    <div>
+      <p class="section-eyebrow">Selected Credits</p>
+      <h2 class="section-heading">Filmography</h2>
+      <div class="film-list">
+        <div class="film-item">
+          <span class="film-year">2026</span>
+          <div><p class="film-title">The Room Below</p><p class="film-meta">Feature · dir. Kurt Martin</p></div>
+          <span class="film-role">DOP</span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">2023</span>
+          <div><p class="film-title">Ron Iddles: The Good Cop</p><p class="film-meta">Documentary</p></div>
+          <span class="film-role">DOP</span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">2020</span>
+          <div><p class="film-title">Moon Rock for Monday</p><p class="film-meta">Feature</p></div>
+          <span class="film-role">DOP</span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">2013</span>
+          <div><p class="film-title">Persons of Interest</p><p class="film-meta">Documentary Series · SBS · dir. Haydn Keenan</p></div>
+          <span class="film-role">DOP</span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">2013</span>
+          <div><p class="film-title">Forbidden Ground</p><p class="film-meta">Feature</p></div>
+          <span class="film-role">DOP</span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">2012</span>
+          <div><p class="film-title">Deadly Women</p><p class="film-meta">Documentary Series · Discovery Channel</p></div>
+          <span class="film-role">DOP</span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">2016</span>
+          <div><p class="film-title">Dark Temptations</p><p class="film-meta">Documentary Series · Discovery Channel</p></div>
+          <span class="film-role">DOP</span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">2008</span>
+          <div><p class="film-title">Bleeders</p><p class="film-meta">Short Film · AFTRS</p></div>
+          <span class="film-role">DOP</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="section-eyebrow">Recognition</p>
+      <h2 class="section-heading">Awards &amp; Festivals</h2>
+      <div class="award-list">
+        <div class="award-item">
+          <span class="award-year">2024</span>
+          <div><p class="award-title">National Award of Distinction — ACS (Australian Cinematography Society)</p><p class="award-film">Moon Rock for Monday</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2023</span>
+          <div><p class="award-title">Silver Logie — Most Outstanding Factual Program</p><p class="award-film">Ron Iddles: The Good Cop</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2023</span>
+          <div><p class="award-title">Gold ACS (Australian Cinematography Society) NSW &amp; ACT</p><p class="award-film">Ron Iddles: The Good Cop</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2020</span>
+          <div><p class="award-title">Gold ACS (Australian Cinematography Society) — Feature Films under 2M</p><p class="award-film">Moon Rock for Monday</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2020</span>
+          <div><p class="award-title">AACTA Nomination — Best Cinematography</p><p class="award-film">Moon Rock for Monday</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2020</span>
+          <div><p class="award-title">SCHLiNGEL SLM Top Award — Best International Feature Film</p><p class="award-film">Moon Rock for Monday</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2020</span>
+          <div><p class="award-title">ASIN Award — Best Feature Film</p><p class="award-film">Moon Rock for Monday · 8 wins, 28 nominations total</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2013</span>
+          <div><p class="award-title">Walkley Award — Outstanding Journalism</p><p class="award-film">Persons of Interest</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2013</span>
+          <div><p class="award-title">MIFF Official Selection</p><p class="award-film">Persons of Interest</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2013</span>
+          <div><p class="award-title">Bronze ACS (Australian Cinematography Society) NSW &amp; ACT</p><p class="award-film">Forbidden Ground</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2008</span>
+          <div><p class="award-title">Best Cinematography Nomination — Camerimage Poland</p><p class="award-film">Bleeders · Student Etudes</p></div>
+        </div>
+        <div class="award-item">
+          <span class="award-year">2008</span>
+          <div><p class="award-title">Official Selection — Festival de Cannes (des Antipodes)</p><p class="award-film">Bleeders</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIO -->
+<section class="bio-section">
+  <div class="bio-inner">
+    <div class="bio-portrait">
+      <img src="/assets/images/Glenn_Hanns_ACS_Alexa.JPG" alt="Glenn Hanns ACS on location operating camera">
+      <p class="bio-portrait-caption">Glenn Hanns ACS — Director of Photography, Sydney</p>
+    </div>
+    <div class="bio-content">
+      <p class="section-eyebrow">Background</p>
+      <h2 class="section-heading">The long version</h2>
+      <p class="bio-text">Glenn Hanns ACS is a Sydney-based Director of Photography known for intimate, visually rich storytelling across <strong>feature drama, television series, documentary, short film, music video and commercial work</strong> — with well over 150 projects to his name.</p>
+      <p class="bio-text">His AFTRS short <em>Bleeders</em> was nominated for Best Cinematography at Camerimage, Poland (Student Etudes category) and screened at Festival de Cannes (des Antipodes). An accredited ACS (Australian Cinematography Society) cinematographer and AACTA member, his films have screened internationally — from Camerimage, Cannes and Zurich to Beijing, Schlingel, Cinemagic, San Sebastian and the Adelaide Film Festival.</p>
+      <p class="bio-text">Recent credits include the psychological creature feature <em>The Room Below</em> (dir. Kurt Martin, starring Alyssa Sutherland and Jonathan Rhys Meyers). Works have been distributed worldwide on:</p>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:1.75rem 2rem;margin:1.25rem 0 1.5rem;opacity:0.45;filter:grayscale(1) brightness(2);">
+        <img src="/assets/images/logos/netflix.svg" alt="Netflix" style="height:22px;width:auto;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg'">
+        <img src="/assets/images/logos/prime.svg" alt="Amazon Prime" style="height:22px;width:auto;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.svg'">
+        <img src="/assets/images/logos/appletv.svg" alt="Apple TV" style="height:22px;width:auto;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg'">
+        <img src="/assets/images/logos/foxtel.svg" alt="Foxtel" style="height:20px;width:auto;" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/7/7f/Foxtel_logo.svg'">
+        <img src="/assets/images/logos/binge.svg" alt="Binge" style="height:20px;width:auto;" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/b/b9/Binge_Australia_logo.svg'">
+        <img src="/assets/images/logos/sbs.svg" alt="SBS" style="height:24px;width:auto;" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/e/e1/SBS_logo_2019.svg'">
+        <img src="/assets/images/logos/abc.svg" alt="ABC" style="height:24px;width:auto;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/a/ab/ABC_Australia_logo.svg'">
+        <img src="/assets/images/logos/lionsgate.svg" alt="Lionsgate" style="height:20px;width:auto;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/3/3d/Lionsgate_logo.svg'">
+        <img src="/assets/images/logos/discovery.svg" alt="Discovery Channel" style="height:20px;width:auto;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/2/24/Discovery_Channel_logo_%282019%29.svg'">
+      </div>
+      <p class="bio-text">His approach is rooted in visual authorship — not just camera operation, but the full creative and technical leadership of the image from prep through to the grade.</p>
+      <div class="bio-links">
+        <a href="/" class="bio-link">View portfolio</a>
+        <a href="/blog.html" class="bio-link">Read the journal</a>
+        <a href="https://www.imdb.com/name/nm1771070/" target="_blank" rel="noopener" class="bio-link">IMDb</a>
+        <a href="#contact" class="bio-link" onclick="document.getElementById('contactModal').classList.add('open');return false;">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-cta">
+      <p class="footer-cta-label">Contact</p>
+      <h2 class="footer-cta-heading">Let's make<br><em>something together.</em></h2>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-col">
+        <p class="footer-col-label">Direct</p>
+        <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a>
+        <a href="tel:+61421667205">+61 421 667 205</a>
+        <a href="#" onclick="document.getElementById('contactModal').classList.add('open');return false;">Send a message ↗</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-label">Society</p>
+        <p>ACS — Australian<br>Cinematographers Society</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-label">Based</p>
+        <p>Sydney · Australia</p>
+        <p>Available worldwide</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-label">Elsewhere</p>
+        <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://vimeo.com/glennhanns" target="_blank" rel="noopener">Vimeo</a>
+        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.imdb.com/name/nm1771070/" target="_blank" rel="noopener">IMDb</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2026 Glenn Hanns ACS — Cinematographer</p>
+      <p>Visual authorship from prep to grade</p>
+    </div>
+  </div>
+</footer>
+
+<!-- CONTACT MODAL -->
+<div class="modal-overlay" id="contactModal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('contactModal').classList.remove('open')" aria-label="Close">&times;</button>
+    <div id="modalForm">
+      <h3>Get in touch</h3>
+      <div class="form-field"><label>Name</label><input type="text" id="m-name" placeholder="Your name" autocomplete="name"></div>
+      <div class="form-field"><label>Email</label><input type="email" id="m-email" placeholder="your@email.com" autocomplete="email"></div>
+      <div class="form-field"><label>Subject</label>
+        <select id="m-subject">
+          <option value="" disabled selected>Select a subject</option>
+          <option>Feature Film</option>
+          <option>TV / Series</option>
+          <option>Documentary</option>
+          <option>Short Film</option>
+          <option>Music Video</option>
+          <option>Commercial / Corporate</option>
+          <option>General Enquiry</option>
+        </select>
+      </div>
+      <div class="form-field"><label>Message</label><textarea id="m-message" placeholder="Tell me about your project…"></textarea></div>
+      <button class="form-submit" onclick="submitForm()">Send Message</button>
+    </div>
+    <div class="form-success" id="formSuccess">
+      <span class="check">✦</span>
+      <h3 style="font-family:var(--serif);font-weight:300;margin-bottom:0.75rem">Message sent</h3>
+      <p>Thanks for reaching out — I'll be in touch shortly.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') document.getElementById('contactModal').classList.remove('open');
+});
+function submitForm() {
+  const name = document.getElementById('m-name').value.trim();
+  const email = document.getElementById('m-email').value.trim();
+  const subject = document.getElementById('m-subject').value;
+  const message = document.getElementById('m-message').value.trim();
+  if(!name || !email || !subject || !message){ alert('Please fill in all fields.'); return; }
+  window.location.href = `mailto:glenn@glennhanns.com?subject=${encodeURIComponent(subject + ' — ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
+  document.getElementById('modalForm').style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+}
+</script>
+</body>
+</html>

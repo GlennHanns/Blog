@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — Glenn Hanns ACS, Director of Photography Sydney</title>
-  <meta name="description" content="Articles on cinematography, visual storytelling, and the craft of the Director of Photography — by Glenn Hanns ACS.">
+  <title>Journal — Glenn Hanns ACS, Director of Photography Sydney</title>
+  <meta name="description" content="Writing on cinematography, visual storytelling, and the craft of the Director of Photography — by Glenn Hanns ACS.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Barlow+Condensed:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Barlow+Condensed:wght@300;400;500&display=swap"></noscript>
   <style>
     :root {
-      --bg:        #0a0a0a;
-      --surface:   #111111;
-      --border:    #1e1e1e;
-      --accent:    #F58535;
-      --text:      #ffffff;
-      --muted:     #888888;
-      --max-width: 1200px;
-      --nav-h:     68px;
+      --bg:        #080808;
+      --surface:   #0f0f0f;
+      --border:    #1c1c1c;
+      --accent:    #d4621a;
+      --text:      #e8e0d6;
+      --muted:     #555555;
+      --serif:     'Cormorant Garamond', serif;
+      --sans:      'Barlow Condensed', sans-serif;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'DM Sans', sans-serif;
+      font-family: var(--sans);
       font-size: 1rem;
       line-height: 1.75;
       -webkit-font-smoothing: antialiased;
@@ -131,9 +131,11 @@
     }
     .post-body { display: flex; flex-direction: column; gap: 0.4rem; }
     .post-title {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: var(--sans);
       font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-      letter-spacing: 0.04em;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: var(--text);
       line-height: 1.1;
       transition: color 0.2s;
@@ -203,10 +205,12 @@
     .footer-base { display: flex; justify-content: space-between; align-items: center; }
     .footer-base p { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: #9A9A9A; }
 .footer-tagline {
-font-family: 'Bebas Neue', sans-serif;
-font-size: 1.4rem;
+font-family: var(--serif);
+font-size: 1.8rem;
+font-weight: 300;
+font-style: italic;
 color: var(--accent);
-letter-spacing: 0.04em;
+letter-spacing: 0.02em;
 margin-bottom: 2rem;
 padding-bottom: 1.75rem;
 border-bottom: 1px solid var(--border);
@@ -262,12 +266,12 @@ border-bottom: 1px solid var(--border);
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Glenn Hanns ACS" />
   <meta property="og:url" content="https://glennhanns.com/blog" />
-  <meta property="og:title" content="Blog — Glenn Hanns ACS, Director of Photography Sydney" />
+  <meta property="og:title" content="Journal — Glenn Hanns ACS, Director of Photography Sydney" />
   <meta property="og:description" content="Articles on cinematography, visual storytelling, and the craft of the Director of Photography — by Glenn Hanns ACS." />
   <meta property="og:image" content="https://glennhanns.com/assets/glenn-hanns-acs.webp" />
   <meta property="og:locale" content="en_AU" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Blog — Glenn Hanns ACS, Director of Photography Sydney" />
+  <meta name="twitter:title" content="Journal — Glenn Hanns ACS, Director of Photography Sydney" />
   <meta name="twitter:description" content="Articles on cinematography, visual storytelling, and the craft of the Director of Photography — by Glenn Hanns ACS." />
   <meta name="twitter:image" content="https://glennhanns.com/assets/glenn-hanns-acs.webp" />
 <script type="application/ld+json">
@@ -476,22 +480,20 @@ border-bottom: 1px solid var(--border);
 </head>
 <body>
 
-<h1 class="seo-h1">Blog — Glenn Hanns ACS, Director of Photography</h1>
+<h1 class="seo-h1">Journal — Glenn Hanns ACS, Director of Photography</h1>
 
 <nav class="site-nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="/"><img src="/assets/images/glennlogotran.webp" alt="Glenn Hanns ACS" width="121" height="92" fetchpriority="high" /></a>
-    <a class="nav-centre-logo" href="/"><img src="/assets/images/glenn-hanns-acs-cinematography.webp" alt="Glenn Hanns ACS Cinematography" width="297" height="76" fetchpriority="high" /></a>
+    <a href="/" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--text);text-decoration:none;letter-spacing:0.05em;">Glenn <span style="color:var(--accent);font-style:italic;">Hanns</span> ACS</a>
     <button class="nav-toggle" aria-label="Toggle navigation"
       onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="/">About</a></li>
-      <li><a href="/work">Work</a></li>
-      <li><a href="/blog.html" class="active">Blog</a></li>
-                <li><button class="nav-contact-btn" onclick="document.getElementById('contactModal').classList.add('open')">Contact</button></li>
-            </ul>
+      <li><a href="/">Work</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog.html" class="active">Journal</a></li>
+    </ul>
   </div>
 </nav>
 
@@ -499,7 +501,7 @@ border-bottom: 1px solid var(--border);
   <section class="blog-section">
     <div class="page-width">
       <div class="blog-header">
-        <p class="blog-label">Writing</p>
+        <p class="blog-label">Journal</p>
         <div class="search-wrap">
           <input
             type="search"
@@ -508,7 +510,7 @@ border-bottom: 1px solid var(--border);
             autocomplete="off"
             oninput="filterPosts(this.value)"
             style="width:100%;background:none;border:none;border-bottom:1px solid #2a2a2a;color:#fff;font-family:'DM Sans',sans-serif;font-size:0.85rem;padding:0.6rem 0;outline:none;transition:border-color 0.2s;"
-            onfocus="this.style.borderColor='#F58535'"
+            onfocus="this.style.borderColor='#d4621a'"
             onblur="this.style.borderColor='#2a2a2a'"
           />
           <p id="search-count" style="font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;color:#9A9A9A;margin-top:0.6rem;min-height:1rem;"></p>
@@ -655,32 +657,44 @@ border-bottom: 1px solid var(--border);
   </section>
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" id="contact">
   <div class="page-width">
-    <div class="footer-tagline">Visual authorship from prep to grade</div>
-<div class="footer-grid">
-      <div class="footer-photo">
-        <img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" width="280" height="280" loading="lazy" />
+    <div style="margin-bottom:3rem;">
+      <p style="font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Contact</p>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;line-height:1.1;color:var(--text);">Let's make<br><em style="color:var(--accent);font-style:italic;">something together.</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;padding-top:3rem;border-top:1px solid var(--border);">
+      <div>
+        <p style="font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Direct</p>
+        <a href="mailto:glenn@glennhanns.com" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">glenn@glennhanns.com</a>
+        <a href="tel:+61421667205" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">+61 421 667 205</a>
+        <a href="#" onclick="document.getElementById('contactModal').classList.add('open');return false;" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">Send a message ↗</a>
       </div>
-      <div class="footer-info">
-        <p><button class="footer-contact-btn" onclick="document.getElementById('contactModal').classList.add('open')">Get in touch</button></p>
-        <p>Glenn Hanns ACS — Director of Photography</p>
-        <p>Sydney, NSW — Available across Australia and internationally</p>
-        <a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
-        <a href="tel:+61421667205">+61 421 667 205</a>
+      <div>
+        <p style="font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Society</p>
+        <p style="font-size:0.8rem;color:rgba(232,224,214,0.5);line-height:2;">ACS — Australian<br>Cinematographers Society</p>
       </div>
-      <div class="footer-socials">
-        <a href="https://www.instagram.com/glennhanns_acs/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://www.imdb.com/name/nm1771070/" target="_blank" rel="noopener noreferrer">IMDb</a>
+      <div>
+        <p style="font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Based</p>
+        <p style="font-size:0.8rem;color:rgba(232,224,214,0.5);line-height:2;">Sydney · Australia</p>
+        <p style="font-size:0.8rem;color:rgba(232,224,214,0.5);line-height:2;">Available worldwide</p>
+      </div>
+      <div>
+        <p style="font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Elsewhere</p>
+        <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">Instagram</a>
+        <a href="https://vimeo.com/glennhanns" target="_blank" rel="noopener" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">Vimeo</a>
+        <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">LinkedIn</a>
+        <a href="https://www.imdb.com/name/nm1771070/" target="_blank" rel="noopener" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">IMDb</a>
       </div>
     </div>
-    <div class="footer-base">
-      <p>© 2026 Glenn Hanns ACS</p>
-      <p>Director of Photography — Sydney</p>
+    <div style="margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;">
+      <p style="font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">© 2026 Glenn Hanns ACS — Cinematographer</p>
+      <p style="font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Visual authorship from prep to grade</p>
     </div>
   </div>
 </footer>
+
+
 
 <script>
 function filterPosts(query) {

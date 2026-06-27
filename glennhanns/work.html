@@ -9,25 +9,27 @@
   <link rel="preconnect" href="https://i.vimeocdn.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"></noscript>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Barlow+Condensed:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Barlow+Condensed:wght@300;400;500&display=swap"></noscript>
 <style>
 :root {
---bg: #0a0a0a;
---surface: #111111;
---border: #1e1e1e;
---accent: #F58535;
---text: #ffffff;
---muted: #888888;
+--bg: #080808;
+--surface: #0f0f0f;
+--border: #1c1c1c;
+--accent: #d4621a;
+--text: #e8e0d6;
+--muted: #555555;
 --max-width: 1200px;
 --nav-h: 68px;
+--serif: 'Cormorant Garamond', serif;
+--sans: 'Barlow Condensed', sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
 background: var(--bg);
 color: var(--text);
-font-family: 'DM Sans', sans-serif;
+font-family: var(--sans);
 font-size: 1rem;
 line-height: 1.75;
 -webkit-font-smoothing: antialiased;
@@ -243,12 +245,14 @@ color: var(--accent);
 margin-bottom: 0.2rem;
 }
 .proj-title {
-font-family: 'Bebas Neue', sans-serif;
-font-size: clamp(1.4rem, 3vw, 2.2rem);
-letter-spacing: 0.04em;
+font-family: var(--sans);
+font-size: clamp(1.6rem, 3vw, 2.6rem);
+font-weight: 400;
+letter-spacing: 0.08em;
 color: var(--text);
 line-height: 1.1;
 margin-bottom: 0.2rem;
+text-transform: none;
 }
 .proj-meta {
 font-size: 0.62rem;
@@ -276,7 +280,7 @@ background: none;
 border: none;
 color: var(--accent);
 font-size: 0.68rem;
-font-family: 'DM Sans', sans-serif;
+font-family: var(--sans);
 letter-spacing: 0.08em;
 cursor: pointer;
 padding: 0;
@@ -509,15 +513,15 @@ gap: 1.5rem;
 .contact-modal-overlay.open { display: flex; }
 .contact-modal { background: var(--surface); border: 1px solid var(--border); max-width: 560px; width: 100%; padding: 2.5rem; position: relative; }
 .contact-modal::before { content: ''; display: block; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); }
-.contact-modal h3 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 0.06em; color: var(--text); margin-bottom: 1.75rem; }
+.contact-modal h3 { font-family: var(--serif); font-size: 2rem; font-weight: 300; color: var(--text); margin-bottom: 1.75rem; }
 .contact-modal-close { position: absolute; top: 1rem; right: 1.25rem; background: none; border: none; color: var(--muted); font-size: 1.4rem; cursor: pointer; line-height: 1; padding: 0.25rem; transition: color 0.2s; }
 .contact-modal-close:hover { color: var(--accent); }
 .contact-field { margin-bottom: 1.25rem; }
 .contact-field label { display: block; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
-.contact-field input, .contact-field textarea, .contact-field select { width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 0.9rem; padding: 0.7rem 0.9rem; outline: none; transition: border-color 0.2s; -webkit-appearance: none; appearance: none; border-radius: 0; }
+.contact-field input, .contact-field textarea, .contact-field select { width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: var(--sans); font-size: 0.9rem; padding: 0.7rem 0.9rem; outline: none; transition: border-color 0.2s; -webkit-appearance: none; appearance: none; border-radius: 0; }
 .contact-field input:focus, .contact-field textarea:focus, .contact-field select:focus { border-color: var(--accent); }
 .contact-field textarea { resize: vertical; min-height: 130px; }
-.contact-submit { display: inline-block; background: var(--accent); color: #fff; font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 0.12em; border: none; padding: 0.75rem 2.25rem; cursor: pointer; transition: opacity 0.2s; width: 100%; margin-top: 0.5rem; }
+.contact-submit { display: inline-block; background: var(--accent); color: #fff; font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; border: none; padding: 0.75rem 2.25rem; cursor: pointer; transition: opacity 0.2s; width: 100%; margin-top: 0.5rem; }
 .contact-submit:hover { opacity: 0.85; }
 .contact-success { display: none; text-align: center; padding: 1.5rem 0; }
 .contact-success p { color: var(--muted); font-size: 0.95rem; margin-top: 0.75rem; }
@@ -630,9 +634,9 @@ border-right: none;
     "2013 Bronze ACS Award NSW & ACT — Feature Films (Forbidden Ground)",
     "2009 Gold ACS Award NSW & ACT — Music Clips (Birds of Tokyo)",
     "2008 Golden Tadpole Nominee — Camerimage, Poland — Student Etudes (Bleeders)",
-    "Festival de Cannes — des Antipodes Official Selection (Bleeders)",
-    "San Sebastian Film Festival — Official Selection (Bleeders)",
-    "Camerimage — Student Etudes Official Selection (Bleeders)"
+    "2008 Festival de Cannes — des Antipodes Official Selection (Bleeders)",
+    "2008 San Sebastian Film Festival — Official Selection (Bleeders)",
+    "2008 Camerimage — Student Etudes Official Selection (Bleeders)"
   ],
   "performerIn": [
     {
@@ -1042,22 +1046,16 @@ border-right: none;
 
 <nav class="site-nav">
 <div class="nav-inner">
-<a class="nav-logo" href="/">
-<img src="/assets/images/glennlogotran.webp" alt="Glenn Hanns ACS" width="121" height="92" fetchpriority="high" />
-</a>
-<a class="nav-centre-logo" href="/">
-<img src="/assets/images/glenn-hanns-acs-cinematography.webp" alt="Glenn Hanns ACS — Director of Photography" width="297" height="76" fetchpriority="high" />
-</a>
+<a href="/" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--text);text-decoration:none;letter-spacing:0.05em;">Glenn <span style="color:var(--accent);font-style:italic;">Hanns</span> ACS</a>
 <button class="nav-toggle" aria-label="Toggle navigation"
 onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
 <span></span><span></span><span></span>
 </button>
 <ul class="nav-links">
-<li><a href="/">About</a></li>
-<li><a href="/work#work" class="active">Work</a></li>
-<li><a href="/blog.html">Blog</a></li>
-                <li><button class="nav-contact-btn" onclick="document.getElementById('contactModal').classList.add('open')">Contact</button></li>
-            </ul>
+<li><a href="/" >Work</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/blog.html">Journal</a></li>
+</ul>
 </div>
 </nav>
 
@@ -1066,6 +1064,7 @@ onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open'
 
 <div class="work-header">
 <p class="work-label">Selected work</p>
+<p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;font-style:italic;color:rgba(232,224,214,0.45);max-width:480px;line-height:1.5;display:none;" id="work-descriptor">Sydney-based Director of Photography — feature drama, long-form documentary and series. Over 150 projects. Over 20 years.</p>
 <div class="work-nav">
 <button id="btn-prev" onclick="navTo(cur-1)" aria-label="Previous project">
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -1140,32 +1139,43 @@ onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open'
   </div>
 </div>
 
-<footer class="site-footer">
+<footer class="site-footer" id="contact">
 <div class="page-width">
-<div class="footer-tagline">Visual authorship from prep to grade</div>
-<div class="footer-grid">
-<div class="footer-photo">
-<img src="/assets/glenn-hanns-acs.webp" alt="Glenn Hanns ACS — Director of Photography" width="280" height="280" loading="lazy" />
-</div>
-<div class="footer-info">
-<p><button class="footer-contact-btn" onclick="document.getElementById('contactModal').classList.add('open')">Get in touch</button></p>
-<p>Glenn Hanns ACS — Director of Photography</p>
-<p>Sydney, NSW — Available across Australia and internationally</p>
-<a href="mailto:glenn@glennhanns.com">glenn@glennhanns.com</a><br>
-<a href="tel:+61421667205">+61 421 667 205</a>
-</div>
-<div class="footer-socials">
-<a href="https://www.instagram.com/glennhanns_acs/" target="_blank" rel="noopener noreferrer">Instagram</a>
-<a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-<a href="https://www.imdb.com/name/nm1771070/" target="_blank" rel="noopener noreferrer">IMDb</a>
-</div>
-</div>
-<div class="footer-base">
-<p>© 2026 Glenn Hanns ACS</p>
-<p>Director of Photography — Sydney</p>
-</div>
+  <div style="margin-bottom:3rem;">
+    <p style="font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Contact</p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;line-height:1.1;color:var(--text);">Let's make<br><em style="color:var(--accent);font-style:italic;">something together.</em></h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;padding-top:3rem;border-top:1px solid var(--border);">
+    <div>
+      <p style="font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Direct</p>
+      <a href="mailto:glenn@glennhanns.com" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">glenn@glennhanns.com</a>
+      <a href="tel:+61421667205" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">+61 421 667 205</a>
+      <a href="#" onclick="document.getElementById('contactModal').classList.add('open');return false;" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">Send a message ↗</a>
+    </div>
+    <div>
+      <p style="font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Society</p>
+      <p style="font-size:0.8rem;color:rgba(232,224,214,0.5);line-height:2;">ACS — Australian<br>Cinematographers Society</p>
+    </div>
+    <div>
+      <p style="font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Based</p>
+      <p style="font-size:0.8rem;color:rgba(232,224,214,0.5);line-height:2;">Sydney · Australia</p>
+      <p style="font-size:0.8rem;color:rgba(232,224,214,0.5);line-height:2;">Available worldwide</p>
+    </div>
+    <div>
+      <p style="font-size:0.58rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Elsewhere</p>
+      <a href="https://www.instagram.com/glennhanns/" target="_blank" rel="noopener" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">Instagram</a>
+      <a href="https://vimeo.com/glennhanns" target="_blank" rel="noopener" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">Vimeo</a>
+      <a href="https://www.linkedin.com/in/glennhanns/" target="_blank" rel="noopener" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">LinkedIn</a>
+      <a href="https://www.imdb.com/name/nm1771070/" target="_blank" rel="noopener" style="font-size:0.8rem;color:rgba(232,224,214,0.5);display:block;line-height:2;text-decoration:none;" onmouseover="this.style.color='#d4621a'" onmouseout="this.style.color='rgba(232,224,214,0.5)'">IMDb</a>
+    </div>
+  </div>
+  <div style="margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;">
+    <p style="font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">© 2026 Glenn Hanns ACS — Cinematographer</p>
+    <p style="font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Visual authorship from prep to grade</p>
+  </div>
 </div>
 </footer>
+
 
 <!-- Contact Modal -->
 <div class="contact-modal-overlay" id="contactModal" onclick="if(event.target===this)this.classList.remove('open')">
@@ -1209,6 +1219,10 @@ onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open'
 </div>
 
 <script>
+function mixedCase(str) {
+  return str.toUpperCase();
+}
+
 const projects = [
 {
 id: '_placeholder',
@@ -2013,7 +2027,7 @@ if (projects[cur].id === '_placeholder') { navTo(cur + 1); return; }
 const p = projects[cur];
 document.getElementById('proj-counter').textContent = (cur + 1) + '/' + projects.length;
 document.getElementById('proj-cat').textContent = p.cat;
-document.getElementById('proj-title').textContent = p.title;
+document.getElementById('proj-title').innerHTML = mixedCase(p.title);
 document.getElementById('proj-meta').textContent = p.year + (p.dir ? ' — ' + p.dir : '');
 document.getElementById('proj-desc').innerHTML = p.desc;
 // reset expanded state and check if clamping is needed
