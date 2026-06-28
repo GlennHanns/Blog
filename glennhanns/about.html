@@ -15,7 +15,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Barlow+Condensed:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Barlow+Condensed:wght@300;400;500&display=swap"></noscript>
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -194,7 +195,7 @@ footer{border-top:1px solid var(--border);padding:5rem 3rem 3rem}
 <!-- HERO -->
 <section class="hero">
   <div class="hero-image">
-    <img src="/assets/images/Glenn_Hanns_ACS_BW.webp" alt="Glenn Hanns ACS  -  Director of Photography, Sydney">
+    <img src="/assets/images/Glenn_Hanns_ACS_BW.webp" alt="Glenn Hanns ACS  -  Director of Photography, Sydney" fetchpriority="high">
   </div>
   <div class="hero-content">
     <img src="/assets/images/glennlogo.webp" alt="" aria-hidden="true" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:420px;height:420px;object-fit:contain;opacity:0.10;pointer-events:none;z-index:0;">
@@ -472,9 +473,16 @@ footer{border-top:1px solid var(--border);padding:5rem 3rem 3rem}
 
 <script>
 const nav = document.getElementById('nav');
+let ticking = false;
 window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 60);
-});
+  if (!ticking) {
+    requestAnimationFrame(() => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+      ticking = false;
+    });
+    ticking = true;
+  }
+}, { passive: true });
 document.addEventListener('keydown', e => {
   if(e.key === 'Escape') document.getElementById('contactModal').classList.remove('open');
 });
