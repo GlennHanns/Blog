@@ -93,7 +93,7 @@ nav.scrolled{background:rgba(8,8,8,0.95);border-bottom:1px solid var(--border)}
 .bio-section{padding:5rem 3rem 7rem;border-top:1px solid var(--border)}
 .bio-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;align-items:start}
 .bio-portrait{position:relative}
-.bio-portrait img{width:100%;display:block;filter:grayscale(15%)}
+.bio-portrait img{width:100%;height:auto;display:block;filter:grayscale(15%);aspect-ratio:1050/637}
 .bio-portrait-caption{font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-top:1rem}
 .bio-content{}
 .bio-text{font-size:1rem;color:rgba(232,224,214,0.75);line-height:1.9;margin-bottom:1.5rem;font-weight:300}
@@ -151,8 +151,8 @@ footer{border-top:1px solid var(--border);padding:5rem 3rem 3rem}
   .nav-links{display:none}
   .nav-hamburger{display:flex}
   .hero{grid-template-columns:1fr;min-height:auto}
-  .hero-image{height:85vw;max-height:520px}
-  .hero-image img{object-position:right top}
+  .hero-image{height:56.25vw;max-height:480px}
+  .hero-image img{object-position:center center}
   .hero-image::after{background:linear-gradient(to bottom,transparent 50%,var(--bg) 100%)}
   .hero-content{padding:3rem 1.5rem 4rem}
   .quote-section{padding:4rem 1.5rem}
@@ -329,7 +329,7 @@ footer{border-top:1px solid var(--border);padding:5rem 3rem 3rem}
 <section class="bio-section">
   <div class="bio-inner">
     <div class="bio-portrait">
-      <img src="/assets/images/Glenn_Hanns_ACS_Alexa.webp" alt="Glenn Hanns ACS on location operating camera" width="800" height="600" loading="lazy">
+      <img src="/assets/images/Glenn_Hanns_ACS_Alexa.webp" alt="Glenn Hanns ACS on location operating camera" width="1050" height="637" loading="lazy">
       <p class="bio-portrait-caption">Glenn Hanns ACS  -  Director of Photography, Sydney</p>
     </div>
     <div class="bio-content">
