@@ -47,8 +47,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 3rem;background:transparent;transition:background 0.4s}
 nav.scrolled{background:rgba(8,8,8,0.95);border-bottom:1px solid var(--border)}
-.nav-logo{text-decoration:none;}
-.nav-logo img{height:38px;width:auto;}
+.nav-logo{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--text);text-decoration:none;letter-spacing:0.05em}
+.nav-logo span{color:var(--accent);font-style:italic}
 .nav-links{display:flex;gap:3rem;list-style:none}
 .nav-links a{font-size:0.65rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
 .nav-links a:hover,.nav-links a.active{color:var(--text)}
@@ -437,7 +437,7 @@ footer{border-top:1px solid var(--border);padding:5rem 3rem 3rem}
 <body>
 
 <nav id="nav">
-  <a class="nav-logo" href="/about"><img src="/assets/images/glenn-hanns-acs-cinematography.webp" alt="Glenn Hanns ACS" style="height:38px;width:auto;" width="297" height="76" fetchpriority="high" /></a>
+  <a href="/work.html" class="nav-logo">Glenn <span>Hanns</span> ACS</a>
   <ul class="nav-links">
     <li><a href="/work.html">Work</a></li>
     <li><a href="/about" class="active">About</a></li>
