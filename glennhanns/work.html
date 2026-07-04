@@ -1121,12 +1121,12 @@ border-right: none;
     <li><a href="/about">About</a></li>
     <li><a href="/blog.html">Journal</a></li>
   </ul>
-  <button class="nav-hamburger" onclick="document.getElementById('mobileNavWork').classList.toggle('open')" aria-label="Menu">
+  <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<div class="nav-mobile" id="mobileNavWork">
+<div class="nav-mobile" id="mobileNav">
   <a href="/work.html" onclick="this.closest('.nav-mobile').classList.remove('open')">Work</a>
   <a href="/about" onclick="this.closest('.nav-mobile').classList.remove('open')">About</a>
   <a href="/blog.html" onclick="this.closest('.nav-mobile').classList.remove('open')">Journal</a>
@@ -1164,7 +1164,7 @@ border-right: none;
   <button id="still-next" class="still-arrow" aria-label="Next still">&#8594;</button>
 </div>
 
-<div id="proj-info">
+<div id="proj-info" aria-live="polite">
 <p id="proj-cat" class="proj-cat"></p>
 <p id="proj-title" class="proj-title"></p>
 <p id="proj-meta" class="proj-meta"></p>
