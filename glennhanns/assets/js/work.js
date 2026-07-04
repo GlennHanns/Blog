@@ -348,7 +348,7 @@ desc: "Music video for The Snowdroppers' blues-rock single 'White Dress', from t
 tech: ['Canon 5D Mark III', 'Leica R Primes'],
 awards: [],
 dist: ['YouTube'],
-cast: []
+cast: [],
 warning: 'This video contains nudity. Viewer discretion is advised.',
 readMoreLink: '<a href="/blog/what-award-winning-cinematographers-bring.html">What award-winning cinematographers bring →</a>',
 },
@@ -456,7 +456,9 @@ clearTimeout(scrollTimer);
 scrollTimer = setTimeout(detectSnap, 120);
 });
 loadVimeo(1);
-setTimeout(() => navTo(1), 50);
+const firstSlide = sw.querySelectorAll('.proj-slide')[1];
+if (firstSlide) sw.scrollLeft = firstSlide.offsetLeft + firstSlide.offsetWidth / 2 - sw.clientWidth / 2;
+detectSnap();
 }
 
 function detectSnap() {
@@ -588,7 +590,14 @@ info.style.transform = 'translateY(0)';
 }
 
 function updateInfo() {
-if (projects[cur].id === '_placeholder') { navTo(cur + 1); return; }
+if (projects[cur].id === '_placeholder') {
+cur = 1;
+const sw = document.getElementById('proj-swiper');
+const slide = sw.querySelectorAll('.proj-slide')[1];
+if (slide) sw.scrollLeft = slide.offsetLeft + slide.offsetWidth / 2 - sw.clientWidth / 2;
+updateInfo();
+return;
+}
 const p = projects[cur];
 document.getElementById('proj-counter').textContent = (cur + 1) + '/' + projects.length;
 document.getElementById('proj-cat').textContent = p.cat;
@@ -952,8 +961,27 @@ document.getElementById('btn-next').style.opacity = cur === projects.length - 1 
 
 function navTo(n) {
 if (n < 0 || n >= projects.length) return;
-const slide = document.querySelectorAll('.proj-slide')[n];
+const slides = document.querySelectorAll('.proj-slide');
+const slide = slides[n];
 if (slide) slide.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});
+if (n === cur) return;
+slides.forEach((s, i) => {
+s.style.opacity = i === n ? '1' : '0.35';
+s.style.transform = i === n ? 'scale(1)' : 'scale(0.97)';
+});
+const prevSlide = slides[cur];
+if (prevSlide) {
+const prevFr = prevSlide.querySelector('.vframe');
+const prevCov = prevSlide.querySelector('.slide-cover');
+const prevOverlay = prevSlide.querySelector('.play-overlay');
+if (prevFr) { prevFr.src = ''; prevFr.removeAttribute('data-loaded'); }
+if (prevCov) { prevCov.onclick = null; prevCov.removeAttribute('data-poster'); }
+if (prevOverlay) prevOverlay.classList.remove('visible');
+}
+cur = n;
+fadeInfo();
+loadVimeo(n);
+updateNav();
 }
 
 function toggleDesc() {
