@@ -57,6 +57,8 @@ nav.scrolled{background:rgba(8,8,8,0.95);border-bottom:1px solid var(--border)}
 .toolbar-group button{background:none;border:none;color:var(--muted);cursor:pointer;font-family:var(--sans);font-size:inherit;letter-spacing:inherit;text-transform:inherit;padding:0.25rem 0}
 .toolbar-group button.active{color:var(--accent);border-bottom:1px solid var(--accent)}
 .toolbar-group span{color:var(--border)}
+.toolbar-count{color:var(--muted);font-size:0.9em}
+.toolbar-group button.active .toolbar-count{color:var(--accent)}
 
 .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
 .work-card{position:relative;overflow:hidden;aspect-ratio:16/10;background:var(--surface);cursor:pointer}

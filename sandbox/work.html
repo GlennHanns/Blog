@@ -39,17 +39,17 @@
 
     <div class="work-toolbar">
       <div class="toolbar-group" id="filterGroup">
-        <button class="active" data-filter="all">All</button>
+        <button class="active" data-filter="all">All <span class="toolbar-count"></span></button>
         <span>/</span>
-        <button data-filter="feature">Feature</button>
+        <button data-filter="feature">Feature <span class="toolbar-count"></span></button>
         <span>/</span>
-        <button data-filter="tv">Television</button>
+        <button data-filter="tv">Television <span class="toolbar-count"></span></button>
         <span>/</span>
-        <button data-filter="documentary">Documentary</button>
+        <button data-filter="documentary">Documentary <span class="toolbar-count"></span></button>
         <span>/</span>
-        <button data-filter="short">Short Film</button>
+        <button data-filter="short">Short Film <span class="toolbar-count"></span></button>
         <span>/</span>
-        <button data-filter="music">Music Video</button>
+        <button data-filter="music">Music Video <span class="toolbar-count"></span></button>
       </div>
     </div>
 
@@ -244,6 +244,14 @@
 window.addEventListener('scroll', () => {
   document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
 });
+(function(){
+  const cards = document.querySelectorAll('#workGrid .work-card');
+  document.querySelectorAll('#filterGroup button').forEach(btn => {
+    const filter = btn.dataset.filter;
+    const count = filter === 'all' ? cards.length : [...cards].filter(c => c.dataset.cat === filter).length;
+    btn.querySelector('.toolbar-count').textContent = `(${count})`;
+  });
+})();
 document.getElementById('filterGroup').addEventListener('click', e => {
   const btn = e.target.closest('button[data-filter]');
   if(!btn) return;
