@@ -7,24 +7,24 @@ Glenn's approach centres on visual authorship - not just camera operation, but t
 ## Pages
 
 - [About](https://glennhanns.com/about): Filmography, awards and festival recognition, background, and testimonials from directors and collaborators.
-- [Work](https://glennhanns.com/work): Portfolio of selected feature, television, and documentary projects.
-- [Journal](https://glennhanns.com/blog): Articles on cinematography, visual storytelling, and the craft of the Director of Photography.
+- [Work](https://glennhanns.com/work.html): Portfolio of selected feature, television, and documentary projects.
+- [Journal](https://glennhanns.com/blog.html): Articles on cinematography, visual storytelling, and the craft of the Director of Photography.
 
 ## Journal
 
-- [How to Brief a DOP](https://glennhanns.com/blog/how-to-brief-a-dop): What makes a useful director's brief, and what a cinematographer needs to build a creative partnership that works.
-- [TV Drama Series Director of Photography](https://glennhanns.com/blog/tv-drama-series-director-of-photography): How a drama DOP builds a visual language and keeps the image consistent across a full season.
-- [Cinematographer vs Camera Operator](https://glennhanns.com/blog/cinematographer-vs-camera-operator): The distinction between the two roles and why it matters before the first shooting day.
-- [What Award-Winning Cinematographers Bring](https://glennhanns.com/blog/what-award-winning-cinematographers-bring): Why industry recognition matters on serious productions, and what it signals about a cinematographer's track record.
-- [The Strategic Value of Director of Photography Services](https://glennhanns.com/blog/the-strategic-value-of-director-of-photography-services): Why the DOP role extends beyond camera operation into visual systems and departmental leadership.
-- [What a Television Series Cinematographer Does](https://glennhanns.com/blog/what-a-television-series-cinematographer-does): Building a repeatable visual system across episodic production and multiple directors.
-- [What a Short Film Cinematographer Does and Why It Matters](https://glennhanns.com/blog/what-a-short-film-cinematographer-does-and-why-it-matters): Why the cinematographer hire can define whether a short film lands with authority.
-- [How to Hire a Cinematographer for Feature Film](https://glennhanns.com/blog/how-to-hire-a-cinematographer-for-feature-film): What to look for beyond the showreel when hiring a DOP for a feature.
-- [What Does a Feature Film Cinematographer Do](https://glennhanns.com/blog/what-does-a-feature-film-cinematographer-do): A breakdown of the DOP role across pre-production, principal photography, and post.
-- [The Editor in the Director's Chair - Josh Groom](https://glennhanns.com/blog/editor-in-the-directors-chair-josh-groom): On the long-term collaboration with editor-turned-director Josh Groom.
-- [Working with Directors](https://glennhanns.com/blog/working-with-directors): On long-term creative partnerships with directors Kurt Martin, John Mavety, and Josh Groom.
-- [Moon Rock For Monday - Cinematography Breakdown](https://glennhanns.com/blog/moon-rock-for-monday-cinematography): Shooting a feature on the salt plains of outback Australia - camera and lighting choices included.
-- [Forbidden Ground - Cinematography Breakdown](https://glennhanns.com/blog/forbidden-ground-cinematography): A WWI feature shot across 19 days - the technical and creative breakdown of the production.
+- [How to Brief a DOP](https://glennhanns.com/blog/how-to-brief-a-dop.html): What makes a useful director's brief, and what a cinematographer needs to build a creative partnership that works.
+- [TV Drama Series Director of Photography](https://glennhanns.com/blog/tv-drama-series-director-of-photography.html): How a drama DOP builds a visual language and keeps the image consistent across a full season.
+- [Cinematographer vs Camera Operator](https://glennhanns.com/blog/cinematographer-vs-camera-operator.html): The distinction between the two roles and why it matters before the first shooting day.
+- [What Award-Winning Cinematographers Bring](https://glennhanns.com/blog/what-award-winning-cinematographers-bring.html): Why industry recognition matters on serious productions, and what it signals about a cinematographer's track record.
+- [The Strategic Value of Director of Photography Services](https://glennhanns.com/blog/the-strategic-value-of-director-of-photography-services.html): Why the DOP role extends beyond camera operation into visual systems and departmental leadership.
+- [What a Television Series Cinematographer Does](https://glennhanns.com/blog/what-a-television-series-cinematographer-does.html): Building a repeatable visual system across episodic production and multiple directors.
+- [What a Short Film Cinematographer Does and Why It Matters](https://glennhanns.com/blog/what-a-short-film-cinematographer-does-and-why-it-matters.html): Why the cinematographer hire can define whether a short film lands with authority.
+- [How to Hire a Cinematographer for Feature Film](https://glennhanns.com/blog/how-to-hire-a-cinematographer-for-feature-film.html): What to look for beyond the showreel when hiring a DOP for a feature.
+- [What Does a Feature Film Cinematographer Do](https://glennhanns.com/blog/what-does-a-feature-film-cinematographer-do.html): A breakdown of the DOP role across pre-production, principal photography, and post.
+- [The Editor in the Director's Chair - Josh Groom](https://glennhanns.com/blog/editor-in-the-directors-chair-josh-groom.html): On the long-term collaboration with editor-turned-director Josh Groom.
+- [Working with Directors](https://glennhanns.com/blog/working-with-directors.html): On long-term creative partnerships with directors Kurt Martin, John Mavety, and Josh Groom.
+- [Moon Rock For Monday - Cinematography Breakdown](https://glennhanns.com/blog/moon-rock-for-monday-cinematography.html): Shooting a feature on the salt plains of outback Australia - camera and lighting choices included.
+- [Forbidden Ground - Cinematography Breakdown](https://glennhanns.com/blog/forbidden-ground-cinematography.html): A WWI feature shot across 19 days - the technical and creative breakdown of the production.
 
 ## Optional
 

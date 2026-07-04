@@ -1,41 +1,24 @@
-/*
-  MASTER SCHEMA -- glennhanns.com about page
-  ==========================================
-  This is the canonical, full Person + WebSite block for the site.
-  It lives on about.html ONLY. Every other page (blog.html, blog posts,
-  work.html) should reference this Person via a stub:
+/**
+ * SCHEMA MASTER — ABOUT (Person + WebSite)
+ * Canonical source of truth for Glenn Hanns ACS structured data.
+ *
+ * DO NOT DEPLOY THIS FILE LIVE. Reference only — kept outside the
+ * /glennhanns publish directory. Live copy lives inline in about.html
+ * as a single <script type="application/ld+json"> @graph block.
+ *
+ * Standing rule: this is the ONLY place the Person + WebSite schema
+ * should be authored. work.html previously carried its own separate
+ * (and divergent) Person + WebSite blocks — that caused the sameAs
+ * LinkedIn URL to silently drift out of sync between files. If work.html
+ * still has its own Person/WebSite JSON-LD, it should be removed and
+ * replaced with nothing (work.html only needs the per-project
+ * VideoObject/Movie/TVSeries/ShortFilm/MusicVideoObject entries —
+ * see schema-master-work.js).
+ *
+ * Last synced from live about.html: 2026-07-04
+ */
 
-      "author": { "@id": "https://glennhanns.com/#person" }
-
-  rather than repeating the full definition. Those pages use the
-  lighter Person block instead (see schema-master.js).
-
-  WHEN TO UPDATE THIS FILE:
-    - New film/project completed and added to the portfolio
-        -> add an entry to the "performerIn" array below.
-           Pick the right @type: Movie / TVSeries / ShortFilm.
-           (Music videos live on work.html as MusicVideoObject,
-           not in this Person's performerIn array.)
-           See schema-master-work.js for the full type decision tree.
-    - New award, credential, or professional affiliation
-        -> add to "award" / "hasCredential" / "memberOf".
-    - Contact details, address, or socials change
-        -> update "email" / "telephone" / "address" / "sameAs".
-
-  Do not add tokens like POST_TITLE here -- unlike the blog-post
-  master, this file is not a repeatable per-page template. It is
-  a single block that just IS the about.html schema. Replace the
-  whole <script> block on about.html with the block below whenever
-  you edit it.
-
-  Reminder: like schema-master.js, this reference file should never
-  be uploaded to the live server itself -- it's a local reference copy.
-*/
-
-/* -- PASTE INTO HTML (about.html only) ------------------------------ */
-
-<script type="application/ld+json">
-{
+const SCHEMA_MASTER_ABOUT = {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -256,7 +239,7 @@
       "email": "glenn@glennhanns.com",
       "telephone": "+61421667205",
       "sameAs": [
-        "https://au.linkedin.com/in/glennhanns",
+        "https://www.linkedin.com/in/glennhanns/",
         "https://www.instagram.com/glennhanns_acs/",
         "https://www.youtube.com/@GlennHanns/playlists",
         "https://www.imdb.com/name/nm1771070/"
@@ -283,5 +266,6 @@
       }
     }
   ]
-}
-</script>
+};
+
+module.exports = SCHEMA_MASTER_ABOUT;

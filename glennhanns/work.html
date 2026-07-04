@@ -520,6 +520,16 @@ border-right: none;
 @media (prefers-reduced-motion: reduce) {
 *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* PORTFOLIO INDEX (static, crawlable) */
+.portfolio-index { max-width: var(--max-width); margin: 4rem auto 0; padding: 3rem 2rem 0; border-top: 1px solid var(--border); }
+.portfolio-index h2 { font-family: var(--serif); font-weight: 300; font-style: italic; font-size: clamp(1.6rem,3vw,2.2rem); color: var(--text); margin-bottom: 0.5rem; }
+.portfolio-index > p { font-size: 0.85rem; color: var(--muted); margin-bottom: 2rem; max-width: 560px; }
+.portfolio-list { list-style: none; display: grid; gap: 1.75rem; }
+.portfolio-list li { border-bottom: 1px solid var(--border); padding-bottom: 1.75rem; }
+.portfolio-list h3 { font-family: var(--serif); font-weight: 400; font-size: 1.15rem; color: var(--text); margin-bottom: 0.35rem; }
+.portfolio-list .p-meta { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
+.portfolio-list p.p-desc { font-size: 0.85rem; line-height: 1.7; color: rgba(232,224,214,0.65); max-width: 720px; }
 </style>
 
 
@@ -714,7 +724,7 @@ border-right: none;
   "email": "glenn@glennhanns.com",
   "telephone": "+61421667205",
   "sameAs": [
-    "https://au.linkedin.com/in/glennhanns",
+    "https://www.linkedin.com/in/glennhanns/",
     "https://www.instagram.com/glennhanns_acs/",
     "https://www.youtube.com/@GlennHanns/playlists",
     "https://www.imdb.com/name/nm1771070/?ref_=ext_shr_lnk"
@@ -955,6 +965,29 @@ border-right: none;
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "MusicVideoObject",
+  "name": "She Says  -  Cinematography by Glenn Hanns ACS",
+  "description": "Music video (2023) for 'She Says', the debut single from Sydney band Wicker Jane (Jackson Perrett and Dax Love), directed by Valentina Iastrebova.",
+  "director": {
+    "@type": "Person",
+    "name": "Valentina Iastrebova"
+  },
+  "byArtist": {
+    "@type": "MusicGroup",
+    "name": "Wicker Jane"
+  },
+  "thumbnailUrl": "https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_18.webp",
+  "image": "https://glennhanns.com/assets/images/Glenn_Hanns_ACS_DOP_18.webp",
+  "embedUrl": "https://player.vimeo.com/video/1202014958",
+  "url": "https://vimeo.com/1202014958",
+  "uploadDate": "2023-01-01T00:00:00+10:00",
+  "genre": "Music Video",
+  "countryOfOrigin": "AU"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": [
     "TVSeries",
     "VideoObject"
@@ -1166,6 +1199,83 @@ border-right: none;
 <div id="stills-section" class="stills-section" style="display:none;">
 <p class="stills-label">Stills</p>
 <div id="thumb-strip"></div>
+</div>
+
+<div class="portfolio-index">
+<h2>Full portfolio</h2>
+<p>Every project above, listed in full for reference - feature drama, television series, documentary, short film, and music video, spanning twenty years of visual storytelling.</p>
+<ul class="portfolio-list">
+<li>
+<h3>Moon Rock For Monday</h3>
+<p class="p-meta">2020 · Feature Film · Dir. Kurt Martin</p>
+<p class="p-desc">Feature film for Lunar Pictures. Winner of the ACS Gold Award NSW & ACT (2021) and the ACS Award of Distinction at the ACS Nationals (2022), and an AACTA nominee for Best Cinematography.</p>
+</li>
+<li>
+<h3>Forbidden Ground</h3>
+<p class="p-meta">2013 · Feature Film · Dir. Adrian Powers, Johan Earl</p>
+<p class="p-desc">WWI feature film distributed by Lionsgate. Winner of the ACS Bronze Award NSW & ACT (2013), with additional festival selections and award nominations.</p>
+</li>
+<li>
+<h3>Ron Iddles: The Good Cop</h3>
+<p class="p-meta">2018 · Television Documentary · Dir. John Mavety</p>
+<p class="p-desc">Television documentary series for FOX/CJZ. Winner of the ACS Gold Award NSW & ACT (2023) and a Silver Logie (2019) for Most Outstanding Factual or Documentary Program.</p>
+</li>
+<li>
+<h3>The Room Below</h3>
+<p class="p-meta">2024 · Feature Film · Dir. Kurt Martin</p>
+<p class="p-desc">Psychological creature feature for Lunar Pictures, starring Alyssa Sutherland and Jonathan Rhys Meyers. North American distribution rights acquired by Uncork'd Entertainment.</p>
+</li>
+<li>
+<h3>Transitions</h3>
+<p class="p-meta">2022 · Short Film Drama · Dir. Zain Ayub</p>
+<p class="p-desc">A young Pakistani migrant in Western Sydney loses herself in memories of her wedding day after her husband's passing. Shot on Sony Venice 2 with uncoated Sigma Classic Cine primes.</p>
+</li>
+<li>
+<h3>Manifestation</h3>
+<p class="p-meta">2017 · Short Film Horror · Dir. Josh Groom</p>
+<p class="p-desc">Short horror film for Greenlight Productions. Set in 1994, a couple discover the previous guests of a hotel have forgotten to check out. Shot on Canon C500 with vintage Leica R primes.</p>
+</li>
+<li>
+<h3>The Briefcase</h3>
+<p class="p-meta">2015 · Short Film · Dir. Kurt Martin</p>
+<p class="p-desc">Short mythological film. Zeus tracks down Prometheus to an ambiguous era of man. Shot on Canon C500 RAW with Canon CN-E primes, graded to black and white.</p>
+</li>
+<li>
+<h3>Narci-titus</h3>
+<p class="p-meta">2015 · Short Film · Dir. Kurt Martin</p>
+<p class="p-desc">Kevin Milton seeks help for a rare condition preventing him from having normal relationships. Shot on Canon C500 with Canon CN-E primes.</p>
+</li>
+<li>
+<h3>She Says</h3>
+<p class="p-meta">2023 · Music Video · Dir. Valentina Iastrebova</p>
+<p class="p-desc">Music video for "She Says," the debut single from Sydney band Wicker Jane (Jackson Perrett and Dax Love).</p>
+</li>
+<li>
+<h3>Persons of Interest</h3>
+<p class="p-meta">2013 · Documentary Miniseries · Dir. Haydn Keenan</p>
+<p class="p-desc">Documentary miniseries for SBS exploring covert ASIO operations during the Cold War and Australia's post-9/11 counter-terrorism surveillance. Winner of the Walkley Award for Outstanding Journalism.</p>
+</li>
+<li>
+<h3>Dark Temptations</h3>
+<p class="p-meta">2016 · Television Drama · Dir. John Mavety</p>
+<p class="p-desc">Television drama series episode for Discovery Channel. Shot on Canon C500 with Canon FD primes.</p>
+</li>
+<li>
+<h3>White Rabbit Project</h3>
+<p class="p-meta">2016 · Television Series · Dir. John Mavety</p>
+<p class="p-desc">Netflix television series from the makers of MythBusters, with Kari Byron, Tory Belleci, and Grant Imahara ranking history's greatest inventions, heists, and more.</p>
+</li>
+<li>
+<h3>Birds of Tokyo - "Wild Eyed Boy"</h3>
+<p class="p-meta">2009 · Music Video · Dir. Josh Groom</p>
+<p class="p-desc">Music video for Perth rock band Birds of Tokyo. Winner of the Gold ACS Australian Cinematography Award NSW & ACT for Music Clips. Shot on Arriflex 35 III with Zeiss SuperSpeed primes.</p>
+</li>
+<li>
+<h3>After Touch - "Use Me"</h3>
+<p class="p-meta">2019 · Music Video · Dir. Dax Love</p>
+<p class="p-desc">Music video for After Touch. Shot on Blackmagic URSA 4.6K with Canon CN-E primes.</p>
+</li>
+</ul>
 </div>
 
 </section>
