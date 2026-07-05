@@ -384,12 +384,12 @@ border-bottom: 1px solid var(--border);
     <li><a href="/about">About</a></li>
     <li><a href="/blog.html" class="active">Journal</a></li>
   </ul>
-  <button class="nav-hamburger" onclick="document.getElementById('mobileNavBlog').classList.toggle('open')" aria-label="Menu">
+  <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<div class="nav-mobile" id="mobileNavBlog">
+<div class="nav-mobile" id="mobileNav">
   <a href="/work.html" onclick="this.closest('.nav-mobile').classList.remove('open')">Work</a>
   <a href="/about" onclick="this.closest('.nav-mobile').classList.remove('open')">About</a>
   <a href="/blog.html" onclick="this.closest('.nav-mobile').classList.remove('open')">Journal</a>

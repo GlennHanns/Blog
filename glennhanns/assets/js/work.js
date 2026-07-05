@@ -14,8 +14,7 @@ vimeoStart: 0,
 cover: '',
 desc: '',
 tech: [],
-awards: [],
-thumbs: []
+awards: []
 },
 {
 id: 'moon-rock',
@@ -37,31 +36,7 @@ quote: "We couldn't have made this film without Glenn. Seriously. Working in the
 attribution: 'Jim R.  -  Managing Director, Film & TV Producer',
 company: 'Lunar Pictures',
 url: 'https://www.linkedin.com/in/lunarpictures/'
-},
-thumbs: [
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_1.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_2.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_3.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_4.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_5.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_6.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_7.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_8.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_9.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_10.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_11.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_12.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_13.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_14.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_15.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_16.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_17.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_18.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_19.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_20.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_21.webp',
-'assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_22.webp'
-]
+}
 },
 {
 id: 'forbidden-ground',
@@ -83,26 +58,7 @@ quote: "Working with Glenn was one of the highlights of my career. Finding a col
 attribution: 'Adrian Powers  -  Director, Editor, Writer',
 company: 'Powers That Be Pty Ltd',
 url: 'https://www.linkedin.com/in/adrian-powers-aba67130/'
-},
-thumbs: [
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_1.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_2.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_3.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_4.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_5.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_6.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_7.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_8.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_9.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_10.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_11.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_12.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_13.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_14.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_15.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_16.webp',
-'assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_17.webp'
-]
+}
 },
 {
 id: 'room-below',
@@ -118,26 +74,7 @@ readMoreLink: '<a href="/blog/cinematographer-vs-camera-operator.html">Cinematog
 tech: ['ARRI Alexa 35', 'Leica Summicron Primes'],
 awards: ['In post-production'],
 dist: ['Uncorked Media'],
-cast: ['Alyssa Sutherland', 'Jonathan Rhys Meyers', 'Gilbert Bradman', 'Bobby Gilchrist', 'Lauren Grimson', 'Goran D. Kleut'],
-thumbs: [
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_1.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_2.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_3.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_4.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_5.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_6.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_7.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_8.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_9.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_10.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_11.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_12.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_13.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_14.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_15.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_16.webp',
-'assets/images/The_Room_Below/Glenn_Hanns_ACS_DOP_The_Room_Below_17.webp'
-]
+cast: ['Alyssa Sutherland', 'Jonathan Rhys Meyers', 'Gilbert Bradman', 'Bobby Gilchrist', 'Lauren Grimson', 'Goran D. Kleut']
 },
 {
 id: 'transitions',
@@ -152,29 +89,7 @@ desc: 'A young Pakistani migrant in Western Sydney receives news of her husband\
 tech: ['Sony Venice 2', 'Uncoated Sigma Classic Cine Primes'],
 awards: [],
 dist: ['TEDx'],
-readMoreLink: '<a href="/blog/what-a-short-film-cinematographer-does-and-why-it-matters.html">What a short film cinematographer does →</a>',
-thumbs: [
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_1.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_2.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_3.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_4.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_5.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_6.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_7.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_8.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_9.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_10.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_11.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_12.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_13.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_14.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_15.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_16.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_17.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_18.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_19.webp',
-'assets/images/Transitions/Glenn_Hanns_ACS_DOP_Transitions_20.webp'
-]
+readMoreLink: '<a href="/blog/what-a-short-film-cinematographer-does-and-why-it-matters.html">What a short film cinematographer does →</a>'
 },
 {
 id: 'manifestation',
@@ -195,20 +110,7 @@ quote: "Glenn is a consummate professional who thrives under pressure and produc
 attribution: 'Josh Groom  -  Video Producer',
 company: 'The $100 MBA',
 url: 'https://www.linkedin.com/in/joshgroom/'
-},
-thumbs: [
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_1.webp',
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_2.webp',
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_3.webp',
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_4.webp',
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_5.webp',
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_6.webp',
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_7.webp',
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_8.webp',
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_9.webp',
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_10.webp',
-'assets/images/Manifestation/Glenn_Hanns_ACS_DOP_Manifestation_11.webp'
-]
+}
 },
 {
 id: 'briefcase',
@@ -224,20 +126,7 @@ readMoreLink: '<a href="/blog/working-with-directors.html">Read more about worki
 tech: ['Canon C500 RAW', 'Canon CN-E Primes'],
 awards: [],
 dist: ['Independent Cinema Release'],
-cast: ['Samara Weaving', 'Bianca Bradey', 'Shane Withington', 'Simon Westaway'],
-thumbs: [
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_1.webp',
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_2.webp',
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_3.webp',
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_4.webp',
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_5.webp',
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_6.webp',
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_7.webp',
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_8.webp',
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_9.webp',
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_10.webp',
-'assets/images/The_Briefcase/Glenn_Hanns_ACS_DOP_The_Briefcase_11.webp'
-]
+cast: ['Samara Weaving', 'Bianca Bradey', 'Shane Withington', 'Simon Westaway']
 },
 {
 id: 'narci-titus',
@@ -253,31 +142,7 @@ tech: ['Canon C500', 'Canon CN-E Primes'],
 awards: [],
 dist: ['Independent Cinema Release'],
 cast: ['Jim Chapman', 'Ainslie Clouston', 'Alex Dyson'],
-readMoreLink: '<a href="/blog/working-with-directors.html">Working with directors  -  long-term creative partnerships &#8594;</a>',
-thumbs: [
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_1.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_3.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_4.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_5.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_6.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_7.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_8.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_9.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_10.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_11.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_12.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_13.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_14.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_15.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_16.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_17.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_18.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_19.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_20.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_21.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_22.webp',
-'assets/images/Narcititus/Glenn_Hanns_ACS_DOP_Narcititus_23.webp'
-]
+readMoreLink: '<a href="/blog/working-with-directors.html">Working with directors  -  long-term creative partnerships &#8594;</a>'
 },
 {
 id: 'ron-iddles',
@@ -299,8 +164,7 @@ quote: "Glenn is a highly talented DOP. I've worked with him on two seasons of D
 attribution: 'John Mavety  -  Content Director',
 company: '',
 url: 'https://www.linkedin.com/in/john-mavety/'
-},
-thumbs: ['/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_1.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_2.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_3.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_4.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_5.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_6.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_7.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_8.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_9.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_10.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_11.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_12.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_13.webp','/assets/images/The_Good_Cop/Glenn_Hanns_ACS_DOP_The_Good_Cop_14.webp']
+}
 },
 {
 id: 'persons-of-interest',
@@ -322,8 +186,7 @@ quote: "Glenn Hanns is one of the most talented cinematographers I have worked w
 attribution: 'Frank Haines',
 company: '',
 url: 'https://www.linkedin.com/in/frank-haines-70300a22/'
-},
-thumbs: []
+}
 },
 {
 id: 'dark-temptations',
@@ -340,39 +203,7 @@ readMoreLink: '<a href="/blog/the-strategic-value-of-director-of-photography-ser
 tech: ['Canon C500', 'Canon FD Primes'],
 awards: [],
 dist: ['Discovery Channel'],
-cast: ['Bobey Taleb', 'Marisa Lamonica'],
-thumbs: [
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_1.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_2.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_3.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_4.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_5.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_6.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_7.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_8.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_9.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_10.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_11.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_12.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_13.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_14.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_15.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_16.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_17.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_18.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_19.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_20.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_21.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_22.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_23.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_24.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_25.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_26.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_27.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_28.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_29.webp',
-'assets/images/Dark_temptations/Glenn_Hanns_ACS_DOP_Dark_Temptations_30.webp'
-]
+cast: ['Bobey Taleb', 'Marisa Lamonica']
 },
 {
 id: 'white-rabbit-project',
@@ -388,8 +219,7 @@ desc: 'The coolest tech. The weirdest weapons. The craziest escapes. Three scien
 tech: ['Canon C500', 'Canon CN-E Primes'],
 awards: [],
 dist: ['Netflix'],
-cast: ['Kari Byron', 'Tory Belleci', 'Grant Imahara'],
-thumbs: []
+cast: ['Kari Byron', 'Tory Belleci', 'Grant Imahara']
 },
 {
 id: 'secret-life-breasts',
@@ -403,8 +233,7 @@ cover: '',
 desc: 'A documentary examining the science of breasts  -  why women\'s breasts are getting larger, why they develop at earlier ages, why some develop breast cancer, and why some men develop breasts.',
 tech: ['Canon C500', 'Canon CN-E Primes'],
 awards: [],
-dist: ['SBS'],
-thumbs: []
+dist: ['SBS']
 },
 {
 id: 'pastoral-narrative',
@@ -425,8 +254,7 @@ quote: "Glenn is a unique and exceptional artist. On set, he is relaxed, yet he 
 attribution: 'Jo Carne  -  Creative Arts Specialist',
 company: '',
 url: 'https://www.linkedin.com/in/jo-carne-nee-kenny-868115207/'
-},
-thumbs: []
+}
 },
 {
 id: 'latitude',
@@ -441,8 +269,7 @@ desc: 'Thought leadership corporate video for Latitude, directed by Matt Hopper.
 tech: ['Sony A7S III'],
 awards: [],
 dist: [],
-cast: [],
-thumbs: []
+cast: []
 },
 {
 id: 'birds-tokyo',
@@ -462,8 +289,7 @@ quote: "It has been a privilege to work as a camera operator for Glenn on a numb
 attribution: 'Aaron Smith ACS  -  Freelance Cinematographer and Director/Producer',
 company: '',
 url: 'https://www.linkedin.com/in/aaronsmithcine/'
-},
-thumbs: []
+}
 },
 {
 id: 'after-touch-use-me',
@@ -478,39 +304,7 @@ desc: 'Official music video for After Touch.',
 tech: ['Blackmagic URSA 4.6K', 'Canon CN-E Primes'],
 awards: [],
 dist: ['YouTube'],
-cast: [],
-thumbs: [
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_1.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_2.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_3.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_4.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_5.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_6.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_7.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_8.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_9.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_10.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_11.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_12.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_13.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_14.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_15.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_16.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_17.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_18.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_19.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_20.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_21.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_22.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_23.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_24.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_25.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_26.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_27.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_28.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_29.webp',
-'assets/images/Use_Me/Glenn_Hanns_ACS_DOP_After_Touch_Use_Me_30.webp'
-]
+cast: []
 },
 {
 id: 'resist-the-thought',
@@ -525,8 +319,7 @@ desc: 'Official music video for Resist the Thought.',
 tech: ['Sony FS5', 'Canon CN-E Primes'],
 awards: [],
 dist: ['Rage (ABC)'],
-cast: ['Rhys Giles', 'Darcy Reynolds', 'Zak Borg'],
-thumbs: []
+cast: ['Rhys Giles', 'Darcy Reynolds', 'Zak Borg']
 },
 {
 id: 'snow-droppers',
@@ -540,8 +333,7 @@ cover: '',
 desc: "Music video for Sydney band The Snowdroppers, from their album 'Business', directed by Josh Groom.<br><br>Love Letters was a labour of love  -  extremely small crew, single-day shoot in a warehouse  -  which meant I worked as DOP, gaffer and grip simultaneously, pulling my own focus from a Bartech RF rigged directly to the handle of the ARRI Alexa XT. On a bigger budget those would be separate departments; here we moved fast with three people doing everything.<br><br>Lighting stayed deliberately minimal  -  three units only. A 4K HMI on a dolly as the moving side key, sliding through a giant bookcase mid-take to throw shifting hard shadows across the band; a hanging practical bulb that swung in and out of the foreground for kinetic rhythm; and a small LED panel for fill on selective close-ups. Smoke threaded through the set registered every beam, giving the warehouse the depth and atmospheric volume the look needed. With only three sources, every cue had a job.<br><br>For coverage variety, I rigged a jib high on an overhang to grab top-down shots of the drummer  -  which leads to the music-video maxim every editor will thank you for following: cover the drummer. Whatever else you shoot, make sure there’s enough drummer footage to cut back to. It saves the edit, every single time.",
 tech: ['Canon 5D Mark III', 'Leica Primes'],
 awards: [],
-dist: ['Rage (ABC)'],
-thumbs: []
+dist: ['Rage (ABC)']
 },
 {
 id: 'snow-droppers-white-dress',
@@ -557,7 +349,6 @@ tech: ['Canon 5D Mark III', 'Leica R Primes'],
 awards: [],
 dist: ['YouTube'],
 cast: [],
-thumbs: [],
 warning: 'This video contains nudity. Viewer discretion is advised.',
 readMoreLink: '<a href="/blog/what-award-winning-cinematographers-bring.html">What award-winning cinematographers bring →</a>',
 },
@@ -583,8 +374,7 @@ crew: [
 'Hair & Makeup: Natalia Ladyko',
 'Photographer: Conrad Taylor',
 'Art Dept: Amelia Weaver, Wendy Marriott, Dee Milenkovic'
-],
-thumbs: []
+]
 },
 {
 id: 'faydee-aywa',
@@ -599,8 +389,7 @@ desc: 'Official music video for Faydee featuring Valderrama.',
 tech: ['Sony A7S III', 'RED Helium'],
 awards: [],
 dist: ['Rage (ABC)'],
-cast: [],
-thumbs: []
+cast: []
 },
 {
 id: 'nay-nay',
@@ -614,8 +403,7 @@ cover: '',
 desc: 'Kids music clip directed by Josh Groom.',
 tech: ['Sony FS7', 'Zeiss Primes'],
 awards: [],
-dist: ['ABC Kids Network'],
-thumbs: []
+dist: ['ABC Kids Network']
 },
 {
 id: 'nay-nay-bubble-pop',
@@ -630,8 +418,7 @@ desc: 'Kids music clip directed by Josh Groom.',
 tech: ['Sony FS7', 'Zeiss Primes'],
 awards: [],
 dist: ['ABC Kids Network'],
-cast: [],
-thumbs: []
+cast: []
 }
 ];
 
@@ -669,7 +456,9 @@ clearTimeout(scrollTimer);
 scrollTimer = setTimeout(detectSnap, 120);
 });
 loadVimeo(1);
-setTimeout(() => navTo(1), 50);
+const firstSlide = sw.querySelectorAll('.proj-slide')[1];
+if (firstSlide) sw.scrollLeft = firstSlide.offsetLeft + firstSlide.offsetWidth / 2 - sw.clientWidth / 2;
+detectSnap();
 }
 
 function detectSnap() {
@@ -801,7 +590,14 @@ info.style.transform = 'translateY(0)';
 }
 
 function updateInfo() {
-if (projects[cur].id === '_placeholder') { navTo(cur + 1); return; }
+if (projects[cur].id === '_placeholder') {
+cur = 1;
+const sw = document.getElementById('proj-swiper');
+const slide = sw.querySelectorAll('.proj-slide')[1];
+if (slide) sw.scrollLeft = slide.offsetLeft + slide.offsetWidth / 2 - sw.clientWidth / 2;
+updateInfo();
+return;
+}
 const p = projects[cur];
 document.getElementById('proj-counter').textContent = (cur + 1) + '/' + projects.length;
 document.getElementById('proj-cat').textContent = p.cat;
@@ -1165,8 +961,27 @@ document.getElementById('btn-next').style.opacity = cur === projects.length - 1 
 
 function navTo(n) {
 if (n < 0 || n >= projects.length) return;
-const slide = document.querySelectorAll('.proj-slide')[n];
+const slides = document.querySelectorAll('.proj-slide');
+const slide = slides[n];
 if (slide) slide.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});
+if (n === cur) return;
+slides.forEach((s, i) => {
+s.style.opacity = i === n ? '1' : '0.35';
+s.style.transform = i === n ? 'scale(1)' : 'scale(0.97)';
+});
+const prevSlide = slides[cur];
+if (prevSlide) {
+const prevFr = prevSlide.querySelector('.vframe');
+const prevCov = prevSlide.querySelector('.slide-cover');
+const prevOverlay = prevSlide.querySelector('.play-overlay');
+if (prevFr) { prevFr.src = ''; prevFr.removeAttribute('data-loaded'); }
+if (prevCov) { prevCov.onclick = null; prevCov.removeAttribute('data-poster'); }
+if (prevOverlay) prevOverlay.classList.remove('visible');
+}
+cur = n;
+fadeInfo();
+loadVimeo(n);
+updateNav();
 }
 
 function toggleDesc() {

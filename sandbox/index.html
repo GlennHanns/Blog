@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glenn Hanns ACS — Director of Photography, Sydney [SANDBOX]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap"></noscript>
+<link rel="stylesheet" href="/sandbox/style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-logo" href="/sandbox/index.html"><img src="/glennhanns/assets/images/glenn-hanns-acs-cinematography.webp" alt="Glenn Hanns ACS" width="297" height="76"></a>
+  <ul class="nav-links">
+    <li><a href="/sandbox/work.html"><span class="nav-icon">▸</span>Work</a></li>
+    <li><a href="/sandbox/about.html" class="active"><span class="nav-icon">▪</span>About</a></li>
+    <li><a href="/glennhanns/blog.html"><span class="nav-icon">○</span>Journal</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-mobile" id="mobileNav">
+  <a href="/sandbox/work.html">Work</a>
+  <a href="/sandbox/about.html">About</a>
+  <a href="/glennhanns/blog.html">Journal</a>
+</div>
+
+<main>
+
+<section class="hero">
+  <div class="hero-bg">
+    <!-- swap for: <video class="hero-bg-media" autoplay muted loop playsinline poster="...BW.webp"><source src="/assets/video/hero.mp4" type="video/mp4"></video> -->
+    <img class="hero-bg-media" src="/glennhanns/assets/images/Glenn_Hanns_ACS_BW.webp" alt="Glenn Hanns ACS — Director of Photography, Sydney" fetchpriority="high" width="800" height="1067">
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Director of Photography — Sydney</p>
+    <h1 class="hero-giant">
+      <span class="hg-line">Visual <span class="hg-accent">authorship</span> — </span>
+      <span class="hg-line hg-italic">from prep to <span class="hg-accent">grade</span>.</span>
+    </h1>
+    <p class="hero-body">Glenn Hanns ACS is a Sydney-based Director of Photography known for intimate, visually rich storytelling across feature drama, long-form documentary and series. Over 150 projects. Over 20 years.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">ACS Accredited</span>
+      <span class="hero-tag">AFTRS Alumni</span>
+      <span class="hero-tag">Sydney · Available Worldwide</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">Selected Work</p>
+    <h2 class="section-heading">A twenty year archive <span class="section-count">[14]</span></h2>
+    <div class="work-grid" style="margin-top:3rem">
+      <a class="work-card" href="/sandbox/work.html">
+        <img src="/glennhanns/assets/images/Moon_Rock_For_Monday/Glenn_Hanns_ACS_DOP_Moon_Rock_For_Monday_1.webp" alt="Moon Rock For Monday" loading="lazy">
+        <div class="work-card-info">
+          <div class="work-card-title">Moon Rock For Monday</div>
+          <div class="work-card-meta">2020 · Feature Film</div>
+        </div>
+      </a>
+      <a class="work-card" href="/sandbox/work.html">
+        <img src="/glennhanns/assets/images/Forbidden_Ground/Glenn_Hanns_ACS_DOP_Forbidden_Ground_1.webp" alt="Forbidden Ground" loading="lazy">
+        <div class="work-card-info">
+          <div class="work-card-title">Forbidden Ground</div>
+          <div class="work-card-meta">2013 · Feature Film</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+</script>
+</body>
+</html>
