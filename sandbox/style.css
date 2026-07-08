@@ -57,12 +57,15 @@ nav.scrolled{background:rgba(8,8,8,0.95);border-bottom:1px solid var(--border)}
 .toolbar-group button{background:none;border:none;color:var(--muted);cursor:pointer;font-family:var(--sans);font-size:inherit;letter-spacing:inherit;text-transform:inherit;padding:0.25rem 0}
 .toolbar-group button.active{color:var(--accent);border-bottom:1px solid var(--accent)}
 .toolbar-group span{color:var(--border)}
+.toolbar-count{color:var(--muted);font-size:0.9em}
+.toolbar-group button.active .toolbar-count{color:var(--accent)}
 
 .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
 .work-card{position:relative;overflow:hidden;aspect-ratio:16/10;background:var(--surface);cursor:pointer}
-.work-card img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.85);transition:filter 0.4s,transform 0.6s}
-.work-card:hover img{filter:brightness(1);transform:scale(1.03)}
-.work-card-info{position:absolute;left:0;right:0;bottom:0;padding:1.25rem 1.5rem;background:linear-gradient(0deg,rgba(0,0,0,0.75),transparent)}
+.work-card img{width:100%;height:100%;object-fit:cover;display:block;transition:filter 0.5s,transform 0.6s}
+.work-card:hover img{filter:brightness(0.35);transform:scale(1.03)}
+.work-card-info{position:absolute;left:0;right:0;bottom:0;padding:1.25rem 1.5rem;background:linear-gradient(0deg,rgba(0,0,0,0.75),transparent);opacity:0;transition:opacity 0.4s}
+.work-card:hover .work-card-info{opacity:1}
 .work-card-title{font-family:var(--serif);font-size:1.3rem;color:var(--text)}
 .work-card-meta{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-top:0.25rem}
 
