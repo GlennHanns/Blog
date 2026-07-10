@@ -30,21 +30,12 @@ jobs:
           # Extract all <loc> URLs from the sitemap
           URLS=$(grep -oE '<loc>[^<]+</loc>' "$SITEMAP" | sed -E 's/<loc>(.*)<\/loc>/\1/')
 
-          # Build a JSON array of URLs
-          URL_LIST=$(printf '%s\n' "$URLS" | python3 -c "
-import sys, json
-urls = [line.strip() for line in sys.stdin if line.strip()]
-print(json.dumps(urls))
-")
+          # Build a JSON array of URLs (single-line python to keep valid YAML indentation)
+          URL_LIST=$(printf '%s\n' "$URLS" | python3 -c "import sys, json; print(json.dumps([line.strip() for line in sys.stdin if line.strip()]))")
 
           echo "Submitting the following URLs to IndexNow:"
           echo "$URL_LIST"
 
           curl -s -X POST "https://api.indexnow.org/indexnow" \
             -H "Content-Type: application/json; charset=utf-8" \
-            -d "{
-              \"host\": \"${HOST}\",
-              \"key\": \"${KEY}\",
-              \"keyLocation\": \"${KEY_LOCATION}\",
-              \"urlList\": ${URL_LIST}
-            }"
+            -d "{\"host\": \"${HOST}\", \"key\": \"${KEY}\", \"keyLocation\": \"${KEY_LOCATION}\", \"urlList\": ${URL_LIST}}"
