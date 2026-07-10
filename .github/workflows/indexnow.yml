@@ -1,0 +1,41 @@
+name: Notify IndexNow
+
+# Fires on every push to main (i.e. every Netlify deploy trigger),
+# tells Bing/Yandex/Seznam/Naver via IndexNow that URLs in the
+# sitemap may have changed, so they crawl promptly instead of
+# waiting for their normal schedule.
+#
+# Does NOT affect Google — Google does not participate in IndexNow.
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Submit sitemap URLs to IndexNow
+        run: |
+          set -e
+          HOST="glennhanns.com"
+          KEY="f84bd3c5791e0bbdd277244f7870c6ed"
+          KEY_LOCATION="https://glennhanns.com/${KEY}.txt"
+          SITEMAP="glennhanns/sitemap.xml"
+
+          # Extract all <loc> URLs from the sitemap
+          URLS=$(grep -oE '<loc>[^<]+</loc>' "$SITEMAP" | sed -E 's/<loc>(.*)<\/loc>/\1/')
+
+          # Build a JSON array of URLs (single-line python to keep valid YAML indentation)
+          URL_LIST=$(printf '%s\n' "$URLS" | python3 -c "import sys, json; print(json.dumps([line.strip() for line in sys.stdin if line.strip()]))")
+
+          echo "Submitting the following URLs to IndexNow:"
+          echo "$URL_LIST"
+
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\": \"${HOST}\", \"key\": \"${KEY}\", \"keyLocation\": \"${KEY_LOCATION}\", \"urlList\": ${URL_LIST}}"
